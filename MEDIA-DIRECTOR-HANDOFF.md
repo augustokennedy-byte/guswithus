@@ -1,6 +1,8 @@
 # GUS Website & Donations — Media Director Handoff
 
-Welcome aboard! Here's everything you need to manage the GUS web presence.
+**For:** Arnau Sagrera-Barnet (info@velorfilms.com)
+
+Welcome aboard, Arnau! Here's everything you need to manage the GUS web presence.
 
 ## What you have access to
 
