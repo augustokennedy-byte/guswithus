@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GUS — Growth, Unity &amp; Success | Empowering Underserved Youth in NYC</title>
+<meta name="description" content="GUS is a 501(c)(3) nonprofit in Jamaica, Queens empowering underserved youth through basic essentials, academic mentorship, athletics, and career training. 100% of your donation funds programs — zero platform fees.">
+<meta property="og:title" content="GUS — Growth, Unity & Success | Where Potential Meets Purpose">
+<meta property="og:description" content="Empowering underserved youth and communities in New York City. Every dollar you give goes to work — zero platform fees.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.guswithus.org">
+<link rel="icon" type="image/jpeg" href="assets/gus-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   GUS BRAND SYSTEM
+   Green  #22A95A  — energy, growth (accents, icons, highlights)
+   Blue   #0848A2  — trust, stability (headings, primary buttons)
+   Text greens are darkened for WCAG AA contrast.
+   ============================================================ */
+:root{
+  --green:#22A95A;
+  --green-dark:#15803D;      /* AA-safe green for text on white */
+  --green-tint:#E8F7EF;
+  --blue:#0848A2;
+  --blue-deep:#063575;
+  --blue-ink:#0B2447;        /* near-navy for body headings */
+  --blue-tint:#EAF1FB;
+  --ink:#1F2937;             /* body text */
+  --ink-soft:#4B5563;
+  --paper:#FFFFFF;
+  --cloud:#F6F9FC;
+  --gold:#F5B301;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(8,72,162,.10);
+  --shadow-lift:0 18px 44px rgba(8,72,162,.16);
+  --max:1140px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.65;
+  font-size:1.0625rem;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Sora','Inter',sans-serif;color:var(--blue-ink);line-height:1.15;letter-spacing:-.02em}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* Accessibility helpers */
+.skip-link{
+  position:absolute;left:-9999px;top:0;background:var(--blue-ink);color:#fff;
+  padding:12px 20px;z-index:200;border-radius:0 0 10px 0;font-weight:600;
+}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ============ ANNOUNCEMENT BAR ============ */
+.bar{
+  background:var(--blue-ink);color:#fff;text-align:center;
+  padding:9px 16px;font-size:.875rem;font-weight:500;
+}
+.bar strong{color:#7EE2A8}
+
+/* ============ HEADER ============ */
+header{
+  position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid #E5EBF3;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:52px;width:52px;object-fit:cover;border-radius:10px}
+.brand-name{font-family:'Sora',sans-serif;font-weight:800;font-size:1.35rem;color:var(--blue);letter-spacing:.02em}
+.brand-tag{display:block;font-family:'Inter',sans-serif;font-size:.64rem;font-weight:700;color:var(--green-dark);letter-spacing:.14em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+.nav-links a{
+  text-decoration:none;color:var(--blue-ink);font-weight:600;font-size:.95rem;
+  padding:10px 14px;border-radius:10px;transition:background .18s,color .18s;
+}
+.nav-links a:hover{background:var(--blue-tint);color:var(--blue)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;
+  padding:14px 28px;border-radius:999px;text-decoration:none;cursor:pointer;
+  border:2px solid transparent;transition:transform .18s,box-shadow .18s,background .18s;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 20px rgba(8,72,162,.30)}
+.btn-primary:hover{background:var(--blue-deep);box-shadow:0 12px 26px rgba(8,72,162,.38)}
+.btn-green{background:var(--green);color:#08341C;box-shadow:0 8px 20px rgba(34,169,90,.32)}
+.btn-green:hover{background:#1E9750}
+.btn-ghost{background:transparent;color:var(--blue-ink);border-color:#C9D6E8}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn-lg{padding:17px 36px;font-size:1.08rem}
+.nav .btn{padding:11px 22px;font-size:.95rem}
+.menu-toggle{
+  display:none;background:none;border:2px solid #C9D6E8;border-radius:10px;
+  width:46px;height:46px;cursor:pointer;color:var(--blue-ink);
+  align-items:center;justify-content:center;font-size:1.3rem;
+}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 480px at 88% -10%, rgba(34,169,90,.16), transparent 60%),
+    radial-gradient(800px 520px at -10% 110%, rgba(8,72,162,.12), transparent 60%),
+    linear-gradient(180deg,#FFFFFF 0%,#F2F7FC 100%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
+  padding:84px 0 96px;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--green-tint);color:var(--green-dark);
+  font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  padding:8px 16px;border-radius:999px;margin-bottom:22px;
+}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green)}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);font-weight:800;margin-bottom:22px}
+.hero h1 .u-green{color:var(--green-dark)}
+.hero h1 .u-blue{color:var(--blue)}
+.hero p.lede{font-size:1.2rem;color:var(--ink-soft);max-width:34em;margin-bottom:34px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:30px}
+.trust-row{display:flex;flex-wrap:wrap;gap:10px 22px;color:var(--ink-soft);font-size:.9rem;font-weight:500}
+.trust-row span{display:inline-flex;align-items:center;gap:7px}
+.trust-row svg{flex:none}
+
+/* hero visual — logo-motif "unity" card */
+.hero-visual{position:relative}
+.hero-card{
+  background:#fff;border-radius:26px;box-shadow:var(--shadow-lift);
+  padding:38px 34px;position:relative;z-index:2;
+}
+.hero-card .mark{width:150px;margin:0 auto 8px}
+.hero-card h2{font-size:1.15rem;text-align:center;margin-bottom:6px}
+.hero-card p{text-align:center;color:var(--ink-soft);font-size:.95rem;margin-bottom:20px}
+.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini-stat{
+  background:var(--cloud);border-radius:14px;padding:14px 10px;text-align:center;
+}
+.mini-stat b{display:block;font-family:'Sora',sans-serif;font-size:1.5rem;color:var(--blue)}
+.mini-stat span{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+.hero-badge{
+  position:absolute;z-index:3;background:var(--green);color:#08341C;
+  font-weight:700;font-size:.85rem;padding:10px 18px;border-radius:999px;
+  box-shadow:0 10px 24px rgba(34,169,90,.4);
+  right:-8px;top:-16px;transform:rotate(3deg);
+}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);z-index:1}
+.blob-1{width:180px;height:180px;background:rgba(34,169,90,.18);left:-60px;bottom:-40px}
+.blob-2{width:120px;height:120px;background:rgba(8,72,162,.14);right:-30px;bottom:60px}
+
+/* ============ IMPACT STATS ============ */
+.impact{background:var(--blue);color:#fff;padding:58px 0}
+.impact .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center}
+.impact b{display:block;font-family:'Sora',sans-serif;font-size:clamp(2.2rem,4vw,3rem);font-weight:800;color:#7EE2A8}
+.impact span{font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#C9DAF4}
+
+/* ============ SECTIONS ============ */
+section{padding:92px 0}
+.section-head{max-width:720px;margin:0 auto 56px;text-align:center}
+.section-head .eyebrow{margin-bottom:16px}
+.section-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);font-weight:800;margin-bottom:16px}
+.section-head p{color:var(--ink-soft);font-size:1.1rem}
+
+/* mission */
+.mission{background:var(--paper)}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.mission-copy h2{font-size:clamp(1.9rem,3.4vw,2.5rem);margin-bottom:20px}
+.mission-copy p{color:var(--ink-soft);margin-bottom:18px}
+.mission-copy blockquote{
+  border-left:4px solid var(--green);padding:6px 0 6px 20px;margin:26px 0;
+  font-family:'Sora',sans-serif;font-weight:700;font-size:1.25rem;color:var(--blue-ink);
+}
+.mission-points{list-style:none;display:grid;gap:14px}
+.mission-points li{
+  display:flex;gap:14px;align-items:flex-start;background:var(--cloud);
+  border-radius:var(--radius);padding:20px 22px;
+}
+.mission-points .tick{
+  flex:none;width:34px;height:34px;border-radius:10px;background:var(--green-tint);
+  display:flex;align-items:center;justify-content:center;color:var(--green-dark);font-weight:800;
+}
+.mission-points b{display:block;color:var(--blue-ink);margin-bottom:2px}
+.mission-points span{color:var(--ink-soft);font-size:.95rem}
+
+/* programs */
+.programs{background:var(--cloud)}
+.program-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.card{
+  background:#fff;border-radius:var(--radius);padding:34px 30px;
+  box-shadow:var(--shadow);border-top:5px solid var(--green);
+  transition:transform .2s,box-shadow .2s;
+}
+.card:nth-child(even){border-top-color:var(--blue)}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift)}
+.card .icon{
+  width:58px;height:58px;border-radius:16px;background:var(--green-tint);
+  display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:18px;
+}
+.card:nth-child(even) .icon{background:var(--blue-tint)}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card .kicker{color:var(--green-dark);font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:10px}
+.card:nth-child(even) .kicker{color:var(--blue)}
+.card ul{list-style:none;margin-top:14px;display:grid;gap:9px}
+.card ul li{display:flex;gap:10px;color:var(--ink-soft);font-size:.97rem}
+.card ul li::before{content:"✓";color:var(--green-dark);font-weight:800;flex:none}
+
+/* donate */
+.donate{background:linear-gradient(160deg,var(--blue-ink) 0%,var(--blue) 70%,#0A5BC4 100%);color:#fff}
+.donate .section-head h2,.donate .section-head p{color:#fff}
+.donate .section-head p{color:#C9DAF4}
+.donate .eyebrow{background:rgba(126,226,168,.15);color:#7EE2A8}
+.donate-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+.give-levels{display:grid;gap:16px}
+.level{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+  border-radius:var(--radius);padding:22px 24px;display:flex;gap:18px;align-items:center;
+  transition:background .18s,border-color .18s;
+}
+.level:hover{background:rgba(255,255,255,.12);border-color:#7EE2A8}
+.level .amt{
+  flex:none;font-family:'Sora',sans-serif;font-weight:800;font-size:1.45rem;color:#7EE2A8;
+  min-width:84px;
+}
+.level b{display:block;font-size:1.02rem;margin-bottom:2px}
+.level span{color:#C9DAF4;font-size:.92rem}
+.fee-note{
+  margin-top:22px;background:rgba(126,226,168,.12);border:1px solid rgba(126,226,168,.35);
+  border-radius:14px;padding:16px 18px;font-size:.95rem;color:#DFF7E9;
+}
+.fee-note b{color:#7EE2A8}
+.zeffy-shell{
+  background:#fff;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.35);
+  overflow:hidden;
+}
+.zeffy-shell .zeffy-head{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:16px 22px;border-bottom:1px solid #E5EBF3;
+}
+.zeffy-shell .zeffy-head b{color:var(--blue-ink);font-family:'Sora',sans-serif}
+.zeffy-shell .zeffy-head span{font-size:.8rem;color:var(--ink-soft)}
+.zeffy-shell iframe{width:100%;height:640px;border:0;display:block}
+.zeffy-cta{padding:44px 36px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+.zeffy-cta .lock{width:64px;height:64px;border-radius:18px;background:var(--blue-tint);display:flex;align-items:center;justify-content:center}
+.zeffy-cta h3{font-size:1.45rem}
+.zeffy-cta p{color:var(--ink-soft);max-width:26em}
+.quick-amts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:6px 0 8px}
+.quick-amts span{
+  border:2px solid #D8E2EF;border-radius:999px;padding:9px 20px;
+  font-weight:700;color:var(--blue-ink);font-size:.98rem;
+}
+.quick-amts span.pop{background:var(--green-tint);border-color:var(--green);color:var(--green-dark);position:relative}
+.zeffy-cta small{color:var(--ink-soft);font-size:.85rem}
+.zeffy-fallback{text-align:center;font-size:.85rem;color:var(--ink-soft);padding:12px 16px;border-top:1px solid #E5EBF3;margin:0}
+
+/* stories */
+.stories{background:var(--paper)}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.story{
+  background:var(--cloud);border-radius:var(--radius);padding:30px 28px;
+  display:flex;flex-direction:column;gap:18px;position:relative;
+}
+.story::before{
+  content:"“";font-family:'Sora',sans-serif;font-size:4rem;line-height:1;
+  color:var(--green);opacity:.5;position:absolute;top:14px;right:22px;
+}
+.story p{color:var(--ink);font-size:.98rem;flex:1}
+.story footer{display:flex;align-items:center;gap:12px}
+.story .avatar{
+  width:44px;height:44px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#fff;font-family:'Sora',sans-serif;
+}
+.story .avatar.g{background:var(--green)}
+.story .avatar.b{background:var(--blue)}
+.story b{display:block;color:var(--blue-ink);font-size:.95rem}
+.story span{color:var(--ink-soft);font-size:.83rem}
+
+/* founder */
+.founder{background:var(--cloud)}
+.founder-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.founder-panel{
+  background:linear-gradient(160deg,var(--green) 0%,#178A4A 100%);
+  border-radius:26px;color:#fff;padding:44px 38px;box-shadow:var(--shadow-lift);
+  text-align:center;
+}
+.founder-panel .avatar{
+  width:96px;height:96px;border-radius:50%;background:#fff;color:var(--green-dark);
+  font-family:'Sora',sans-serif;font-weight:800;font-size:2rem;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 18px;
+}
+.founder-panel h3{color:#fff;font-size:1.4rem;margin-bottom:4px}
+.founder-panel .role{color:#DFF7E9;font-size:.92rem;margin-bottom:20px;display:block}
+.founder-panel blockquote{font-size:1.05rem;font-style:italic;color:#F0FBF5}
+.founder-copy h2{font-size:clamp(1.9rem,3.4vw,2.5rem);margin-bottom:20px}
+.founder-copy p{color:var(--ink-soft);margin-bottom:18px}
+.founder-copy .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{
+  background:#fff;border:1px solid #D8E2EF;border-radius:999px;
+  padding:8px 16px;font-size:.85rem;font-weight:600;color:var(--blue-ink);
+}
+
+/* other ways */
+.ways .card{border-top:none;text-align:left}
+.ways-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.ways .card h3{font-size:1.2rem}
+.ways .card p{color:var(--ink-soft);font-size:.97rem;margin-top:8px}
+.ways .card a{font-weight:700;display:inline-block;margin-top:14px;text-decoration:none}
+.ways .card a::after{content:" →"}
+
+/* final CTA */
+.final{
+  background:
+    radial-gradient(700px 380px at 15% 0%, rgba(34,169,90,.25), transparent 60%),
+    linear-gradient(150deg,var(--blue-ink),var(--blue));
+  color:#fff;text-align:center;
+}
+.final h2{color:#fff;font-size:clamp(2rem,4.2vw,3rem);max-width:18em;margin:0 auto 18px}
+.final p{color:#C9DAF4;font-size:1.15rem;max-width:36em;margin:0 auto 34px}
+.final .hero-ctas{justify-content:center}
+
+/* footer */
+footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;margin-bottom:44px}
+.foot-grid h4{color:#fff;font-family:'Sora',sans-serif;font-size:1rem;margin-bottom:16px}
+.foot-grid ul{list-style:none;display:grid;gap:10px}
+.foot-grid a{color:#AEC3DF;text-decoration:none}
+.foot-grid a:hover{color:#7EE2A8}
+.foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.foot-brand img{height:46px;width:46px;border-radius:10px}
+.foot-brand b{font-family:'Sora',sans-serif;color:#fff;font-size:1.2rem}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.85rem;color:#7E96B8}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ MOBILE ============ */
+@media (max-width:960px){
+  .hero-grid,.mission-grid,.donate-grid,.founder-grid{grid-template-columns:1fr;gap:44px}
+  .hero-grid{padding:56px 0 64px}
+  .program-grid{grid-template-columns:1fr}
+  .story-grid,.ways-grid{grid-template-columns:1fr}
+  .impact .wrap{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .founder-grid .founder-panel{order:-1}
+}
+@media (max-width:860px){
+  .nav-links{
+    display:none;position:absolute;top:76px;left:0;right:0;
+    background:#fff;flex-direction:column;align-items:stretch;
+    padding:18px 24px 26px;gap:4px;border-bottom:1px solid #E5EBF3;
+    box-shadow:0 20px 40px rgba(8,72,162,.12);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:14px;font-size:1.05rem}
+  .nav-links .btn{margin-top:10px;justify-content:center}
+  .menu-toggle{display:flex}
+  .nav .btn-desktop{display:none}
+  .hero p.lede{font-size:1.1rem}
+  .hero-ctas .btn{flex:1 1 100%;justify-content:center}
+  .zeffy-shell iframe{height:720px}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="bar" role="region" aria-label="Announcement">
+  <strong>100% of your donation reaches our programs.</strong> We fundraise on Zeffy — zero platform fees, ever.
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="GUS — Growth, Unity and Success, home">
+      <img src="assets/gus-logo.jpg" alt="" width="52" height="52">
+      <span>
+        <span class="brand-name">GUS</span>
+        <span class="brand-tag">Growth, Unity &amp; Success</span>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a class="btn btn-green" href="#donate">Donate — 0% fees</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-green btn-desktop" href="#donate">Donate</a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">501(c)(3) Nonprofit · Jamaica, Queens, NYC</span>
+      <h1 id="hero-h">Where <span class="u-green">potential</span> meets <span class="u-blue">purpose.</span></h1>
+      <p class="lede">
+        GUS puts coats on backs, tutors beside students, coaches on courts, and career skills
+        within reach — so no young person in our community grows up without someone in their corner.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="#donate">Give today — every dollar goes to work</a>
+        <a class="btn btn-ghost btn-lg" href="#programs">See our programs</a>
+      </div>
+      <div class="trust-row" aria-label="Trust indicators">
+        <span><svg width="16" height="16" viewBox="0 0 16 16" fill="#15803D" aria-hidden="true"><path d="M8 0l2 5h5l-4 3.5L12.5 14 8 11 3.5 14 5 8.5 1 5h5z"/></svg> Registered 501(c)(3)</span>
+        <span><svg width="16" height="16" viewBox="0 0 16 16" fill="#15803D" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#15803D" stroke-width="2" fill="none"/><path d="M4.5 8.5l2.5 2.5 4.5-5" stroke="#15803D" stroke-width="2" fill="none"/></svg> Tax-deductible giving</span>
+        <span><svg width="16" height="16" viewBox="0 0 16 16" fill="#15803D" aria-hidden="true"><path d="M8 1C5 1 3 3.2 3 6c0 3.8 5 9 5 9s5-5.2 5-9c0-2.8-2-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z"/></svg> Rooted in NYC schools &amp; courts</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-badge">0% platform fees on Zeffy</div>
+      <div class="hero-card">
+        <img class="mark" src="assets/gus-logo.jpg" alt="GUS logo — a green circle of people around the letter G above the blue letters G U S">
+        <h2>One community. Real outcomes.</h2>
+        <p>What supporters like you made possible so far:</p>
+        <div class="mini-stats" role="list" aria-label="Impact statistics">
+          <div class="mini-stat" role="listitem"><b data-count="1700" data-suffix="+">1,700</b><span>Youth impacted</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="25">25</b><span>Communities reached</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="400" data-suffix="+">400+</b><span>Hours of service</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="4">4</b><span>Core programs</span></div>
+        </div>
+      </div>
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT BAND ================= -->
+<div class="impact" role="region" aria-label="Our impact in numbers">
+  <div class="wrap">
+    <div class="reveal"><b>1,700</b><span>Young men &amp; women impacted</span></div>
+    <div class="reveal"><b>25</b><span>Communities reached</span></div>
+    <div class="reveal"><b>400+</b><span>Hours of committed work</span></div>
+    <div class="reveal"><b>4</b><span>Programs &amp; services</span></div>
+  </div>
+</div>
+
+<!-- ================= MISSION ================= -->
+<section class="mission" id="mission" aria-labelledby="mission-h">
+  <div class="wrap mission-grid">
+    <div class="mission-copy reveal">
+      <span class="eyebrow">Why GUS exists</span>
+      <h2 id="mission-h">Every kid deserves someone in their corner. We make sure they have one.</h2>
+      <p>
+        Our mission is to empower underserved youth and communities through transformative
+        programs that promote personal growth, strengthen unity, and cultivate long-term
+        success — through education, support services, and skill-building opportunities.
+      </p>
+      <p>
+        Our story began with the Police Athletic League — the program that shaped our founder's
+        own path. GUS exists to pay that forward.
+      </p>
+      <blockquote>“No potential goes untapped. No barrier left standing.”</blockquote>
+    </div>
+    <ul class="mission-points reveal">
+      <li><span class="tick" aria-hidden="true">✓</span><div><b>We meet basic needs first</b><span>A student can't focus on algebra without a coat, sneakers, or supplies. Dignity comes before everything else.</span></div></li>
+      <li><span class="tick" aria-hidden="true">✓</span><div><b>We work inside the system</b><span>NYC DOE educators serve on our staff and board — we reach students through real relationships in real schools.</span></div></li>
+      <li><span class="tick" aria-hidden="true">✓</span><div><b>We stay for the long run</b><span>From tutoring to job readiness, we support young people at every stage — not just one moment.</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section class="programs" id="programs" aria-labelledby="programs-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Four programs, one goal</span>
+      <h2 id="programs-h">From basic needs to big futures</h2>
+      <p>Each program removes a different barrier standing between a young person and their potential.</p>
+    </div>
+    <div class="program-grid">
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">🧥</div>
+        <span class="kicker">Dignity first</span>
+        <h3>Clothing &amp; Basic Essentials</h3>
+        <p>Relief and dignity through access to everyday necessities — because no child should sit in class worrying about what they don't have.</p>
+        <ul>
+          <li>Free clothing for youth and families in need</li>
+          <li>Seasonal drives: school uniforms, coats, shoes</li>
+          <li>Hygiene kits and essential household items</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">📚</div>
+        <span class="kicker">Confidence in the classroom</span>
+        <h3>Academic Support &amp; Mentorship</h3>
+        <p>Helping K–12 students build skills, self-esteem, and the habit of advocating for themselves — in school and beyond.</p>
+        <ul>
+          <li>Tutoring and homework help for K–12</li>
+          <li>Mentorship in leadership and goal setting</li>
+          <li>Workshops: study skills, financial literacy, future planning</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">🏀</div>
+        <span class="kicker">Character through sport</span>
+        <h3>Athletic Development &amp; Wellness</h3>
+        <p>Basketball, golf, and floor hockey as vehicles for discipline, teamwork, and mental and physical health.</p>
+        <ul>
+          <li>Organized youth sports programming</li>
+          <li>Clinics and fitness events that build wellness</li>
+          <li>Safe, structured spaces for recreation and mentorship</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">🛠️</div>
+        <span class="kicker">Skills that pay forward</span>
+        <h3>Vocational Training &amp; Careers</h3>
+        <p>Equipping young adults with practical skills and connections for sustainable success after graduation.</p>
+        <ul>
+          <li>Job readiness: resumes, interviews, workplace skills</li>
+          <li>Career exploration and trade training</li>
+          <li>Pathways to internships, certifications, and jobs</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DONATE ================= -->
+<section class="donate" id="donate" aria-labelledby="donate-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Give with confidence</span>
+      <h2 id="donate-h">Your dollar doesn't get skimmed. It gets to work.</h2>
+      <p>We fundraise on Zeffy, the only platform that charges nonprofits nothing — no platform fees, no transaction fees. 100% of what you give funds programs for NYC youth.</p>
+    </div>
+    <div class="donate-grid">
+      <div class="reveal">
+        <div class="give-levels" role="list" aria-label="What your gift provides">
+          <div class="level" role="listitem">
+            <span class="amt">$25</span>
+            <div><b>Fills a backpack</b><span>School supplies and a hygiene kit for one student.</span></div>
+          </div>
+          <div class="level" role="listitem">
+            <span class="amt">$50</span>
+            <div><b>Warms a winter</b><span>A new coat and shoes for a young person in need.</span></div>
+          </div>
+          <div class="level" role="listitem">
+            <span class="amt">$100</span>
+            <div><b>Funds a month of tutoring</b><span>Weekly academic support and mentorship for one student.</span></div>
+          </div>
+          <div class="level" role="listitem">
+            <span class="amt">$250</span>
+            <div><b>Sponsors an athlete</b><span>A full season of sports — gear, clinics, and coaching included.</span></div>
+          </div>
+        </div>
+        <p class="fee-note">
+          <b>Why Zeffy?</b> Typical platforms take 3–8% of every donation. Zeffy takes <b>$0</b> —
+          so a $100 gift means $100 for our kids. Your donation is tax-deductible; you'll receive
+          a receipt instantly by email.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="zeffy-shell">
+          <div class="zeffy-head">
+            <b>Donate securely</b>
+            <span>Powered by Zeffy · SSL encrypted</span>
+          </div>
+          <!-- Live Zeffy campaign: Support GUS — Empowering NYC Youth -->
+          <iframe
+            title="Donation form powered by Zeffy — Support GUS, Empowering NYC Youth"
+            src="https://www.zeffy.com/embed/donation-form/support-gus-empowering-nyc-youth"
+            allow="payment"
+            allowtransparency="true"
+            loading="lazy"></iframe>
+          <p class="zeffy-fallback">
+            Form not loading? <a href="https://www.zeffy.com/en-US/donation-form/support-gus-empowering-nyc-youth" target="_blank" rel="noopener">Open the secure donation page in a new tab</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STORIES ================= -->
+<section class="stories" id="stories" aria-labelledby="stories-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stories of impact</span>
+      <h2 id="stories-h">Don't take our word for it</h2>
+      <p>Educators, social workers, and students — in their own words.</p>
+    </div>
+    <div class="story-grid">
+      <article class="story reveal">
+        <p>“As a school social worker, I've witnessed firsthand the incredible impact of Growth, Unity &amp; Success. Their partnership has provided our students with essential items — from school supplies to warm coats — ensuring their basic needs are met so they can focus on learning.”</p>
+        <footer>
+          <span class="avatar g" aria-hidden="true">LG</span>
+          <div><b>LaRelle Gee, LMSW</b><span>School Social Worker</span></div>
+        </footer>
+      </article>
+      <article class="story reveal">
+        <p>“Seeing a student walk upright with confidence because they have a brand-new book bag or sneakers is evidence of how much of an impact GUS has on the community. Sometimes the smallest things make the biggest difference.”</p>
+        <footer>
+          <span class="avatar b" aria-hidden="true">MB</span>
+          <div><b>Malawi Bracey</b><span>School Culture Liaison, MS 358, Jamaica NY</span></div>
+        </footer>
+      </article>
+      <article class="story reveal">
+        <p>“When I was struggling, GUS didn't judge or try to ‘fix' everything — they showed up, listened, and made sure I knew I wasn't alone. Having someone like that in your corner can change everything.”</p>
+        <footer>
+          <span class="avatar g" aria-hidden="true">L</span>
+          <div><b>Louie</b><span>Student</span></div>
+        </footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="founder" id="founder" aria-labelledby="founder-h">
+  <div class="wrap founder-grid">
+    <div class="founder-panel reveal">
+      <div class="avatar" aria-hidden="true">AK</div>
+      <h3>Augusto Alexander Kennedy</h3>
+      <span class="role">Founder &amp; President · Educator · Coach · Mentor</span>
+      <blockquote>
+        “A youth program changed the direction of my life. GUS exists so I can pay
+        that forward — so no potential in our community goes untapped.”
+      </blockquote>
+    </div>
+    <div class="founder-copy reveal">
+      <span class="eyebrow">Meet the founder</span>
+      <h2 id="founder-h">Built by someone who lived it</h2>
+      <p>
+        Gus is a New York City educator, coach, and youth mentor. A former NYC Department of
+        Education employee, he coaches basketball, golf, and floor hockey, and works daily
+        alongside guidance counselors helping teenagers become self-advocates.
+      </p>
+      <p>
+        His own trajectory was shaped by the Police Athletic League — proof that one program,
+        one mentor, one season can change a life. GUS was founded to be that program for the
+        next generation, with current NYC DOE educators serving on its staff and board.
+      </p>
+      <div class="chips" aria-label="Founder credentials">
+        <span class="chip">NYC DOE background</span>
+        <span class="chip">Basketball · Golf · Floor hockey coach</span>
+        <span class="chip">Brooklyn &amp; Queens roots</span>
+        <span class="chip">Citywide school partnerships</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OTHER WAYS ================= -->
+<section class="ways" id="get-involved" aria-labelledby="ways-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">More ways to help</span>
+      <h2 id="ways-h">Can't give today? You can still show up.</h2>
+    </div>
+    <div class="ways-grid">
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">🙋</div>
+        <h3>Volunteer with us</h3>
+        <p>Tutor a student, help at a clothing drive, or coach at a clinic. A few hours of your time changes a young person's week.</p>
+        <a href="mailto:info@guswithus.org?subject=I want to volunteer with GUS">Email us to volunteer</a>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">🤝</div>
+        <h3>Partner or sponsor</h3>
+        <p>Schools, businesses, and brands: partner with GUS to reach the courts, classrooms, and communities of NYC — with quarterly impact reporting.</p>
+        <a href="mailto:info@guswithus.org?subject=Partnership inquiry">Start a conversation</a>
+      </article>
+      <article class="card reveal">
+        <div class="icon" aria-hidden="true">📦</div>
+        <h3>Donate goods</h3>
+        <p>Coats, sneakers, school supplies, and sports gear go directly to families through our basic-essentials program.</p>
+        <a href="mailto:info@guswithus.org?subject=Goods donation">Arrange a drop-off</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="final" aria-labelledby="final-h">
+  <div class="wrap reveal">
+    <h2 id="final-h">The next kid we reach could be the one who changes everything.</h2>
+    <p>Growth for the kids. Unity for the community. Success for all of us. Join the people making it happen — starting with whatever amount feels right.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-green btn-lg" href="#donate">Donate now — 100% goes to programs</a>
+      <a class="btn btn-ghost btn-lg" style="color:#fff;border-color:rgba(255,255,255,.4)" href="mailto:info@guswithus.org">Talk to us first</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/gus-logo.jpg" alt="">
+          <div><b>GUS</b><br><span style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase">Growth, Unity &amp; Success, Inc.</span></div>
+        </div>
+        <p>A 501(c)(3) nonprofit empowering underserved youth and communities in New York City. Where potential meets purpose.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#stories">Stories of Impact</a></li>
+          <li><a href="#founder">Our Founder</a></li>
+          <li><a href="#donate">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@guswithus.org">info@guswithus.org</a></li>
+          <li>Jamaica, Queens, New York</li>
+          <li><a href="#get-involved">Volunteer &amp; partner</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 GUS — Growth, Unity &amp; Success, Inc. All rights reserved.</span>
+      <span>Registered 501(c)(3) nonprofit · Donations are tax-deductible as allowed by law.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+const toggle = document.getElementById('menu-toggle');
+const links = document.getElementById('nav-links');
+toggle.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+  toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  toggle.textContent = open ? '✕' : '☰';
+});
+links.addEventListener('click', e => {
+  if (e.target.tagName === 'A') {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = '☰';
+  }
+});
+
+// Scroll reveal (respects reduced motion)
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (!prefersReduced && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+}
+</script>
+</body>
+</html>

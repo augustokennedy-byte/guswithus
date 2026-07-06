@@ -1,0 +1,28 @@
+DNS RECORDS FOR guswithus.org → GitHub Pages
+=============================================
+Add these in Wix (or wherever the domain's DNS is managed):
+My Domains → guswithus.org → Manage DNS / DNS Records
+
+1) CNAME record (the www address)
+   Host/Name:  www
+   Value:      YOUR-GITHUB-USERNAME.github.io     ← fill in after account creation
+   TTL:        default
+
+2) Four A records (the bare domain, guswithus.org)
+   Host/Name:  @
+   Values (create one A record per line):
+       185.199.108.153
+       185.199.109.153
+       185.199.110.153
+       185.199.111.153
+   TTL:        default
+
+3) DELETE any old A/CNAME records on @ and www that point to Wix
+   (they look like 185.230.x.x or cdn1.wixdns.net) — but only after
+   the new site is confirmed live.
+
+Then in GitHub: repo → Settings → Pages → Custom domain = www.guswithus.org
+→ Save → wait for the DNS check → tick "Enforce HTTPS".
+
+DNS changes can take 30 minutes to 24 hours to take effect.
+The Wix SITE stays live until these records change, so there is no downtime window.
