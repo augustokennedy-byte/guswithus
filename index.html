@@ -265,6 +265,7 @@ section{padding:92px 0}
 }
 .quick-amts span.pop{background:var(--green-tint);border-color:var(--green);color:var(--green-dark);position:relative}
 .zeffy-cta small{color:var(--ink-soft);font-size:.85rem}
+.zeffy-fallback{text-align:center;font-size:.85rem;color:var(--ink-soft);padding:12px 16px;border-top:1px solid #E5EBF3;margin:0}
 
 /* stories */
 .stories{background:var(--paper)}
@@ -586,41 +587,16 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
             <b>Donate securely</b>
             <span>Powered by Zeffy · SSL encrypted</span>
           </div>
-          <!-- ZEFFY SETUP ============================================
-               STEP 1: Create your free donation form at zeffy.com
-                       (Fundraising → Donation forms → Create).
-               STEP 2 (embed the full form on this page):
-                       In Zeffy: your form → Share → Embed → copy the URL
-                       that looks like
-                       https://www.zeffy.com/embed/donation-form/XXXXXXXX
-                       then DELETE the .zeffy-cta div below and UNCOMMENT
-                       this iframe, pasting your URL into src:
-
+          <!-- Live Zeffy campaign: Support GUS — Empowering NYC Youth -->
           <iframe
-            title="Donation form powered by Zeffy"
-            src="PASTE-YOUR-ZEFFY-EMBED-URL-HERE"
+            title="Donation form powered by Zeffy — Support GUS, Empowering NYC Youth"
+            src="https://www.zeffy.com/embed/donation-form/support-gus-empowering-nyc-youth"
             allow="payment"
             allowtransparency="true"
             loading="lazy"></iframe>
-
-               STEP 3: Also update the href in the .zeffy-cta button and
-                       the two "Donate" buttons in the header if you prefer
-                       linking straight to your Zeffy page.
-               ======================================================== -->
-          <div class="zeffy-cta">
-            <div class="lock" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0848A2" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
-            </div>
-            <h3>Give in under a minute</h3>
-            <p>Choose an amount, pay by card, Apple&nbsp;Pay, or bank — you'll get your tax receipt instantly. Every cent reaches GUS.</p>
-            <div class="quick-amts" aria-hidden="true">
-              <span>$25</span><span>$50</span><span class="pop">$100</span><span>$250</span><span>Custom</span>
-            </div>
-            <a class="btn btn-green btn-lg" href="https://www.zeffy.com/en-US/donation-form/donate-to-gus-growth-unity-success" target="_blank" rel="noopener">
-              Donate securely on Zeffy
-            </a>
-            <small>Monthly giving available · Tax-deductible · Prefer another way? <a href="mailto:info@guswithus.org">Email us</a></small>
-          </div>
+          <p class="zeffy-fallback">
+            Form not loading? <a href="https://www.zeffy.com/en-US/donation-form/support-gus-empowering-nyc-youth" target="_blank" rel="noopener">Open the secure donation page in a new tab</a>.
+          </p>
         </div>
       </div>
     </div>
