@@ -362,6 +362,14 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
 .foot-brand img{height:46px;width:46px;border-radius:10px}
 .foot-brand b{font-family:'Sora',sans-serif;color:#fff;font-size:1.2rem}
 .foot-legal{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.85rem;color:#7E96B8}
+.socials{display:flex;gap:12px;margin-top:18px}
+.socials a{
+  display:flex;align-items:center;justify-content:center;
+  width:42px;height:42px;border-radius:50%;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);
+  color:#AEC3DF;transition:background .18s,color .18s,transform .18s;
+}
+.socials a:hover{background:var(--green);color:#08341C;transform:translateY(-2px)}
 
 /* reveal animation */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
@@ -687,7 +695,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
     <div class="founder-panel reveal">
       <div class="avatar" aria-hidden="true">AK</div>
       <h3>Augusto Alexander Kennedy</h3>
-      <span class="role">Founder &amp; President · Educator · Coach · Mentor</span>
+      <span class="role">Founder &amp; Executive Director · Educator · Coach · Mentor</span>
       <blockquote>
         “A youth program changed the direction of my life. GUS exists so I can pay
         that forward — so no potential in our community goes untapped.”
@@ -770,6 +778,17 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
           <div><b>GUS</b><br><span style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase">Growth, Unity &amp; Success, Inc.</span></div>
         </div>
         <p>A 501(c)(3) nonprofit empowering underserved youth and communities in New York City. Where potential meets purpose.</p>
+        <div class="socials" aria-label="GUS on social media">
+          <a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener" aria-label="GUS on Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@gus.withus" target="_blank" rel="noopener" aria-label="GUS on TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3v13.4a2.9 2.9 0 11-2.9-2.9c.3 0 .6 0 .9.1V9.5a6 6 0 00-.9-.06 6 6 0 106 6V8.9a7.6 7.6 0 004.4 1.4V7.2a4.5 4.5 0 01-3.2-1.5A4.6 4.6 0 0116.6 2z"/></svg>
+          </a>
+          <a href="https://x.com/guswithus" target="_blank" rel="noopener" aria-label="GUS on X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21H2.1l7.3-8.3L2 3h6.4l4.4 5.9L17.8 3zm-1.1 16.2h1.7L7.6 4.7H5.8l10.9 14.5z"/></svg>
+          </a>
+        </div>
       </div>
       <div>
         <h4>Explore</h4>
@@ -787,6 +806,9 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
           <li><a href="mailto:info@guswithus.org">info@guswithus.org</a></li>
           <li>Jamaica, Queens, New York</li>
           <li><a href="#get-involved">Volunteer &amp; partner</a></li>
+          <li><a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener">Instagram: @gus.withus</a></li>
+          <li><a href="https://www.tiktok.com/@gus.withus" target="_blank" rel="noopener">TikTok: @gus.withus</a></li>
+          <li><a href="https://x.com/guswithus" target="_blank" rel="noopener">X: @guswithus</a></li>
         </ul>
       </div>
     </div>
