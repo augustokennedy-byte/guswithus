@@ -3,13 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GUS — Growth, Unity &amp; Success | Empowering Underserved Youth in NYC</title>
-<meta name="description" content="GUS is a 501(c)(3) nonprofit in Jamaica, Queens empowering underserved youth through basic essentials, academic mentorship, athletics, and career training. 100% of your donation funds programs — zero platform fees.">
-<meta property="og:title" content="GUS — Growth, Unity & Success | Where Potential Meets Purpose">
-<meta property="og:description" content="Empowering underserved youth and communities in New York City. Every dollar you give goes to work — zero platform fees.">
+<title>GUS — Growth, Unity &amp; Success | Youth Nonprofit in Jamaica, Queens NYC</title>
+<meta name="description" content="A 501(c)(3) nonprofit in Jamaica, Queens serving young people ages 8 to 24. Coats and school supplies, K-12 tutoring, basketball and golf coaching, job training. 100% of gifts fund programs.">
+<link rel="canonical" href="https://www.guswithus.org/">
+<meta name="theme-color" content="#0848A2">
+<meta name="robots" content="index,follow,max-image-preview:large">
+
+<meta property="og:site_name" content="GUS — Growth, Unity &amp; Success">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="GUS — Growth, Unity &amp; Success | Where Potential Meets Purpose">
+<meta property="og:description" content="A 501(c)(3) nonprofit in Jamaica, Queens. Coats, tutoring, coaching, and job training for young people ages 8 to 24. 100% of gifts fund programs.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.guswithus.org">
-<link rel="icon" type="image/jpeg" href="assets/gus-logo.jpg">
+<meta property="og:url" content="https://www.guswithus.org/">
+<meta property="og:image" content="https://www.guswithus.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GUS — Growth, Unity &amp; Success. Where potential meets purpose. 501(c)(3) nonprofit in Jamaica, Queens, NYC.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@guswithus">
+<meta name="twitter:title" content="GUS — Growth, Unity &amp; Success | Where Potential Meets Purpose">
+<meta name="twitter:description" content="A 501(c)(3) nonprofit in Jamaica, Queens. Coats, tutoring, coaching, and job training for young people ages 8 to 24.">
+<meta name="twitter:image" content="https://www.guswithus.org/assets/og-image.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/logo-192.png">
+<link rel="apple-touch-icon" href="/assets/logo-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -384,12 +404,13 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
 /* ============ MOBILE ============ */
 @media (max-width:960px){
   .hero-grid,.mission-grid,.donate-grid,.founder-grid{grid-template-columns:1fr;gap:44px}
-  .hero-grid{padding:56px 0 64px}
+  .hero-grid{padding:24px 0 56px}
   .program-grid{grid-template-columns:1fr}
   .story-grid,.ways-grid{grid-template-columns:1fr}
   .impact .wrap{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1fr}
   section{padding:64px 0}
+  .hero{padding-top:12px}
   .founder-grid .founder-panel{order:-1}
 }
 @media (max-width:860px){
@@ -407,8 +428,74 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
   .hero p.lede{font-size:1.1rem}
   .hero-ctas .btn{flex:1 1 100%;justify-content:center}
   .zeffy-shell iframe{height:720px}
+
+  /* 44px minimum tap targets (WCAG 2.5.5 / Lighthouse) */
+  footer ul a,
+  .foot-legal a,
+  .ways-grid > * > a,
+  .zeffy-fallback a{
+    display:inline-flex;align-items:center;min-height:44px;
+  }
+  .socials a{width:48px;height:48px}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "@id": "https://www.guswithus.org/#organization",
+  "name": "GUS — Growth, Unity & Success, Inc.",
+  "alternateName": ["GUS With Us", "GUS"],
+  "url": "https://www.guswithus.org/",
+  "logo": "https://www.guswithus.org/assets/logo-512.png",
+  "image": "https://www.guswithus.org/assets/og-image.png",
+  "description": "GUS — Growth, Unity & Success, Inc. is a 501(c)(3) public charity in Jamaica, Queens, New York. GUS serves young people ages 8 to 24 across Jamaica, South Jamaica, South Ozone Park and the Far Rockaways with four programs: clothing and basic essentials, K-12 academic support and mentorship, athletic development in basketball, golf and floor hockey, and vocational and career training.",
+  "email": "info@guswithus.org",
+  "telephone": "+1-718-775-5050",
+  "taxID": "39-2462364",
+  "nonprofitStatus": "Nonprofit501c3",
+  "foundingDate": "2025-05-27",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "175-61 Hillside Avenue, Suite 202",
+    "addressLocality": "Jamaica",
+    "addressRegion": "NY",
+    "postalCode": "11432",
+    "addressCountry": "US"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Augusto Alexander Kennedy",
+    "jobTitle": "Founder & Executive Director"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Jamaica, Queens, NY" },
+    { "@type": "Place", "name": "South Jamaica, Queens, NY" },
+    { "@type": "Place", "name": "South Ozone Park, Queens, NY" },
+    { "@type": "Place", "name": "Far Rockaway, Queens, NY" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/gus.withus/",
+    "https://www.tiktok.com/@gus.withus",
+    "https://x.com/guswithus",
+    "https://www.facebook.com/gus.withus"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "GUS Programs",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Clothing & Basic Essentials", "description": "Free clothing, seasonal coat and uniform drives, hygiene kits and household essentials for youth and families." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Academic Support & Mentorship", "description": "K-12 tutoring, homework help, leadership mentorship, and workshops in study skills and financial literacy." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Athletic Development & Wellness", "description": "Organized youth basketball, golf and floor hockey, fitness clinics, and structured recreation." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vocational Training & Careers", "description": "Job readiness, resume and interview coaching, trade training, and pathways to internships and certifications." } }
+    ]
+  },
+  "potentialAction": {
+    "@type": "DonateAction",
+    "target": "https://www.zeffy.com/en-US/donation-form/support-gus-empowering-nyc-youth"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -422,8 +509,8 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
 <!-- HEADER -->
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#" aria-label="GUS — Growth, Unity and Success, home">
-      <img src="assets/gus-logo.jpg" alt="" width="52" height="52">
+    <a class="brand" href="/" aria-label="GUS — Growth, Unity and Success, home">
+      <img src="assets/logo-192.png" alt="" width="52" height="52">
       <span>
         <span class="brand-name">GUS</span>
         <span class="brand-tag">Growth, Unity &amp; Success</span>
@@ -470,7 +557,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
     <div class="hero-visual">
       <div class="hero-badge">0% platform fees on Zeffy</div>
       <div class="hero-card">
-        <img class="mark" src="assets/gus-logo.jpg" alt="GUS logo — a green circle of people around the letter G above the blue letters G U S">
+        <img class="mark" src="assets/logo-192.png" alt="GUS logo — a green circle of people around the letter G above the blue letters G U S">
         <h2>One community. Real outcomes.</h2>
         <p>What supporters like you made possible so far:</p>
         <div class="mini-stats" role="list" aria-label="Impact statistics">
@@ -627,7 +714,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
             allowtransparency="true"
             loading="lazy"></iframe>
           <p class="zeffy-fallback">
-            Form not loading? <a href="https://www.zeffy.com/en-US/donation-form/support-gus-empowering-nyc-youth" target="_blank" rel="noopener">Open the secure donation page in a new tab</a>.
+            Form not loading? <a href="https://www.zeffy.com/en-US/donation-form/support-gus-empowering-nyc-youth" target="_blank" rel="noopener noreferrer">Open the secure donation page in a new tab</a>.
           </p>
         </div>
         <!-- MORE WAYS TO GIVE ======================================
@@ -642,14 +729,14 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
              ========================================================= -->
         <div class="alt-pay">
           <span class="alt-pay-label">Prefer another way?</span>
-          <a class="alt-btn paypal" href="https://www.paypal.com/donate/?hosted_button_id=5YR45CWSSFJ2W" target="_blank" rel="noopener" aria-label="Donate with PayPal">
+          <a class="alt-btn paypal" href="https://www.paypal.com/donate/?hosted_button_id=5YR45CWSSFJ2W" target="_blank" rel="noopener noreferrer" aria-label="Donate with PayPal">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.1 21.4h-3a.6.6 0 01-.6-.7L6.6 2.9a.9.9 0 01.9-.8h6.8c2.3 0 4 .5 4.9 1.6.9 1 1.1 2.2.8 3.9-.5 3.6-2.8 5.4-6.6 5.4h-2.1c-.5 0-.8.3-.9.8l-1 6.9a.9.9 0 01-.9.7h-1.4z"/><path d="M20.6 7.9c.6.9.7 2 .4 3.5-.6 3.5-2.8 5.3-6.5 5.3h-1.3c-.4 0-.6.2-.7.6l-.7 4.6a.7.7 0 01-.7.6h-2.4a.5.5 0 01-.5-.6l.3-1.7" opacity=".45"/></svg>
             PayPal
           </a>
           <!-- Venmo rides on PayPal checkout (shows for US mobile donors).
                When a dedicated Venmo charity profile is activated, swap
                this href for the direct venmo.com profile URL. -->
-          <a class="alt-btn venmo" href="https://www.paypal.com/donate/?hosted_button_id=5YR45CWSSFJ2W" target="_blank" rel="noopener" aria-label="Donate with Venmo via PayPal checkout">
+          <a class="alt-btn venmo" href="https://www.paypal.com/donate/?hosted_button_id=5YR45CWSSFJ2W" target="_blank" rel="noopener noreferrer" aria-label="Donate with Venmo via PayPal checkout">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.5 3.2c.7 1.1 1 2.3 1 3.8 0 4.7-4 10.8-7.3 15h-6L4.3 4.6l6.5-.6 1.6 12.6c1.5-2.4 3.3-6.1 3.3-8.7 0-1.4-.2-2.4-.6-3.2l4.4-1.5z"/></svg>
             Venmo
           </a>
@@ -780,19 +867,22 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
     <div class="foot-grid">
       <div>
         <div class="foot-brand">
-          <img src="assets/gus-logo.jpg" alt="">
+          <img src="assets/logo-192.png" alt="">
           <div><b>GUS</b><br><span style="font-size:.8rem;letter-spacing:.1em;text-transform:uppercase">Growth, Unity &amp; Success, Inc.</span></div>
         </div>
         <p>A 501(c)(3) nonprofit empowering underserved youth and communities in New York City. Where potential meets purpose.</p>
         <div class="socials" aria-label="GUS on social media">
-          <a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener" aria-label="GUS on Instagram">
+          <a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener noreferrer" aria-label="GUS on Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg>
           </a>
-          <a href="https://www.tiktok.com/@gus.withus" target="_blank" rel="noopener" aria-label="GUS on TikTok">
+          <a href="https://www.tiktok.com/@gus.withus" target="_blank" rel="noopener noreferrer" aria-label="GUS on TikTok">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-3v13.4a2.9 2.9 0 11-2.9-2.9c.3 0 .6 0 .9.1V9.5a6 6 0 00-.9-.06 6 6 0 106 6V8.9a7.6 7.6 0 004.4 1.4V7.2a4.5 4.5 0 01-3.2-1.5A4.6 4.6 0 0116.6 2z"/></svg>
           </a>
-          <a href="https://x.com/guswithus" target="_blank" rel="noopener" aria-label="GUS on X">
+          <a href="https://x.com/guswithus" target="_blank" rel="noopener noreferrer" aria-label="GUS on X">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.2 21H2.1l7.3-8.3L2 3h6.4l4.4 5.9L17.8 3zm-1.1 16.2h1.7L7.6 4.7H5.8l10.9 14.5z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/gus.withus" target="_blank" rel="noopener noreferrer" aria-label="GUS on Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
           </a>
         </div>
       </div>
@@ -815,9 +905,10 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
           <li>175-61 Hillside Avenue, Suite 202<br>Jamaica, NY 11432</li>
           <li><a href="/contact/">Contact us</a></li>
           <li><a href="#get-involved">Volunteer &amp; partner</a></li>
-          <li><a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener">Instagram: @gus.withus</a></li>
-          <li><a href="https://www.tiktok.com/@gus.withus" target="_blank" rel="noopener">TikTok: @gus.withus</a></li>
-          <li><a href="https://x.com/guswithus" target="_blank" rel="noopener">X: @guswithus</a></li>
+          <li><a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener noreferrer">Instagram: @gus.withus</a></li>
+          <li><a href="https://www.tiktok.com/@gus.withus" target="_blank" rel="noopener noreferrer">TikTok: @gus.withus</a></li>
+          <li><a href="https://x.com/guswithus" target="_blank" rel="noopener noreferrer">X: @guswithus</a></li>
+          <li><a href="https://www.facebook.com/gus.withus" target="_blank" rel="noopener noreferrer">Facebook: @gus.withus</a></li>
         </ul>
       </div>
     </div>

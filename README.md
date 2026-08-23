@@ -1,40 +1,77 @@
-# GUS Website — guswithus.org redesign
+# guswithus.org
 
-Premium, mobile-first, accessible homepage for **GUS — Growth, Unity & Success, Inc.**
-Everything lives in one file: `index.html` (plus `assets/gus-logo.jpg`). No build step needed.
+The public website for **GUS — Growth, Unity & Success, Inc.**
+Static HTML, no build step. Hosted on GitHub Pages, served over HTTPS at
+https://www.guswithus.org.
 
-## Preview it
-Double-click `index.html`, or serve the folder:
+## Structure
+
 ```
-python3 -m http.server 8000 --directory "/Users/gus/Documents/GUS Growth Unity & Success/Website"
+index.html          Homepage (all sections, inline CSS + JS)
+about/index.html    About page, legal identity, EIN, determination date
+contact/index.html  Contact details and social accounts
+404.html            Branded not-found page (GitHub Pages serves this automatically)
+robots.txt          Points crawlers at the sitemap
+sitemap.xml         The three real pages
+favicon.ico         Browser tab icon
+assets/             Logos, founder photo, social share card
+CNAME               www.guswithus.org
+.nojekyll           Tells GitHub Pages to serve files as-is
 ```
-then open http://localhost:8000
 
-## Connect Zeffy (free donations — 3 steps)
-1. Create a free account at https://www.zeffy.com and build a **Donation form**
-   (Fundraising → Donation forms → Create). Zeffy charges nonprofits $0 — no platform
-   or transaction fees, so 100% of each gift reaches GUS.
-2. **Quick option (works immediately):** copy your form's public link
-   (Share → Copy link) and paste it into the `href` of the
-   "Donate securely on Zeffy" button in `index.html` (search for `zeffy.com`).
-3. **Embedded option (donors never leave the page):** in Zeffy go to
-   Share → Embed and copy the URL that looks like
-   `https://www.zeffy.com/embed/donation-form/XXXXXXXX`.
-   In `index.html`, find the comment block labeled `ZEFFY SETUP`, delete the
-   `.zeffy-cta` div, and uncomment the `<iframe>`, pasting your embed URL as its `src`.
+Eight single-file redirect folders (`gus-with-us/`, `about-us/`, `donate/`,
+`programs/`, `contact-us/`, `terms-and-conditions/`, `privacy-policy/`,
+`accessibility-statement/`) catch URLs from the old Wix site that Google still
+has indexed and send visitors to the right page. Leave them in place until
+Search Console shows no traffic on them.
+
+## Preview locally
+
+```
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000. Run it from this folder.
 
 ## Publish
-- **Replace the Wix site:** most direct path is to host this file on Netlify / Vercel /
-  GitHub Pages (all free) and point the guswithus.org domain at it, or
-- **Keep Wix:** recreate the sections in Wix using this page as the spec (copy, colors,
-  order, and CTAs are all final).
 
-## Brand system used
-- Green `#22A95A` (accents, energy) · darkened to `#15803D` when used as text for WCAG AA contrast
-- Blue `#0848A2` (trust, headings, primary buttons) · ink navy `#0B2447`
-- Fonts: Sora (headlines) + Inter (body), via Google Fonts
+Commit to `main` and push. GitHub Pages redeploys in about a minute.
+Repo: https://github.com/augustokennedy-byte/guswithus
+
+## Brand system
+
+- Green `#22A95A` for accents, darkened to `#15803D` when used as text (WCAG AA)
+- Blue `#0848A2` for headings and primary buttons, ink navy `#0B2447`
+- Fonts: Sora for headlines, Inter for body, loaded from Google Fonts
 - Tagline: "Where Potential Meets Purpose"
 
-## Accessibility included
-Skip link, semantic landmarks, one `h1`, labeled nav/menu button with `aria-expanded`,
-visible focus rings, AA color contrast, alt text, reduced-motion support, keyboard-friendly.
+Colors are CSS variables at the top of each file (`--green`, `--blue`). Never
+hard-code a new color.
+
+## Images
+
+Source logo is `assets/gus-logo.jpg` (1201px). The sized PNGs used by the site
+(`logo-32`, `logo-180`, `logo-192`, `logo-512`) are generated from it with the
+white background knocked out, so the mark sits flush on any background.
+`assets/og-image.png` is the 1200x630 card that appears when someone shares a
+link. Regenerate these if the logo ever changes.
+
+## Donations
+
+Donations run through Zeffy, which charges nonprofits nothing. The homepage
+embeds the live form as an iframe and falls back to a direct link if the embed
+fails to load. PayPal and Venmo are offered as secondary options.
+
+## Search and social
+
+Each page carries a canonical URL, Open Graph and Twitter card tags, and a
+share image. The homepage also carries `NGO` structured data (JSON-LD) with the
+EIN, address, phone, founder, service area, and the four programs. About and
+contact carry breadcrumb data. Validate changes at
+https://validator.schema.org and https://search.google.com/test/rich-results.
+
+## Accessibility
+
+Skip link, semantic landmarks, one `h1` per page, labeled nav with
+`aria-expanded`, visible focus rings, AA contrast, alt text, reduced-motion
+support, and 44px minimum tap targets on mobile.
