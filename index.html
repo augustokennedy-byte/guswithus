@@ -168,6 +168,7 @@ header{
 .hero-card h2{font-size:1.15rem;text-align:center;margin-bottom:6px}
 .hero-card p{text-align:center;color:var(--ink-soft);font-size:.95rem;margin-bottom:20px}
 .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini-stats>.mini-stat:last-child{grid-column:1/-1}
 .mini-stat{
   background:var(--cloud);border-radius:14px;padding:14px 10px;text-align:center;
 }
@@ -185,7 +186,7 @@ header{
 
 /* ============ IMPACT STATS ============ */
 .impact{background:var(--blue);color:#fff;padding:58px 0}
-.impact .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center}
+.impact .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;text-align:center}
 .impact b{display:block;font-family:'Sora',sans-serif;font-size:clamp(2.2rem,4vw,3rem);font-weight:800;color:#7EE2A8}
 .impact span{font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#C9DAF4}
 
@@ -408,6 +409,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
   .program-grid{grid-template-columns:1fr}
   .story-grid,.ways-grid{grid-template-columns:1fr}
   .impact .wrap{grid-template-columns:repeat(2,1fr)}
+  .impact .wrap>div:last-child{grid-column:1/-1}
   .foot-grid{grid-template-columns:1fr}
   section{padding:64px 0}
   .hero{padding-top:12px}
@@ -562,7 +564,8 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
         <h2>One community. Real outcomes.</h2>
         <p>What supporters like you made possible so far:</p>
         <div class="mini-stats" role="list" aria-label="Impact statistics">
-          <div class="mini-stat" role="listitem"><b data-count="1700" data-suffix="+">1,700</b><span>Youth impacted</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="1700" data-suffix="+">1,700</b><span>Reached with coats &amp; supplies</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="75" data-suffix="+">75</b><span>In weekly programs</span></div>
           <div class="mini-stat" role="listitem"><b data-count="25">25</b><span>Communities reached</span></div>
           <div class="mini-stat" role="listitem"><b data-count="400" data-suffix="+">400+</b><span>Hours of service</span></div>
           <div class="mini-stat" role="listitem"><b data-count="4">4</b><span>Core programs</span></div>
@@ -577,7 +580,8 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
 <!-- ================= IMPACT BAND ================= -->
 <div class="impact" role="region" aria-label="Our impact in numbers">
   <div class="wrap">
-    <div class="reveal"><b>1,700</b><span>Young men &amp; women impacted</span></div>
+    <div class="reveal"><b>1,700</b><span>Reached with coats &amp; supplies</span></div>
+    <div class="reveal"><b>75</b><span>In weekly programs</span></div>
     <div class="reveal"><b>25</b><span>Communities reached</span></div>
     <div class="reveal"><b>400+</b><span>Hours of committed work</span></div>
     <div class="reveal"><b>4</b><span>Programs &amp; services</span></div>
