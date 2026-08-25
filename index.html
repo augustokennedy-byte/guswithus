@@ -109,6 +109,9 @@ header{
   padding:10px 14px;border-radius:10px;transition:background .18s,color .18s;
 }
 .nav-links a:hover{background:var(--blue-tint);color:var(--blue)}
+.nav-links a.nav-help{color:var(--green-dark);background:var(--green-tint)}
+.nav-links a.nav-help:hover{background:var(--green);color:#fff}
+@media (min-width:861px){.nav-links .btn{display:none}}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
   font-family:'Inter',sans-serif;font-weight:700;font-size:1rem;
@@ -187,6 +190,12 @@ header{
 /* ============ IMPACT STATS ============ */
 .impact{background:var(--blue);color:#fff;padding:58px 0}
 .impact .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;text-align:center}
+.needhelp{background:var(--green-tint);border-top:1px solid #CDEBDA;border-bottom:1px solid #CDEBDA;padding:38px 0}
+.needhelp .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.needhelp h2{font-size:clamp(1.35rem,2.6vw,1.85rem);margin-bottom:10px}
+.needhelp p{color:var(--ink-soft);max-width:52em;margin:0}
+.needhelp .btn{flex-shrink:0}
+@media (max-width:860px){.needhelp{padding:28px 0}.needhelp .btn{width:100%;justify-content:center}}
 .impact b{display:block;font-family:'Sora',sans-serif;font-size:clamp(2.2rem,4vw,3rem);font-weight:800;color:#7EE2A8}
 .impact span{font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#C9DAF4}
 
@@ -523,6 +532,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
       <ul class="nav-links" id="nav-links">
         <li><a href="#mission">Our Mission</a></li>
         <li><a href="#programs">Programs</a></li>
+        <li><a class="nav-help" href="/resources/">Resource Center</a></li>
         <li><a href="#stories">Stories</a></li>
         <li><a href="#founder">Founder</a></li>
         <li><a href="#get-involved">Get Involved</a></li>
@@ -585,6 +595,18 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
     <div class="reveal"><b>25</b><span>Communities reached</span></div>
     <div class="reveal"><b>400+</b><span>Hours of committed work</span></div>
     <div class="reveal"><b>4</b><span>Programs &amp; services</span></div>
+  </div>
+</div>
+
+<!-- ================= NEED HELP BAND ================= -->
+<div class="needhelp" role="region" aria-labelledby="needhelp-h">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Free &middot; Open to everyone</span>
+      <h2 id="needhelp-h">Need help right now? Start at The GUS Resource Center.</h2>
+      <p>Food, rent, shelter, cash assistance, unemployment, a job, a lawyer, free taxes, programs for your kids, money to start a business. Free links and phone numbers for Jamaica, Queens and all five boroughs. No account. Nothing saved.</p>
+    </div>
+    <a class="btn btn-green" href="/resources/">Open the Resource Center</a>
   </div>
 </div>
 
@@ -898,6 +920,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
           <li><a href="#programs">Programs</a></li>
           <li><a href="#stories">Stories of Impact</a></li>
           <li><a href="#founder">Our Founder</a></li>
+          <li><a href="/resources/">The GUS Resource Center</a></li>
           <li><a href="/about/">About GUS</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="#donate">Donate</a></li>
