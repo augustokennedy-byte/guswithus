@@ -29,6 +29,20 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/logo-192.png">
 <link rel="apple-touch-icon" href="/assets/logo-180.png">
+<!-- Google tag (gtag.js) — hardened: no ad storage, no Google Signals, no ad personalisation. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CD057EXE6B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('consent', 'default', {
+  'ad_storage':'denied', 'ad_user_data':'denied', 'ad_personalization':'denied'
+});
+gtag('config', 'G-CD057EXE6B', {
+  'allow_google_signals': false,
+  'allow_ad_personalization_signals': false
+});
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -59,6 +73,19 @@ a{color:var(--blue)}
 .emerg .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;justify-content:center;text-align:center}
 .emerg strong{font-weight:700}
 .emerg a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+
+.qexit{
+  font-family:inherit;font-size:.82rem;font-weight:800;cursor:pointer;
+  background:#fff;color:var(--red);border:2px solid #fff;border-radius:999px;
+  padding:5px 14px;margin-left:6px;line-height:1.3;letter-spacing:.01em;
+}
+.qexit:hover{background:#FFE9E7}
+.safebar{background:#2B0F0C;color:#F3C9C3;font-size:.82rem;padding:7px 0;text-align:center;line-height:1.5}
+.safebar b{color:#fff}
+.safebar kbd{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.76rem;
+  background:#4A211B;color:#fff;border-radius:4px;padding:1px 6px;border:1px solid #6B322A;
+}
 
 /* ---- HEADER ---- */
 header.top{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -146,6 +173,8 @@ footer.site p strong{color:#AEC3DF}
 
 @media (max-width:860px){
   .emerg{font-size:.82rem;padding:8px 0;line-height:1.45}
+  .safebar{font-size:.76rem;padding:7px 12px}
+  .qexit{font-size:.78rem;padding:5px 12px}
   .emerg .wrap{gap:3px 14px;padding:0 14px}
   header.top .wrap{min-height:60px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
   .brand img{width:40px;height:40px}
@@ -171,7 +200,7 @@ footer.site p strong{color:#AEC3DF}
 }
 
 @media print{
-  .emerg,header.top,.controls,.closer,footer.site,.g-method{display:none!important}
+  .emerg,.safebar,header.top,.controls,.closer,footer.site,.g-method{display:none!important}
   body{font-size:11pt}
   .card{break-inside:avoid;border:1px solid #999;box-shadow:none}
   .grid{grid-template-columns:1fr 1fr}
@@ -201,6 +230,14 @@ footer.site p strong{color:#AEC3DF}
     <a href="tel:988">Crisis? Call or text 988</a>
     <a href="tel:18006214673">Domestic violence: 1-800-621-HOPE</a>
     <a href="tel:311">Anything else: 311</a>
+    <button class="qexit" id="qexit" type="button">Quick exit &rarr;</button>
+  </div>
+</div>
+
+<div class="safebar">
+  <div class="wrap">
+    Worried someone checks this device? Hit <kbd>Esc</kbd> or <b>Quick exit</b> to leave this page fast.
+    Next time, open a private or incognito window and this page will not appear in your history.
   </div>
 </div>
 
@@ -229,7 +266,7 @@ footer.site p strong{color:#AEC3DF}
     <h1>Free Help in <span class="u-green">Staten Island</span></h1>
     <p class="slogan">Everything you need, at your fingertips.</p>
     <p>St. George, Stapleton and the South Shore. Below are 79 free programs that serve Staten Island &mdash; 7 of them with an address in the borough, the rest citywide. Every link goes straight to the application or the phone number.</p>
-    <p class="meta">Nothing here costs money. You do not need an account, and nothing you type is saved.</p>
+    <p class="meta">Nothing here costs money. You do not need an account, and what you type is never recorded.</p>
     <div class="g-method"><b>The G Method:</b> one page, real links, no runaround.</div>
   </div>
 </div>
@@ -277,7 +314,7 @@ footer.site p strong{color:#AEC3DF}
         <button class="chip" type="button" data-cat="safety" aria-pressed="false">Safety &amp; Crisis<span class="cnt">7</span></button>
       </div>
     </div>
-    <p id="tally"><b>79</b> free resources. Nothing you enter here is saved or sent anywhere.</p>
+    <p id="tally"><b>79</b> free resources. What you type here is never recorded.</p>
   </div>
 </div>
 
@@ -1050,7 +1087,7 @@ footer.site p strong{color:#AEC3DF}
     var where = boro === 'all' ? 'across all five boroughs' : 'in ' + document.querySelector('.chips [data-boro="'+boro+'"]').firstChild.nodeValue;
     tally.innerHTML = shown === 0
       ? 'No matches. Try a different word.'
-      : '<b>' + shown + '</b> free resource' + (shown===1?'':'s') + ' ' + where + '. Nothing you enter here is saved or sent anywhere.';
+      : '<b>' + shown + '</b> free resource' + (shown===1?'':'s') + ' ' + where + '. What you type here is never recorded.';
   }
 
   function wire(sel, set){
@@ -1086,6 +1123,52 @@ footer.site p strong{color:#AEC3DF}
   });
 
   apply();
+})();
+
+/* ---------------- Quick exit ----------------
+   Replaces this page with a neutral one, so the Resource Center is not sitting
+   in the back button of the visible tab. Deliberately does NOT open a new tab:
+   a popup-blocker warning bar would be conspicuous, which defeats the purpose. */
+(function(){
+  function quickExit(){
+    window.location.replace('https://www.google.com/search?q=weather');
+  }
+  var btn = document.getElementById('qexit');
+  if (btn) btn.addEventListener('click', quickExit);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      // Do not hijack Escape while someone is typing in the search box.
+      if (document.activeElement && document.activeElement.id === 'q') return;
+      quickExit();
+    }
+  });
+})();
+
+/* ---------------- Analytics events ----------------
+   Counts how many people reach real help, and nothing else.
+   What is NEVER sent: anything typed in the search box, and the name of any
+   Safety & Crisis or Immigrants resource. Those report as a generic label so
+   no record ties a person to a hotline. */
+(function(){
+  if (typeof gtag !== 'function') return;
+  var QUIET = { safety: 1, immigrants: 1 };
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || !a.getAttribute) return;
+    var href = a.getAttribute('href') || '';
+    var card = a.closest ? a.closest('.card') : null;
+    var cat  = card ? (card.getAttribute('data-cat') || '') : '';
+    var name = '';
+    if (card) { var h = card.querySelector('h3'); if (h) name = h.textContent.trim(); }
+    var label = QUIET[cat] ? 'crisis resource' : (name || 'site link');
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'phone_click', { resource: label, category: cat || 'site' });
+    } else if (a.classList && a.classList.contains('go')) {
+      gtag('event', 'apply_click', { resource: label, category: cat || 'site' });
+    } else if (href.indexOf('#donate') > -1 || href.indexOf('zeffy') > -1) {
+      gtag('event', 'donate_click', { category: 'donate' });
+    }
+  }, true);
 })();
 </script>
 </body>

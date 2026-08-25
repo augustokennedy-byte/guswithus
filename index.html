@@ -30,6 +30,20 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/logo-192.png">
 <link rel="apple-touch-icon" href="/assets/logo-180.png">
+<!-- Google tag (gtag.js) — hardened: no ad storage, no Google Signals, no ad personalisation. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CD057EXE6B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('consent', 'default', {
+  'ad_storage':'denied', 'ad_user_data':'denied', 'ad_personalization':'denied'
+});
+gtag('config', 'G-CD057EXE6B', {
+  'allow_google_signals': false,
+  'allow_ad_personalization_signals': false
+});
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -604,7 +618,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
     <div>
       <span class="eyebrow">Free &middot; Open to everyone</span>
       <h2 id="needhelp-h">Need help right now? Start at The GUS Resource Center.</h2>
-      <p>Food, rent, shelter, cash assistance, unemployment, a job, a lawyer, free taxes, programs for your kids, money to start a business. Free links and phone numbers for Jamaica, Queens and all five boroughs. No account. Nothing saved.</p>
+      <p>Food, rent, shelter, cash assistance, unemployment, a job, a lawyer, free taxes, programs for your kids, money to start a business. Free links and phone numbers for Jamaica, Queens and all five boroughs. No account needed.</p>
     </div>
     <a class="btn btn-green" href="/resources/">Open the Resource Center</a>
   </div>
@@ -967,6 +981,23 @@ links.addEventListener('click', e => {
     toggle.textContent = '☰';
   }
 });
+
+// Analytics events: donations and phone taps. Nothing personal is sent.
+(function(){
+  if (typeof gtag !== 'function') return;
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a || !a.getAttribute) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'phone_click', { category: 'site' });
+    } else if (href.indexOf('#donate') > -1 || href.indexOf('zeffy') > -1 || href.indexOf('paypal') > -1) {
+      gtag('event', 'donate_click', { category: 'donate' });
+    } else if (href.indexOf('/resources/') > -1) {
+      gtag('event', 'resource_center_open', { category: 'resources' });
+    }
+  }, true);
+})();
 
 // Scroll reveal (respects reduced motion)
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
