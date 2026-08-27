@@ -65,14 +65,14 @@ a{color:var(--blue)}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
 .skip-link{position:absolute;left:-9999px;top:0;background:var(--blue-ink);color:#fff;padding:12px 20px;z-index:300;border-radius:0 0 10px 0;font-weight:600}
 .skip-link:focus{left:0}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:3px solid #0B2447;outline-offset:2px;border-radius:4px;box-shadow:0 0 0 6px rgba(245,179,1,.95)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* ---- EMERGENCY BAR ---- */
 .emerg{background:var(--red);color:#fff;padding:10px 0;font-size:.95rem}
 .emerg .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;justify-content:center;text-align:center}
 .emerg strong{font-weight:700}
-.emerg a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.emerg a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap;display:inline-flex;align-items:center;min-height:24px}
 
 .qexit{
   font-family:inherit;font-size:.82rem;font-weight:800;cursor:pointer;
@@ -98,7 +98,7 @@ nav.simple{display:flex;gap:6px;align-items:center;font-weight:600;font-size:.95
 nav.simple a{text-decoration:none;color:var(--blue-ink);padding:9px 13px;border-radius:9px}
 nav.simple a:hover{background:var(--blue-tint);color:var(--blue)}
 nav.simple a[aria-current="page"]{background:var(--blue-tint);color:var(--blue)}
-.btn-green{background:var(--green);color:#fff!important;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:700}
+.btn-green{background:var(--green-dark);color:#fff!important;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:700}
 .btn-green:hover{background:var(--green-dark)}
 
 /* ---- HERO ---- */
@@ -117,7 +117,7 @@ nav.simple a[aria-current="page"]{background:var(--blue-tint);color:var(--blue)}
 .searchrow{display:flex;gap:10px;align-items:center;margin-bottom:14px}
 .searchrow label{flex:1;position:relative;display:block}
 #q{width:100%;font-family:inherit;font-size:1.05rem;padding:15px 16px 15px 46px;border:2px solid var(--line);border-radius:12px;background:var(--cloud);color:var(--ink)}
-#q:focus{border-color:var(--blue);background:#fff;outline:none}
+#q:focus{border-color:var(--blue);background:#fff}
 .searchrow svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--ink-soft);pointer-events:none}
 #clear{display:none;font-family:inherit;font-size:.95rem;font-weight:600;padding:14px 18px;border:2px solid var(--line);background:#fff;color:var(--blue-ink);border-radius:12px;cursor:pointer}
 #clear:hover{border-color:var(--blue);color:var(--blue)}
@@ -126,8 +126,8 @@ nav.simple a[aria-current="page"]{background:var(--blue-tint);color:var(--blue)}
 .chips{display:flex;flex-wrap:wrap;gap:7px}
 .chip{font-family:inherit;text-decoration:none;display:inline-flex;align-items:center;font-size:.94rem;font-weight:600;padding:9px 15px;border-radius:999px;border:2px solid var(--line);background:#fff;color:var(--blue-ink);cursor:pointer;line-height:1.3}
 .chip:hover{border-color:var(--blue);color:var(--blue)}
-.chip[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
-.chips.boro .chip[aria-pressed="true"]{background:var(--green-dark);border-color:var(--green-dark)}
+.chip[aria-pressed="true"],.chip[aria-current]{background:var(--blue);border-color:var(--blue);color:#fff}
+.chips.boro .chip[aria-pressed="true"],.chips.boro .chip[aria-current]{background:var(--green-dark);border-color:var(--green-dark)}
 .chip .cnt{opacity:.65;font-weight:500;font-size:.85em;margin-left:5px}
 #tally{font-size:.9rem;color:var(--ink-soft);padding-top:2px}
 #tally b{color:var(--blue-ink)}
@@ -207,6 +207,16 @@ footer.site p strong{color:#AEC3DF}
   .go{border:1px solid #333;background:#fff;color:#000}
   .card a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;font-weight:400;word-break:break-all}
 }
+
+/* Google "preferred source" badge. Plain link, no third-party script, so the
+   Resource Center keeps loading nothing that could log a visitor. */
+footer.site a.gps-badge{display:inline-flex;align-items:center;gap:9px;min-height:44px;
+  padding:11px 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,.45);
+  background:rgba(255,255,255,.08);color:#fff;font-weight:600;font-size:.92rem;
+  line-height:1.3;text-decoration:none}
+footer.site a.gps-badge:hover{background:rgba(255,255,255,.18);border-color:#fff}
+footer.site a.gps-badge svg{flex:none;color:#F5B301}
+.gps-line{margin:20px 0 14px}
 </style>
 <script type="application/ld+json">
 {
@@ -286,13 +296,13 @@ footer.site p strong{color:#AEC3DF}
     <div class="filterblock">
       <span class="lbl">Where are you?</span>
       <div class="chips boro" role="group" aria-label="Filter by borough">
-        <a class="chip" href="/resources/" data-boro="all" aria-pressed="false">All of NYC<span class="cnt">112</span></a>
-        <a class="chip" href="/resources/jamaica/" data-boro="jamaica" aria-pressed="false">Jamaica<span class="cnt">85</span></a>
-        <a class="chip" href="/resources/queens/" data-boro="queens" aria-pressed="true" aria-current="page">Queens<span class="cnt">86</span></a>
-        <a class="chip" href="/resources/brooklyn/" data-boro="brooklyn" aria-pressed="false">Brooklyn<span class="cnt">80</span></a>
-        <a class="chip" href="/resources/manhattan/" data-boro="manhattan" aria-pressed="false">Manhattan<span class="cnt">78</span></a>
-        <a class="chip" href="/resources/bronx/" data-boro="bronx" aria-pressed="false">The Bronx<span class="cnt">79</span></a>
-        <a class="chip" href="/resources/staten-island/" data-boro="statenisland" aria-pressed="false">Staten Island<span class="cnt">79</span></a>
+        <a class="chip" href="/resources/" data-boro="all">All of NYC<span class="cnt">112</span></a>
+        <a class="chip" href="/resources/jamaica/" data-boro="jamaica">Jamaica<span class="cnt">85</span></a>
+        <a class="chip" href="/resources/queens/" data-boro="queens" aria-current="page">Queens<span class="cnt">86</span></a>
+        <a class="chip" href="/resources/brooklyn/" data-boro="brooklyn">Brooklyn<span class="cnt">80</span></a>
+        <a class="chip" href="/resources/manhattan/" data-boro="manhattan">Manhattan<span class="cnt">78</span></a>
+        <a class="chip" href="/resources/bronx/" data-boro="bronx">The Bronx<span class="cnt">79</span></a>
+        <a class="chip" href="/resources/staten-island/" data-boro="statenisland">Staten Island<span class="cnt">79</span></a>
       </div>
     </div>
 
@@ -314,7 +324,7 @@ footer.site p strong{color:#AEC3DF}
         <button class="chip" type="button" data-cat="safety" aria-pressed="false">Safety &amp; Crisis<span class="cnt">7</span></button>
       </div>
     </div>
-    <p id="tally"><b>86</b> free resources. What you type here is never recorded.</p>
+    <p id="tally" role="status"><b>86</b> free resources. What you type here is never recorded.</p>
   </div>
 </div>
 
@@ -1090,7 +1100,13 @@ footer.site p strong{color:#AEC3DF}
       <a href="https://www.facebook.com/gus.withus" target="_blank" rel="noopener noreferrer">Facebook: @gus.withus</a> &middot;
       <a href="https://x.com/guswithus" target="_blank" rel="noopener noreferrer">X: @guswithus</a>
     </p>
-    <p>&copy; 2026 GUS &mdash; Growth, Unity &amp; Success, Inc. All rights reserved. &middot; <a href="/privacy/">Privacy Policy</a></p>
+    <p class="gps-line">
+      <a class="gps-badge" href="https://www.google.com/preferences/source?q=www.guswithus.org" target="_blank" rel="noopener noreferrer">
+        <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.6l2.76 5.85 6.24.94-4.52 4.55 1.07 6.46L12 17.3l-5.55 3.1 1.07-6.46L3 9.39l6.24-.94L12 2.6z"/></svg>
+        <span>Make GUS a preferred source on Google</span>
+      </a>
+    </p>
+    <p>&copy; 2026 GUS &mdash; Growth, Unity &amp; Success, Inc. All rights reserved. &middot; <a href="/privacy/">Privacy Policy</a> &middot; <a href="/accessibility/">Accessibility</a></p>
   </div>
 </footer>
 
@@ -1156,8 +1172,12 @@ footer.site p strong{color:#AEC3DF}
     btns.forEach(function(b){
       b.addEventListener('click', function(ev){
         if (b.tagName === 'A') ev.preventDefault();
-        btns.forEach(function(o){ o.setAttribute('aria-pressed','false'); });
-        b.setAttribute('aria-pressed','true');
+        btns.forEach(function(o){
+          if (o.tagName === 'A') o.removeAttribute('aria-current');
+          else o.setAttribute('aria-pressed','false');
+        });
+        if (b.tagName === 'A') b.setAttribute('aria-current','true');
+        else b.setAttribute('aria-pressed','true');
         set(b);
         apply();
         if (window.scrollY > 240) document.getElementById('main').scrollIntoView({block:'start'});
@@ -1177,8 +1197,14 @@ footer.site p strong{color:#AEC3DF}
     if (document.body.getAttribute('data-page') === 'all') boro = 'all';
     [].slice.call(document.querySelectorAll('.chips .chip')).forEach(function(b){
       var db = b.getAttribute('data-boro');
-      if (db !== null) { if (document.body.getAttribute('data-page') === 'all') b.setAttribute('aria-pressed', db==='all'?'true':'false'); }
-      else b.setAttribute('aria-pressed', b.getAttribute('data-cat')==='all' ? 'true':'false');
+      if (db !== null) {
+        if (document.body.getAttribute('data-page') === 'all') {
+          if (db === 'all') b.setAttribute('aria-current','true');
+          else b.removeAttribute('aria-current');
+        }
+      } else {
+        b.setAttribute('aria-pressed', b.getAttribute('data-cat')==='all' ? 'true':'false');
+      }
     });
     apply(); q.focus();
   });

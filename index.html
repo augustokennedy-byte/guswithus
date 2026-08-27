@@ -97,7 +97,7 @@ a{color:var(--blue)}
   padding:12px 20px;z-index:200;border-radius:0 0 10px 0;font-weight:600;
 }
 .skip-link:focus{left:0}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:3px solid #0B2447;outline-offset:2px;border-radius:4px;box-shadow:0 0 0 6px rgba(245,179,1,.95)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* ============ ANNOUNCEMENT BAR ============ */
@@ -124,7 +124,7 @@ header{
 }
 .nav-links a:hover{background:var(--blue-tint);color:var(--blue)}
 .nav-links a.nav-help{color:var(--green-dark);background:var(--green-tint)}
-.nav-links a.nav-help:hover{background:var(--green);color:#fff}
+.nav-links a.nav-help:hover{background:var(--green-dark);color:#fff}
 @media (min-width:861px){.nav-links .btn{display:none}}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
@@ -143,7 +143,7 @@ header{
 .nav .btn{padding:11px 22px;font-size:.95rem}
 .menu-toggle{
   display:none;background:none;border:2px solid #C9D6E8;border-radius:10px;
-  width:46px;height:46px;cursor:pointer;color:var(--blue-ink);
+  flex:none;width:46px;height:46px;min-width:46px;cursor:pointer;color:var(--blue-ink);
   align-items:center;justify-content:center;font-size:1.3rem;
 }
 
@@ -266,8 +266,8 @@ section{padding:92px 0}
 /* donate */
 .donate{background:linear-gradient(160deg,var(--blue-ink) 0%,var(--blue) 70%,#0A5BC4 100%);color:#fff}
 .donate .section-head h2,.donate .section-head p{color:#fff}
-.donate .section-head p{color:#C9DAF4}
-.donate .eyebrow{background:rgba(126,226,168,.15);color:#7EE2A8}
+.donate .section-head p{color:var(--blue-tint)}
+.donate .eyebrow{background:rgba(126,226,168,.15);color:#EAFBF1}
 .donate-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
 .give-levels{display:grid;gap:16px}
 .level{
@@ -281,12 +281,12 @@ section{padding:92px 0}
   min-width:84px;
 }
 .level b{display:block;font-size:1.02rem;margin-bottom:2px}
-.level span{color:#C9DAF4;font-size:.92rem}
+.level span{color:var(--blue-tint);font-size:.92rem}
 .fee-note{
   margin-top:22px;background:rgba(126,226,168,.12);border:1px solid rgba(126,226,168,.35);
   border-radius:14px;padding:16px 18px;font-size:.95rem;color:#DFF7E9;
 }
-.fee-note b{color:#7EE2A8}
+.fee-note b{color:#fff}
 .zeffy-shell{
   background:#fff;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,.35);
   overflow:hidden;
@@ -317,7 +317,7 @@ section{padding:92px 0}
 }
 .alt-pay[data-pending="true"]{display:none}
 .alt-btn[hidden]{display:none}
-.alt-pay-label{color:#C9DAF4;font-size:.92rem;font-weight:600}
+.alt-pay-label{color:var(--blue-tint);font-size:.92rem;font-weight:600}
 .alt-btn{
   display:inline-flex;align-items:center;gap:8px;
   font-weight:700;font-size:.95rem;text-decoration:none;
@@ -326,7 +326,7 @@ section{padding:92px 0}
   transition:background .18s,border-color .18s,transform .18s;
 }
 .alt-btn:hover{transform:translateY(-2px);border-color:#fff;background:rgba(255,255,255,.16)}
-.alt-pay small{flex-basis:100%;color:#9DB6DC;font-size:.8rem}
+.alt-pay small{flex-basis:100%;color:var(--blue-tint);font-size:.8rem}
 @media (max-width:860px){.alt-btn{flex:1 1 40%;justify-content:center}}
 
 /* stories */
@@ -347,7 +347,7 @@ section{padding:92px 0}
   display:flex;align-items:center;justify-content:center;
   font-weight:800;color:#fff;font-family:'Sora',sans-serif;
 }
-.story .avatar.g{background:var(--green)}
+.story .avatar.g{background:var(--green-dark)}
 .story .avatar.b{background:var(--blue)}
 .story b{display:block;color:var(--blue-ink);font-size:.95rem}
 .story span{color:var(--ink-soft);font-size:.83rem}
@@ -356,7 +356,7 @@ section{padding:92px 0}
 .founder{background:var(--cloud)}
 .founder-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
 .founder-panel{
-  background:linear-gradient(160deg,var(--green) 0%,#178A4A 100%);
+  background:linear-gradient(160deg,#12703C 0%,#0B5A2E 100%);
   border-radius:26px;color:#fff;padding:44px 38px;box-shadow:var(--shadow-lift);
   text-align:center;
 }
@@ -404,7 +404,7 @@ section{padding:92px 0}
 /* footer */
 footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95rem}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;margin-bottom:44px}
-.foot-grid h4{color:#fff;font-family:'Sora',sans-serif;font-size:1rem;margin-bottom:16px}
+.foot-grid h3{color:#fff;font-family:'Sora',sans-serif;font-size:1rem;margin-bottom:16px}
 .foot-grid ul{list-style:none;display:grid;gap:10px}
 .foot-grid a{color:#AEC3DF;text-decoration:none}
 .foot-grid a:hover{color:#7EE2A8}
@@ -463,6 +463,16 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
   }
   .socials a{width:48px;height:48px}
 }
+
+/* Google "preferred source" badge. Plain link, no third-party script, so the
+   Resource Center keeps loading nothing that could log a visitor. */
+footer.site a.gps-badge{display:inline-flex;align-items:center;gap:9px;min-height:44px;
+  padding:11px 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,.45);
+  background:rgba(255,255,255,.08);color:#fff;font-weight:600;font-size:.92rem;
+  line-height:1.3;text-decoration:none}
+footer.site a.gps-badge:hover{background:rgba(255,255,255,.18);border-color:#fff}
+footer.site a.gps-badge svg{flex:none;color:#F5B301}
+.gps-line{margin:20px 0 14px}
 </style>
 <script type="application/ld+json">
 {
@@ -928,7 +938,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
         </div>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3>Explore</h3>
         <ul>
           <li><a href="#mission">Our Mission</a></li>
           <li><a href="#programs">Programs</a></li>
@@ -937,11 +947,12 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
           <li><a href="/resources/">The GUS Resource Center</a></li>
           <li><a href="/about/">About GUS</a></li>
           <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/accessibility/">Accessibility</a></li>
           <li><a href="#donate">Donate</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <ul>
           <li><a href="mailto:info@guswithus.org">info@guswithus.org</a></li>
           <li><a href="tel:+17187755050">(718)&nbsp;775-5050</a></li>
@@ -955,6 +966,12 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
         </ul>
       </div>
     </div>
+    <p class="gps-line">
+      <a class="gps-badge" href="https://www.google.com/preferences/source?q=www.guswithus.org" target="_blank" rel="noopener noreferrer">
+        <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.6l2.76 5.85 6.24.94-4.52 4.55 1.07 6.46L12 17.3l-5.55 3.1 1.07-6.46L3 9.39l6.24-.94L12 2.6z"/></svg>
+        <span>Make GUS a preferred source on Google</span>
+      </a>
+    </p>
     <div class="foot-legal">
       <p style="flex-basis:100%;line-height:1.7"><strong style="color:#AEC3DF">GUS With Us</strong> is the operating name of GUS — Growth, Unity &amp; Success, Inc., a New York not-for-profit corporation and registered 501(c)(3) public charity. guswithus.org is the official website of GUS — Growth, Unity &amp; Success, Inc.</p>
       <p style="flex-basis:100%;line-height:1.7">175-61 Hillside Avenue, Suite 202, Jamaica, NY 11432 · <a href="tel:+17187755050" style="color:#AEC3DF">(718)&nbsp;775-5050</a> · <a href="mailto:info@guswithus.org" style="color:#AEC3DF">info@guswithus.org</a> · EIN 39-2462364</p>
@@ -974,10 +991,20 @@ toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   toggle.textContent = open ? '✕' : '☰';
 });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && links.classList.contains('open')) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+    toggle.textContent = '☰';
+    toggle.focus();
+  }
+});
 links.addEventListener('click', e => {
   if (e.target.tagName === 'A') {
     links.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
     toggle.textContent = '☰';
   }
 });

@@ -43,6 +43,12 @@ border-radius:999px;text-decoration:none;font-weight:600;font-size:1rem}
 a.btn:hover{transform:translateY(-1px)}
 small{display:block;margin-top:30px;color:var(--ink-soft);font-size:.85rem}
 small a{color:var(--green-dark)}
+
+/* Accessibility: focus indicator. Dark ring for light backgrounds, gold halo
+   for dark ones, so it clears 3:1 either way (WCAG 1.4.11 / 2.4.11). */
+:focus-visible{outline:3px solid #0B2447;outline-offset:2px;border-radius:4px;box-shadow:0 0 0 6px rgba(245,179,1,.95)}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:99;background:#0848A2;color:#fff;padding:12px 20px;border-radius:0 0 10px 0;font-weight:700;text-decoration:none}
+.skip-link:focus{left:0}
 </style>
 </head>
 <body>
