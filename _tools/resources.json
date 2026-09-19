@@ -1,0 +1,3185 @@
+{
+  "checked": "2026-09-19",
+  "sections": [
+    {
+      "slug": "start",
+      "cat": "start",
+      "title": "Start Here"
+    },
+    {
+      "slug": "food",
+      "cat": "food",
+      "title": "Food"
+    },
+    {
+      "slug": "housing",
+      "cat": "housing",
+      "title": "Housing &amp; Shelter"
+    },
+    {
+      "slug": "money",
+      "cat": "money",
+      "title": "Money &amp; Bills"
+    },
+    {
+      "slug": "unemployment",
+      "cat": "unemployment",
+      "title": "Unemployment"
+    },
+    {
+      "slug": "jobs",
+      "cat": "jobs",
+      "title": "Jobs &amp; Training"
+    },
+    {
+      "slug": "business",
+      "cat": "business",
+      "title": "Start a Business"
+    },
+    {
+      "slug": "kids",
+      "cat": "kids",
+      "title": "Kids &amp; Teens"
+    },
+    {
+      "slug": "health",
+      "cat": "health",
+      "title": "Health"
+    },
+    {
+      "slug": "legal",
+      "cat": "legal",
+      "title": "Legal Help"
+    },
+    {
+      "slug": "immigrants",
+      "cat": "immigrants",
+      "title": "Immigrants"
+    },
+    {
+      "slug": "safety",
+      "cat": "safety",
+      "title": "Safety &amp; Crisis"
+    }
+  ],
+  "cards": [
+    {
+      "cat": "start",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "GUS — Growth, Unity &amp; Success",
+      "what": "That is us. Tutoring, clothing, financial literacy, sports and job readiness for young people ages 8 to 24 in Jamaica and South Jamaica.",
+      "addr": "175-61 Hillside Avenue, Suite 202, Jamaica, NY 11432",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "/#programs",
+          "label": "See our programs",
+          "external": false
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17187755050",
+          "label": "(718) 775-5050",
+          "external": false
+        }
+      ],
+      "keywords": " help where do i start begin "
+    },
+    {
+      "cat": "start",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "ACCESS NYC — check what you qualify for",
+      "what": "Answer a few questions and it shows you every city, state and federal benefit you can get. Takes about 10 minutes. No account, no name, nothing saved.",
+      "addr": null,
+      "note": "Also in Spanish, Chinese, Bengali, Russian, Haitian Creole, Korean, Arabic, Urdu, French and Polish.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://access.nyc.gov/",
+          "label": "Start the screener",
+          "external": true
+        }
+      ],
+      "keywords": " help where do i start begin "
+    },
+    {
+      "cat": "start",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "ACCESS HRA — the application itself",
+      "what": "One form applies you for SNAP (food stamps), Cash Assistance and Medicaid at the same time.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://a069-access.nyc.gov/accesshra/",
+          "label": "Apply now",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399 — HRA Infoline",
+          "external": false
+        }
+      ],
+      "keywords": " help where do i start begin "
+    },
+    {
+      "cat": "start",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC 311",
+      "what": "The city's help line for anything you cannot find here. Free, 24 hours, over 175 languages.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://portal.311.nyc.gov/",
+          "label": "Open 311",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:311",
+          "label": "Call 311",
+          "external": false
+        }
+      ],
+      "keywords": " help where do i start begin "
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "The River Fund New York",
+      "what": "One of the biggest pantries in Queens. Families take home roughly 100 pounds of produce, protein and staples. Bring bags or a cart.",
+      "addr": "89-11 Lefferts Blvd, Richmond Hill, NY 11418",
+      "note": "Wednesdays serve seniors and people with disabilities. Saturdays serve everyone. Call to confirm hours.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.river.fund/onsite-pantry",
+          "label": "See pantry days",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17184411125",
+          "label": "(718) 441-1125",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family pantry produce groceries queens richmond hill"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "statenisland"
+      ],
+      "badge": "Right here in Staten Island",
+      "name": "Project Hospitality — Staten Island",
+      "what": "Staten Island's largest food pantry, plus a soup kitchen a few doors down on Canal Street.",
+      "addr": "205 Canal St, Staten Island, NY 10304",
+      "note": "The pantry at 205 Canal Street is open Tuesdays and Thursdays, 9 AM to 12 PM. The soup kitchen at 211 Canal Street serves Tuesdays and Thursdays, 11:30 AM to 1 PM.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://projecthospitality.org/food-services",
+          "label": "See pantry days",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17184481544",
+          "label": "(718) 448-1544",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family pantry soup kitchen staten island"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "CAMBA Beyond Hunger Emergency Food Pantry",
+      "what": "Supermarket-style pantry in Flatbush where you pick your own food. Call before you come so they know to expect you.",
+      "addr": "21 Snyder Avenue, Brooklyn, NY 11226",
+      "note": "Bring a photo ID. It is required to get into the pantry.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://camba.org/programs/beyond-hunger-emergency-food-pantry/",
+          "label": "Pantry details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182823082",
+          "label": "(718) 282-3082",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family "
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "The Campaign Against Hunger — Bed-Stuy",
+      "what": "One of Brooklyn's largest pantries, with a rooftop farm and nutrition programs alongside the groceries.",
+      "addr": "2010 Fulton Street, Brooklyn, NY 11233",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.tcahnyc.org/locations/",
+          "label": "See locations",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17187733551",
+          "label": "(718) 773-3551",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family "
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "bronx"
+      ],
+      "badge": "Right here in The Bronx",
+      "name": "POTS — Part of the Solution",
+      "what": "Food pantry in the morning and a hot sit-down meal at midday, six days a week. They also run legal, medical and housing help in the same building.",
+      "addr": "2759 Webster Avenue, Bronx, NY 10458",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://potsbronx.org/",
+          "label": "See services",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182204892",
+          "label": "(718) 220-4892",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family "
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "manhattan"
+      ],
+      "badge": "Right here in Manhattan",
+      "name": "Holy Apostles Soup Kitchen",
+      "what": "New York's largest soup kitchen. A hot meal every weekday, holidays included. No questions, no paperwork, just come.",
+      "addr": "296 Ninth Avenue, New York, NY 10001",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://holyapostlessoupkitchen.org/",
+          "label": "Hours and services",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+12129240167",
+          "label": "(212) 924-0167",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family "
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "SNAP (food stamps)",
+      "what": "Monthly money on a card for groceries. If you qualify for emergency processing you can get benefits in about 5 days.",
+      "addr": null,
+      "note": "Not sure if you qualify? Check first at access.nyc.gov.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://a069-access.nyc.gov/accesshra/",
+          "label": "Apply now",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family ebt food stamps card snap benefits"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Plentiful — find a pantry and book a time",
+      "what": "Shows the food pantries closest to you and lets you reserve a slot so you are not standing in line.",
+      "addr": null,
+      "note": "No smartphone? Text the word FOOD to 726879 from any phone.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.plentiful.org/",
+          "label": "Find a pantry",
+          "external": true
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family pantry food pantry line reservation"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Food Bank For New York City",
+      "what": "Nearly 800 pantries, soup kitchens and mobile pantries across the five boroughs. Search by your ZIP code.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.foodbanknyc.org/get-help/",
+          "label": "Search by ZIP",
+          "external": true
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family pantry soup kitchen mobile pantry zip code"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "HRA food assistance — pantries, meals and more",
+      "what": "The city's own list of emergency food programs, plus how to get help applying for SNAP.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/help/food-assistance.page",
+          "label": "See food help",
+          "external": true
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family pantry soup kitchen emergency food meals"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "WIC — food for pregnant women, babies and kids under 5",
+      "what": "Free healthy food, formula, breastfeeding support and health referrals. You can qualify even if you work.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.health.ny.gov/prevention/nutrition/wic/",
+          "label": "Apply for WIC",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118005225006",
+          "label": "1-800-522-5006",
+          "external": false
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family wic pregnant baby formula infant breastfeeding"
+    },
+    {
+      "cat": "food",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Free school meals",
+      "what": "Breakfast and lunch are free for every NYC public school student. No form, no income check.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.schools.nyc.gov/school-life/food/school-meals",
+          "label": "How it works",
+          "external": true
+        }
+      ],
+      "keywords": " food hungry hunger groceries grocery eat feed my family school lunch breakfast cafeteria"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Homebase Queens — Jamaica office",
+      "what": "The Homebase office that covers Jamaica and the rest of Queens. Run by Catholic Charities Brooklyn and Queens.",
+      "addr": "161-10 Jamaica Avenue, 5th Floor, Jamaica, NY 11432",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/help/homebase.page",
+          "label": "Homebase info",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17186741000",
+          "label": "(718) 674-1000",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live eviction evicted back rent arrears landlord jamaica queens"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "CAMBA Homebase — Brooklyn",
+      "what": "Brooklyn's Homebase provider. Free help with back rent, landlord trouble and emergency money to keep your apartment. Offices in Fulton Street, Eastern Parkway and Church Avenue.",
+      "addr": null,
+      "note": "Which office you use depends on your community district. Call and they will route you.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://camba.org/programs/homebase/",
+          "label": "Find your office",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17184085756",
+          "label": "(718) 408-5756",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live "
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "bronx"
+      ],
+      "badge": "Right here in The Bronx",
+      "name": "BronxWorks Homebase",
+      "what": "The Bronx Homebase provider. Free help with rent arrears, eviction and emergency grants before you lose your home.",
+      "addr": "1130 Grand Concourse, 3rd Floor, Bronx, NY 10456",
+      "note": "Second office at 630 Jackson Avenue, 2nd Floor, (347) 704-0001. Which one you use depends on your ZIP code.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://bronxworks.org/our-services/eviction-other-prevention-services/homebase/",
+          "label": "Get help",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185083107",
+          "label": "(718) 508-3107",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live "
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "statenisland"
+      ],
+      "badge": "Right here in Staten Island",
+      "name": "CAMBA Homebase — Staten Island",
+      "what": "Staten Island's Homebase provider. Free help with back rent, landlord trouble and emergency money to stay housed.",
+      "addr": "120 Stuyvesant Place, 4th Floor, Suite 413, Staten Island, NY 10301",
+      "note": "Second office at 209 Bay Street, 1st Floor, (718) 226-0496.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://camba.org/programs/homebase/",
+          "label": "Get help",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182826473",
+          "label": "(718) 282-6473",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live "
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Homebase — stop an eviction before it happens",
+      "what": "Free help with back rent, landlord problems, and one-time emergency money to keep you in your apartment. Go here before you lose the place.",
+      "addr": null,
+      "note": "There is a Homebase office in every borough.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/help/homebase.page",
+          "label": "Find your office",
+          "external": true
+        }
+      ],
+      "keywords": " housing home apartment place to live eviction evicted back rent arrears landlord prevention"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "EvictionFreeNYC — free lawyer for eviction",
+      "what": "If you got court papers, you have a right to a free lawyer in every NYC ZIP code. Immigration status does not matter.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.evictionfreenyc.org/",
+          "label": "Get a lawyer",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571379",
+          "label": "(718) 557-1379",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live eviction evicted court papers marshal lockout housing court lawyer"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "One-Shot Deal — emergency money for rent",
+      "what": "A one-time grant for back rent, a security deposit, movers, or a utility shutoff. Apply through ACCESS HRA.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://access.nyc.gov/programs/one-shot-deal/",
+          "label": "How to apply",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live emergency money back rent security deposit quick cash grant movers shutoff"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Enter shelter tonight",
+      "what": "Intake is open 24 hours. Men: 8 East 3rd St, Manhattan. Women: 114 Snediker Ave, Brooklyn or 1122 Franklin Ave, Bronx. Adult families: 333 Bowery, Manhattan. Families with children: PATH, 151 East 151st St, Bronx.",
+      "addr": null,
+      "note": "These addresses changed in August 2026. Call 311 to confirm before you travel.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dhs/shelter/shelter.page",
+          "label": "Shelter info",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:311",
+          "label": "Call 311 first",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live shelter tonight nowhere to sleep homeless intake bed path"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Housing Court Answers",
+      "what": "Free advice line if you are behind on rent, in Housing Court, or facing a lockout. They explain what the papers mean.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://housingcourtanswers.org/",
+          "label": "Get answers",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+12129624795",
+          "label": "(212) 962-4795",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live housing court eviction lockout back rent"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Housing Connect — affordable apartment lottery",
+      "what": "The city's official list of income-restricted apartments. Free to apply. Set up one profile and enter as many lotteries as you want.",
+      "addr": null,
+      "note": "There is never a fee for an HPD or HDC housing application. Anyone charging you is a scam.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://housingconnect.nyc.gov/PublicWeb/",
+          "label": "Apply to lotteries",
+          "external": true
+        }
+      ],
+      "keywords": " housing home apartment place to live lottery affordable apartment cheap apartment housing lottery hpd"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYCHA — public housing and Section 8",
+      "what": "Apply for public housing and check where you stand on the waitlist.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://selfserve.nycha.info/",
+          "label": "Apply or check status",
+          "external": true
+        }
+      ],
+      "keywords": " housing home apartment place to live nycha projects public housing section 8 waitlist voucher"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "HPD eviction prevention",
+      "what": "The city's guide to your rights as a tenant, repairs, harassment and rent arrears help.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hpd/services-and-information/eviction-prevention.page",
+          "label": "Know your rights",
+          "external": true
+        }
+      ],
+      "keywords": " housing home apartment place to live repairs heat no heat harassment landlord tenant rights eviction"
+    },
+    {
+      "cat": "housing",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "CityFHEPS — rental assistance voucher",
+      "what": "A city voucher that pays most of your rent every month. For people in shelter or at risk of losing their home.",
+      "addr": null,
+      "note": "Homebase can help you apply. Start there if you are not in shelter yet.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/help/cityfheps.page",
+          "label": "See if you qualify",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399",
+          "external": false
+        }
+      ],
+      "keywords": " housing home apartment place to live rental assistance voucher rent voucher help paying rent cityfheps"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Cash Assistance",
+      "what": "Monthly cash for rent, food and basics if you have little or no income. Same application as SNAP.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://a069-access.nyc.gov/accesshra/",
+          "label": "Apply now",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399",
+          "external": false
+        }
+      ],
+      "keywords": " money bills benefits broke income welfare public assistance cash ta"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Fair Fares NYC — half-price subway and bus",
+      "what": "Half off subway, eligible buses and Access-A-Ride. Open to New Yorkers 16 to 84 at or below 145% of the federal poverty line.",
+      "addr": null,
+      "note": "Fair Fares now issues OMNY cards instead of MetroCards.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/fairfares/index.page",
+          "label": "Apply for Fair Fares",
+          "external": true
+        }
+      ],
+      "keywords": " money bills benefits broke income metrocard omny subway bus fare transit discount access-a-ride"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Free Tax Prep",
+      "what": "File your taxes free with an IRS-certified preparer and keep the whole refund. Roughly $68,000 or less filing single, $97,000 or less with family.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dca/consumers/file-your-taxes.page",
+          "label": "Book free tax prep",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:311",
+          "label": "Call 311",
+          "external": false
+        }
+      ],
+      "keywords": " money bills benefits broke income taxes tax refund vita irs free tax filing w2 eitc"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Financial Empowerment Centers — free money counseling",
+      "what": "Sit down one-on-one with a counselor about debt, credit, budgeting or opening a bank account. Free, in every borough, no matter your income.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dca/consumers/get-free-financial-counseling.page",
+          "label": "Book a session",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:311",
+          "label": "Call 311",
+          "external": false
+        }
+      ],
+      "keywords": " money bills benefits broke income credit score debt collection budget bank account savings"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "HEAP — heating and cooling bill help",
+      "what": "Pays part of your heating or cooling bill, and can fix or replace a broken furnace or air conditioner. Money goes straight to the utility.",
+      "addr": null,
+      "note": "Application windows open and close each season. Call to check what is open now.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/help/energy-assistance.page",
+          "label": "Apply for HEAP",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399",
+          "external": false
+        }
+      ],
+      "keywords": " money bills benefits broke income heat heating electric bill air conditioner boiler furnace utility heap"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Con Edison payment help",
+      "what": "Set up a payment agreement, stop a shutoff, or apply for bill credits.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.coned.com/en/accounts-billing/payment-plans-assistance",
+          "label": "Set up a plan",
+          "external": true
+        }
+      ],
+      "keywords": " money bills benefits broke income con ed coned electric bill shutoff payment plan utility"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "IDNYC — free photo ID",
+      "what": "A free government photo ID for anyone 10 and up living in NYC. Immigration status does not matter. Gets you into banks, clinics, schools and museums.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/idnyc/index.page",
+          "label": "Get an IDNYC",
+          "external": true
+        }
+      ],
+      "keywords": " money bills benefits broke income id identification photo id card idnyc"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "HRA Job Centers and SNAP Centers",
+      "what": "Where to go in person for Cash Assistance, SNAP and Medicaid if you cannot do it online. There are centers in every borough.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/locations/job-locations.page",
+          "label": "Find a center",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185571399",
+          "label": "(718) 557-1399",
+          "external": false
+        }
+      ],
+      "keywords": " money bills benefits broke income in person office snap center job center walk in"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Social Security, SSI and disability",
+      "what": "Apply for retirement, SSI or disability benefits. You can start the application online and finish by phone.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.ssa.gov/apply",
+          "label": "Apply for benefits",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118007721213",
+          "label": "1-800-772-1213",
+          "external": false
+        }
+      ],
+      "keywords": " money bills benefits broke income ssi ssdi disability retirement social security"
+    },
+    {
+      "cat": "money",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "National Grid bill help",
+      "what": "Payment plans, budget billing and low-income discounts if your gas bill is behind.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nationalgridus.com/NY-Home/Bill-Help/",
+          "label": "Get bill help",
+          "external": true
+        }
+      ],
+      "keywords": " money bills benefits broke income gas bill shutoff payment plan utility national grid"
+    },
+    {
+      "cat": "unemployment",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "File an unemployment claim",
+      "what": "File the week you lose your job. Do not wait. You file once, then certify every week to get paid.",
+      "addr": null,
+      "note": "Telephone Claims Center, Monday to Friday 8am to 5pm. Press 9 for an interpreter.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://unemployment.labor.ny.gov/",
+          "label": "File your claim",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118882098124",
+          "label": "1-888-209-8124",
+          "external": false
+        }
+      ],
+      "keywords": " unemployment jobless benefits claim laid off layoff fired lost my job file claim unemployment"
+    },
+    {
+      "cat": "unemployment",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Certify weekly for your benefit",
+      "what": "You have to certify every single week or you do not get paid, even after you are approved.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://dol.ny.gov/unemployment/certify-weekly-unemployment-insurance-benefits",
+          "label": "Certify now",
+          "external": true
+        }
+      ],
+      "keywords": " unemployment jobless benefits claim certify weekly payment not paid"
+    },
+    {
+      "cat": "unemployment",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Problem with your claim",
+      "what": "Denied, stuck, overpaid, or waiting too long. This is where you push back and where you appeal.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://dol.ny.gov/unemployment/unemployment-insurance-assistance",
+          "label": "Get claim help",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118882098124",
+          "label": "1-888-209-8124",
+          "external": false
+        }
+      ],
+      "keywords": " unemployment jobless benefits claim denied appeal overpaid stuck waiting hearing"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Workforce1 Queens Career Center",
+      "what": "Free resume help, interview coaching, training grants and direct hiring events. Walk in or call. This one is right on Jamaica Avenue.",
+      "addr": "168-25 Jamaica Avenue, 2nd Floor, Jamaica, NY 11432",
+      "note": "Generally Monday to Friday, 9am to 5pm. Call before you go.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185576755",
+          "label": "(718) 557-6755",
+          "external": false
+        }
+      ],
+      "keywords": " job jobs work employment hiring career resume interview job placement training grant jamaica queens"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "NYS Queens Career Center",
+      "what": "The state's own career center for Queens. Job listings, veterans services and help with your unemployment claim in person.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://dol.ny.gov/location/queens-career-center",
+          "label": "Center details",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career resume job listings veterans unemployment in person queens"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Queens Public Library — Adult Learning Centers",
+      "what": "Free English classes, high school equivalency prep, computer classes and job search help. The Central Library in Jamaica has public computers you can use.",
+      "addr": "Central Library, 89-11 Merrick Blvd, Jamaica, NY 11432",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.queenslibrary.org/programs-activities/adult-learners",
+          "label": "See classes",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career esl english classes ged hse computer class library public computer wifi"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "queens"
+      ],
+      "badge": "Right here in Queens",
+      "name": "The Fortune Society — re-entry support",
+      "what": "Housing, jobs, education and legal help for people coming home from prison or jail. Based in Long Island City, serving all of NYC.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://fortunesociety.org/",
+          "label": "Get re-entry help",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career reentry re-entry prison jail parole probation record felony second chance"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "Brooklyn Workforce1 Career Center",
+      "what": "Free resume help, interview coaching, training grants and hiring events in downtown Brooklyn.",
+      "addr": "9 Bond Street, 5th Floor, Brooklyn, NY 11201",
+      "note": "Call 311 for current hours before you go.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page",
+          "label": "Center details",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career "
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "bronx"
+      ],
+      "badge": "Right here in The Bronx",
+      "name": "Hunts Point Workforce1 Career Center",
+      "what": "Free job placement, resume and interview help, and training grants in the South Bronx.",
+      "addr": "1029 East 163rd Street, 3rd Floor, Bronx, NY 10459",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185426777",
+          "label": "(718) 542-6777",
+          "external": false
+        }
+      ],
+      "keywords": " job jobs work employment hiring career "
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "manhattan"
+      ],
+      "badge": "Right here in Manhattan",
+      "name": "Upper Manhattan Workforce1 Career Center",
+      "what": "Free job placement, resume and interview coaching, and training grants on 125th Street in Harlem.",
+      "addr": "215 West 125th Street, 6th Floor, New York, NY 10027",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19174937054",
+          "label": "(917) 493-7054",
+          "external": false
+        }
+      ],
+      "keywords": " job jobs work employment hiring career "
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "statenisland"
+      ],
+      "badge": "Right here in Staten Island",
+      "name": "Staten Island Workforce1 Career Center",
+      "what": "Free job placement, resume help and training grants in St. George, near the ferry.",
+      "addr": "120 Stuyvesant Place, 3rd Floor, Staten Island, NY 10301",
+      "note": "A South Shore office at 3845 Richmond Avenue takes appointments only, (347) 308-5018.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182858388",
+          "label": "(718) 285-8388",
+          "external": false
+        }
+      ],
+      "keywords": " job jobs work employment hiring career "
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Workforce1 — all career centers",
+      "what": "Free job placement help in every borough, run by the city. No cost, ever.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page",
+          "label": "Find your center",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career resume interview job placement training grant"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Jobs NYC — city government jobs and hiring halls",
+      "what": "City jobs with benefits, plus in-person hiring halls where you can interview the same day.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/employment",
+          "label": "See open jobs",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career city job civil service hiring hall benefits pension"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Per Scholas — free tech training",
+      "what": "Free 12 to 15 week training in IT support, cybersecurity, cloud and software engineering, with job placement after. No tuition.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://perscholas.org/",
+          "label": "Apply to a course",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career it cybersecurity cloud coding tech training certification free"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Year Up United",
+      "what": "Free year-long training plus a paid corporate internship for adults 18 to 29 with a high school diploma or equivalency.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.yearup.org/",
+          "label": "See if you qualify",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career internship training young adult 18 to 29 paid"
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Department of Veterans' Services",
+      "what": "Housing, benefits, mental health and job help for veterans and their families.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/veterans/index.page",
+          "label": "Veterans services",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career "
+    },
+    {
+      "cat": "jobs",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "CUNY Reconnect — go back to college",
+      "what": "For adults who started college and stopped. CUNY helps you re-enroll, clear old balances and finish the degree.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.cuny.edu/reconnect/",
+          "label": "Re-enroll at CUNY",
+          "external": true
+        }
+      ],
+      "keywords": " job jobs work employment hiring career college degree cuny school back to school financial aid"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Small Business Development Center at York College",
+      "what": "Free one-on-one business counseling in Jamaica. They help you write the business plan, find the money and file the paperwork. No charge.",
+      "addr": "York College, 94-20 Guy R. Brewer Blvd, Jamaica, NY 11451",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.york.cuny.edu/sbdc",
+          "label": "Book a consultant",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182622880",
+          "label": "(718) 262-2880",
+          "external": false
+        }
+      ],
+      "keywords": " business small business entrepreneur business plan free counseling sbdc jamaica queens funding"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Greater Jamaica Development Corporation",
+      "what": "A Community Development Financial Institution based in Jamaica with a revolving loan fund and hands-on technical help for local businesses.",
+      "addr": "90-04 161st Street, Jamaica, NY 11432",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://gjdc.org/",
+          "label": "See their programs",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182910282",
+          "label": "(718) 291-0282",
+          "external": false
+        }
+      ],
+      "keywords": " business small business entrepreneur loan cdfi jamaica queens storefront funding"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "queens",
+        "jamaica"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Queens Economic Development Corporation",
+      "what": "Free business courses, one-on-one help, and small grant programs across Queens. Home-based businesses count too.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.queensny.org/help",
+          "label": "Get business help",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur grant grants classes queens funding"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "Brooklyn Small Business Development Center",
+      "what": "Free one-on-one business counseling in downtown Brooklyn. Business plans, financing and licensing, at no charge.",
+      "addr": "25 Chapel Street, 11th Floor, Brooklyn, NY 11201",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://nysbdc.org/regional-centers/",
+          "label": "Book a consultant",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17187970187",
+          "label": "(718) 797-0187",
+          "external": false
+        }
+      ],
+      "keywords": " business small business entrepreneur "
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "bronx"
+      ],
+      "badge": "Right here in The Bronx",
+      "name": "Bronx Small Business Development Center",
+      "what": "Free business counseling at Lehman College. Help writing the plan, finding financing and getting licensed.",
+      "addr": "Lehman College, 250 Bedford Park Blvd West, Bronx, NY 10468",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://bronx.nysbdc.org/",
+          "label": "Get business help",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur "
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "manhattan"
+      ],
+      "badge": "Right here in Manhattan",
+      "name": "Midtown Manhattan Small Business Development Center",
+      "what": "Free business counseling at Baruch College. Business plans, loan packaging and licensing help at no cost.",
+      "addr": "Baruch College, 55 Lexington Avenue, Room 2-140, New York, NY 10010",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://nysbdc.org/regional-centers/midtown-manhattan-small-business-development-center/",
+          "label": "Book a consultant",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+16463124790",
+          "label": "(646) 312-4790",
+          "external": false
+        }
+      ],
+      "keywords": " business small business entrepreneur "
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "statenisland"
+      ],
+      "badge": "Right here in Staten Island",
+      "name": "Staten Island Small Business Development Center",
+      "what": "Free business counseling at the College of Staten Island. Plans, financing and licensing, no charge.",
+      "addr": "College of Staten Island, 2800 Victory Blvd, Building 3A Room 105, Staten Island, NY 10314",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.sisbdc.org/",
+          "label": "Book a consultant",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17189822560",
+          "label": "(718) 982-2560",
+          "external": false
+        }
+      ],
+      "keywords": " business small business entrepreneur "
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Business — start, run and grow",
+      "what": "The city's business portal. Walks you through licenses, permits, free courses, and connects you to financing.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/nycbusiness/",
+          "label": "Start here",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:311",
+          "label": "Call 311",
+          "external": false
+        }
+      ],
+      "keywords": " business small business entrepreneur license permit register llc open a business"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "SBA funding programs",
+      "what": "Federal loans, microloans, disaster loans and surety bonds. The SBA does not usually lend directly, it guarantees the loan so a bank will say yes.",
+      "addr": null,
+      "note": "Real SBA grants are rare and go to specific programs. Anyone who charges you a fee to get an SBA grant is a scam.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.sba.gov/funding-programs",
+          "label": "See funding",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur sba loan microloan grant funding capital"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "SBA local assistance",
+      "what": "Find the free counselors, mentors and lenders nearest you, including the New York district office.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.sba.gov/local-assistance",
+          "label": "Find local help",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur sba counselor mentor lender district office"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "M/WBE certification",
+      "what": "Certify your business as minority or woman-owned and get access to city contracts set aside for M/WBEs. Free to apply.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/nycbusiness/article/mwbe-certification",
+          "label": "Get certified",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur mwbe minority owned woman owned certification city contracts"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "SCORE New York City",
+      "what": "Free mentoring from retired and working executives. You can meet the same mentor for as long as you need.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://newyorkcity.score.org/",
+          "label": "Get a mentor",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur mentor mentoring free advice business plan"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Pursuit — small business lending",
+      "what": "A nonprofit lender and top SBA lender in New York. Works with owners banks turn down.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://pursuitlending.com/",
+          "label": "See loan options",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur loan lender sba financing capital"
+    },
+    {
+      "cat": "business",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Accion Opportunity Fund",
+      "what": "Nonprofit small business loans and free coaching in English and Spanish, built for owners without perfect credit.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://aofund.org/",
+          "label": "Apply for a loan",
+          "external": true
+        }
+      ],
+      "keywords": " business small business entrepreneur loan microloan bad credit spanish financing"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Roy Wilkins Recreation Center — Jamaica",
+      "what": "Indoor pool, gym and free youth aquatics including Learn to Swim and a youth swim team for ages 6 to 18. Right in South Jamaica.",
+      "addr": "177th Street &amp; Baisley Blvd, Jamaica, NY 11434",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nycgovparks.org/parks/roy-wilkins-recreation-center",
+          "label": "See the center",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young pool swim gym basketball south jamaica rec center"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Queens Public Library — homework help",
+      "what": "Free tutoring and homework help, in person at branches and online. Also free books, computers and wifi.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.queenslibrary.org/programs-activities/homework-help",
+          "label": "Get homework help",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young tutoring tutor homework help reading books computers wifi library"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "Brooklyn Public Library",
+      "what": "Free homework help, after-school programs, English and equivalency classes, public computers and wifi at branches all over Brooklyn.",
+      "addr": "Central Library, 10 Grand Army Plaza, Brooklyn, NY 11238",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.bklynlibrary.org/",
+          "label": "Find a branch",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182302100",
+          "label": "(718) 230-2100",
+          "external": false
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young "
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "bronx",
+        "manhattan",
+        "statenisland"
+      ],
+      "badge": "Bronx, Manhattan &amp; Staten Island",
+      "name": "New York Public Library",
+      "what": "Free homework help, after-school programs, English and equivalency classes, public computers and wifi. Branches across the Bronx, Manhattan and Staten Island.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nypl.org/",
+          "label": "Find a branch",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+119172756975",
+          "label": "(917) 275-6975 — Ask NYPL",
+          "external": false
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young "
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "DiscoverDYCD — find free programs near you",
+      "what": "Search by your address for free after-school, sports, arts, tutoring and summer programs. This is the fastest way to find something for your kid this week.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://discoverdycd.dycdconnect.nyc/search",
+          "label": "Search by address",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118002464646",
+          "label": "1-800-246-4646",
+          "external": false
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young after school afterschool activities sports arts tutoring summer program things to do"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "COMPASS after-school — free, K through 12",
+      "what": "Three hours a day, five days a week, including school holidays. Homework help, STEM, arts and sports. Every NYC student is eligible.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dycd/services/after-school.page",
+          "label": "Find a program",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118002464646",
+          "label": "1-800-246-4646",
+          "external": false
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young after school afterschool homework stem arts sports free program"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Parks recreation centers — free under 25",
+      "what": "Membership is free for anyone under 25 and for seniors. Gyms, indoor pools, classes and open gym time year round.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nycgovparks.org/facilities/recreationcenters/membership",
+          "label": "Join free",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young gym pool rec center membership basketball fitness free"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Free outdoor pools — summer",
+      "what": "Every summer the city opens free outdoor pools in all five boroughs. No membership needed, even at pools next to a rec center.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nycgovparks.org/facilities/outdoor-pools",
+          "label": "Find a pool",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young pool swim swimming summer free"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Learn to Swim — free swim lessons",
+      "what": "Free swim instruction for kids and adults at city pools. Spots fill fast, so sign up the day registration opens.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nycgovparks.org/programs/aquatics/learn-to-swim",
+          "label": "Sign up",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young swim swimming lessons learn to swim pool"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Summer Rising — free summer program",
+      "what": "Free full-day summer program for public school students in kindergarten through 8th grade. Academics in the morning, trips and activities after.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.schools.nyc.gov/enrollment/summer-rising",
+          "label": "Enroll",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young summer camp free summer program trips"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Summer Youth Employment Program (SYEP)",
+      "what": "A paid summer job for ages 14 to 24. The biggest youth jobs program in the country. Applications usually open in the winter for the coming summer.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dycd/services/jobs-internships/summer-youth-employment-program-syep.page",
+          "label": "Apply for SYEP",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118002464646",
+          "label": "1-800-246-4646",
+          "external": false
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young summer job paid teen youth job syep"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "MyCity — child care and 3-K",
+      "what": "Apply for free or low-cost child care and see if you qualify for a voucher. One city account handles it.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://mycity.nyc.gov/",
+          "label": "Apply for child care",
+          "external": true
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young daycare day care child care 3k prek pre-k voucher babysitting"
+    },
+    {
+      "cat": "kids",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Drop-in centers for youth 14 to 24",
+      "what": "Food, clothing, laundry, a shower, counseling and emergency shelter. You do not have to be homeless and you do not need documents.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://access.nyc.gov/programs/runaway-and-homeless-youth-drop-in-centers/",
+          "label": "Find a drop-in center",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118002464646",
+          "label": "1-800-246-4646",
+          "external": false
+        }
+      ],
+      "keywords": " kids kid children child teen teens youth young runaway homeless youth shower laundry teen shelter drop in"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Care — health care for everyone",
+      "what": "Low-cost and no-cost care at NYC Health + Hospitals for New Yorkers who cannot get or afford insurance. No premiums. Immigration status does not matter and is not recorded.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyccare.nyc/",
+          "label": "Enroll in NYC Care",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+116466922273",
+          "label": "1-646-692-2273",
+          "external": false
+        }
+      ],
+      "keywords": " health medical doctor clinic no insurance uninsured undocumented doctor clinic free care"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NY State of Health — insurance marketplace",
+      "what": "Apply for Medicaid, the Essential Plan, Child Health Plus or a subsidized plan. Many New Yorkers pay nothing.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://nystateofhealth.ny.gov/",
+          "label": "Apply for coverage",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118553555777",
+          "label": "1-855-355-5777",
+          "external": false
+        }
+      ],
+      "keywords": " health medical doctor clinic medicaid essential plan child health plus insurance coverage enroll"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Health + Hospitals — find a clinic",
+      "what": "Public hospitals and neighborhood clinics in every borough. They treat you regardless of ability to pay.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nychealthandhospitals.org/locations/",
+          "label": "Find a location",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118446924692",
+          "label": "1-844-692-4692",
+          "external": false
+        }
+      ],
+      "keywords": " health medical doctor clinic hospital clinic doctor emergency room sliding scale"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "988 — mental health and crisis line",
+      "what": "Call or text 988 any time, free and confidential, for you or for someone you are worried about.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://988lifeline.org/",
+          "label": "Learn more",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:988",
+          "label": "Call or text 988",
+          "external": false
+        }
+      ],
+      "keywords": " health medical doctor clinic suicide depression anxiety crisis someone to talk to mental health"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Drug and alcohol help",
+      "what": "Free treatment referrals, free naloxone, and syringe services. No insurance needed.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use.page",
+          "label": "Get help",
+          "external": true
+        }
+      ],
+      "keywords": " health medical doctor clinic drugs alcohol addiction rehab treatment narcan naloxone overdose"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC Aging — help for seniors",
+      "what": "Senior centers, home-delivered meals, caregiver support, elder abuse help and benefits screening for New Yorkers 60 and up.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dfta/index.page",
+          "label": "See senior services",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+12122446469",
+          "label": "(212) 244-6469",
+          "external": false
+        }
+      ],
+      "keywords": " health medical doctor clinic senior seniors elderly meals on wheels senior center caregiver 60"
+    },
+    {
+      "cat": "health",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Mayor's Office for People with Disabilities",
+      "what": "Accessible housing, benefits, transportation and job help for New Yorkers with disabilities.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/mopd/index.page",
+          "label": "Get connected",
+          "external": true
+        }
+      ],
+      "keywords": " health medical doctor clinic "
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Queens Legal Services",
+      "what": "The Queens office of Legal Services NYC. Free civil legal help for Queens residents.",
+      "addr": "89-00 Sutphin Blvd, 5th Floor, Jamaica, NY 11435",
+      "note": "Office line is (347) 592-2200. They work in any language.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.legalservicesnyc.org/boroughs/queens-legal-services/",
+          "label": "Queens office",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19176614500",
+          "label": "(917) 661-4500 — intake",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights free lawyer queens jamaica civil legal help"
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "Brooklyn Legal Services",
+      "what": "Free civil lawyers for Brooklyn residents. Housing, benefits, family, immigration and consumer debt.",
+      "addr": "29 Albany Avenue, 2nd Floor, Brooklyn, NY 11216",
+      "note": "Office line is (718) 237-5500.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.legalservicesnyc.org/boroughs/brooklyn-legal-services/",
+          "label": "Brooklyn office",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19176614500",
+          "label": "(917) 661-4500 — intake",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights "
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "bronx"
+      ],
+      "badge": "Right here in The Bronx",
+      "name": "Bronx Legal Services",
+      "what": "Free civil lawyers for Bronx residents. Eviction, benefits, family, immigration and debt.",
+      "addr": "349 East 149th Street, 10th Floor, Bronx, NY 10451",
+      "note": "Office line is (718) 928-3700.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.legalservicesnyc.org/boroughs/bronx-legal-services/",
+          "label": "Bronx office",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19176614500",
+          "label": "(917) 661-4500 — intake",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights "
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "manhattan"
+      ],
+      "badge": "Right here in Manhattan",
+      "name": "Manhattan Legal Services",
+      "what": "Free civil lawyers for Manhattan residents. Housing, benefits, family, immigration and consumer cases.",
+      "addr": "40 Worth Street, Suite 606, New York, NY 10013",
+      "note": "Office line is (646) 442-3100.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.legalservicesnyc.org/boroughs/manhattan-legal-services/",
+          "label": "Manhattan office",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19176614500",
+          "label": "(917) 661-4500 — intake",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights "
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "statenisland"
+      ],
+      "badge": "Right here in Staten Island",
+      "name": "Staten Island Legal Services",
+      "what": "Free civil lawyers for Staten Island residents. Right across the street from the ferry terminal.",
+      "addr": "36 Richmond Terrace, Suite 205, Staten Island, NY 10301",
+      "note": "Office line is (718) 233-6480.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.legalservicesnyc.org/boroughs/staten-island-legal-services/",
+          "label": "Staten Island office",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19176614500",
+          "label": "(917) 661-4500 — intake",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights "
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Legal Services NYC",
+      "what": "Free civil lawyers for housing, benefits, family, immigration, consumer debt and disability. Offices in all five boroughs.",
+      "addr": null,
+      "note": "Intake line, Monday to Friday, 9:30am to 4pm.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.legalservicesnyc.org/",
+          "label": "Get free legal help",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+19176614500",
+          "label": "(917) 661-4500",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights free lawyer civil legal help housing benefits family debt"
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "The Legal Aid Society",
+      "what": "Free lawyers for civil, criminal and juvenile cases. The helpline points you to the right unit.",
+      "addr": null,
+      "note": "Helpline Monday to Friday, 10am to 3pm.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://legalaidnyc.org/",
+          "label": "Get help",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118886636680",
+          "label": "1-888-663-6680",
+          "external": false
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights free lawyer criminal civil juvenile legal aid"
+    },
+    {
+      "cat": "legal",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "LawHelpNY",
+      "what": "Plain-English answers about your legal problem plus a directory of free legal help near you.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.lawhelpny.org/",
+          "label": "Find legal help",
+          "external": true
+        }
+      ],
+      "keywords": " legal lawyer lawyers attorney court legal aid rights legal question directory free legal help"
+    },
+    {
+      "cat": "immigrants",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "ActionNYC — free immigration legal help",
+      "what": "Free, safe, confidential immigration legal help through trusted community organizations and schools. You need an appointment.",
+      "addr": null,
+      "note": "Monday to Friday, 9am to 6pm. Or call 311 and say ActionNYC.",
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/actionnyc/index.page",
+          "label": "Learn more",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118003540365",
+          "label": "1-800-354-0365",
+          "external": false
+        }
+      ],
+      "keywords": " immigrant immigrants immigration undocumented immigration lawyer daca asylum green card citizenship free consultation"
+    },
+    {
+      "cat": "immigrants",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Mayor's Office of Immigrant Affairs",
+      "what": "Know your rights, find legal help, and see the city services that are open to you no matter your status.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/immigrants/index.page",
+          "label": "See resources",
+          "external": true
+        }
+      ],
+      "keywords": " immigrant immigrants immigration undocumented "
+    },
+    {
+      "cat": "immigrants",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "IDNYC",
+      "what": "Free NYC photo ID for anyone 10 and up. Immigration status does not matter and the city does not share your information.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/idnyc/index.page",
+          "label": "Get an IDNYC",
+          "external": true
+        }
+      ],
+      "keywords": " immigrant immigrants immigration undocumented id identification photo id card idnyc"
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens"
+      ],
+      "badge": "Right here in Jamaica",
+      "name": "Family Justice Center — Queens",
+      "what": "The Queens center, in Kew Gardens. Walk in. You do not need a police report and you do not need to press charges.",
+      "addr": "126-02 82nd Avenue, Kew Gardens, NY 11415",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185754545",
+          "label": "(718) 575-4545",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now domestic violence queens kew gardens survivor order of protection"
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "brooklyn"
+      ],
+      "badge": "Right here in Brooklyn",
+      "name": "Family Justice Center — Brooklyn",
+      "what": "Walk in for counseling, legal help and safety planning after domestic or sexual violence. No police report needed.",
+      "addr": "350 Jay Street, Brooklyn, NY 11201",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17182505113",
+          "label": "(718) 250-5113",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now "
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "bronx"
+      ],
+      "badge": "Right here in The Bronx",
+      "name": "Family Justice Center — The Bronx",
+      "what": "Free, confidential help after domestic or sexual violence. Counseling, legal help, safety planning, interpreters on site.",
+      "addr": "198 East 161st Street, Bronx, NY 10451",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17185081220",
+          "label": "(718) 508-1220",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now "
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "manhattan"
+      ],
+      "badge": "Right here in Manhattan",
+      "name": "Family Justice Center — Manhattan",
+      "what": "Free help after domestic or sexual violence, downtown near the courts. Counseling, legal help and safety planning under one roof.",
+      "addr": "80 Centre Street, New York, NY 10013",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+12126022800",
+          "label": "(212) 602-2800",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now "
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "statenisland"
+      ],
+      "badge": "Right here in Staten Island",
+      "name": "Family Justice Center — Staten Island",
+      "what": "Free, confidential help after domestic or sexual violence. Counseling, legal help and safety planning in St. George.",
+      "addr": "126 Stuyvesant Place, Staten Island, NY 10301",
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page",
+          "label": "Center details",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+17186974300",
+          "label": "(718) 697-4300",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now "
+    },
+    {
+      "cat": "safety",
+      "urgent": true,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "911 — emergency",
+      "what": "You are in danger right now, or someone is hurt.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "tel",
+          "href": "tel:911",
+          "label": "Call 911",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now emergency police ambulance fire"
+    },
+    {
+      "cat": "safety",
+      "urgent": true,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "988 — suicide and crisis lifeline",
+      "what": "Free and confidential, 24 hours. Call or text.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://988lifeline.org/",
+          "label": "Learn more",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:988",
+          "label": "Call or text 988",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now suicide crisis depression mental health text"
+    },
+    {
+      "cat": "safety",
+      "urgent": true,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "NYC 24-hour domestic violence hotline",
+      "what": "Safe, free and confidential, any hour. They help with safety planning and emergency shelter.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/hra/help/domestic-violence-support.page",
+          "label": "More support",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118006214673",
+          "label": "1-800-621-HOPE (4673)",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now domestic violence dv abuse hit partner hotline safety plan"
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Family Justice Centers",
+      "what": "One place for survivors of domestic violence, sexual violence, trafficking and stalking. Counseling, legal help and safety planning, all free. Staff speak more than 30 languages.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page",
+          "label": "Find your center",
+          "external": true
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now domestic violence sexual assault trafficking stalking survivor counseling order of protection"
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "Safe Horizon",
+      "what": "The country's largest victim services nonprofit. Hotlines for domestic violence, crime victims and rape and sexual assault.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.safehorizon.org/get-help/domestic-violence/",
+          "label": "Get support",
+          "external": true
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now domestic violence crime victim rape sexual assault hotline"
+    },
+    {
+      "cat": "safety",
+      "urgent": false,
+      "boro": [
+        "jamaica",
+        "queens",
+        "brooklyn",
+        "manhattan",
+        "bronx",
+        "statenisland"
+      ],
+      "badge": null,
+      "name": "DYCD Youth Connect",
+      "what": "One call connects a young person or a parent to youth programs, shelter, counseling and more. Over 180 languages.",
+      "addr": null,
+      "note": null,
+      "acts": [
+        {
+          "kind": "go",
+          "href": "https://www.nyc.gov/site/dycd/connected/youth-connect1.page",
+          "label": "Learn more",
+          "external": true
+        },
+        {
+          "kind": "tel",
+          "href": "tel:+118002464646",
+          "label": "1-800-246-4646",
+          "external": false
+        }
+      ],
+      "keywords": " safety crisis emergency danger unsafe help now youth programs referral parent teen help line"
+    }
+  ],
+  "tail": "\n    <div id=\"noresults\">\n      <h2>Nothing matched that word.</h2>\n      <p>Try a simpler word &mdash; &ldquo;rent&rdquo; instead of &ldquo;rental arrears&rdquo;, or &ldquo;food&rdquo; instead of &ldquo;groceries&rdquo;. Or clear the search and pick a category above. If you still cannot find it, call 311 or email us at <a href=\"mailto:info@guswithus.org\">info@guswithus.org</a> and we will help you look.</p>\n    </div>\n\n    <section class=\"closer\">\n      <h2>Cannot find what you need?</h2>\n      <p>Call us at <a href=\"tel:+17187755050\">(718) 775-5050</a> or email <a href=\"mailto:info@guswithus.org\">info@guswithus.org</a>. We are at 175-61 Hillside Avenue, Suite 202 in Jamaica. If we do not run it, we will help you find who does.</p>\n      <p>Know a program that belongs on this page? Send it to us. This list grows because people in the neighborhood tell us what is working.</p>\n      <a class=\"btn-green\" href=\"/#donate\">Help us keep this going</a>\n    </section>\n  </div>\n"
+}
