@@ -48,8 +48,9 @@ def render_card(c, section_title):
     for a in c["acts"]:
         if a["kind"] == "go":
             rel = ' target="_blank" rel="noopener noreferrer"' if a["external"] else ""
-            L.append('            <a class="go" href="%s"%s>%s %s</a>'
-                     % (a["href"], rel, a["label"], ARROW))
+            hint = " (opens in new tab)" if a["external"] else ""
+            L.append('            <a class="go" href="%s"%s>%s<span class="sr-only"> for %s%s</span> %s</a>'
+                     % (a["href"], rel, a["label"], c["name"], hint, ARROW))
         else:
             L.append('            <a class="tel" href="%s">%s %s</a>'
                      % (a["href"], PHONE, a["label"]))

@@ -116,7 +116,8 @@ nav.simple a[aria-current="page"]{background:var(--blue-tint);color:var(--blue)}
 .controls{position:sticky;top:70px;z-index:90;background:#fff;border-bottom:1px solid var(--line);padding:16px 0 12px}
 .searchrow{display:flex;gap:10px;align-items:center;margin-bottom:14px}
 .searchrow label{flex:1;position:relative;display:block}
-#q{width:100%;font-family:inherit;font-size:1.05rem;padding:15px 16px 15px 46px;border:2px solid var(--line);border-radius:12px;background:var(--cloud);color:var(--ink)}
+#q{width:100%;font-family:inherit;font-size:1.05rem;padding:15px 16px 15px 46px;border:2px solid #6B7686;border-radius:12px;background:var(--cloud);color:var(--ink)}
+#q::placeholder{color:#5B6472;opacity:1}
 #q:focus{border-color:var(--blue);background:#fff}
 .searchrow svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--ink-soft);pointer-events:none}
 #clear{display:none;font-family:inherit;font-size:.95rem;font-weight:600;padding:14px 18px;border:2px solid var(--line);background:#fff;color:var(--blue-ink);border-radius:12px;cursor:pointer}
@@ -129,6 +130,7 @@ nav.simple a[aria-current="page"]{background:var(--blue-tint);color:var(--blue)}
 .chip[aria-pressed="true"],.chip[aria-current]{background:var(--blue);border-color:var(--blue);color:#fff}
 .chips.boro .chip[aria-pressed="true"],.chips.boro .chip[aria-current]{background:var(--green-dark);border-color:var(--green-dark)}
 .chip .cnt{opacity:.65;font-weight:500;font-size:.85em;margin-left:5px}
+.chip[aria-pressed="true"] .cnt,.chip[aria-current] .cnt{opacity:1}
 #tally{font-size:.9rem;color:var(--ink-soft);padding-top:2px}
 #tally b{color:var(--blue-ink)}
 
@@ -339,7 +341,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">That is us. Tutoring, clothing, financial literacy, sports and job readiness for young people ages 8 to 24 in Jamaica and South Jamaica.</p>
           <p class="addr">175-61 Hillside Avenue, Suite 202, Jamaica, NY 11432</p>
           <div class="acts">
-            <a class="go" href="/#programs">See our programs <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="/#programs">See our programs<span class="sr-only"> for GUS — Growth, Unity &amp; Success</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17187755050"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 775-5050</a>
           </div>
         </article>
@@ -348,14 +350,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Answer a few questions and it shows you every city, state and federal benefit you can get. Takes about 10 minutes. No account, no name, nothing saved.</p>
           <p class="note">Also in Spanish, Chinese, Bengali, Russian, Haitian Creole, Korean, Arabic, Urdu, French and Polish.</p>
           <div class="acts">
-            <a class="go" href="https://access.nyc.gov/" target="_blank" rel="noopener noreferrer">Start the screener <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://access.nyc.gov/" target="_blank" rel="noopener noreferrer">Start the screener<span class="sr-only"> for ACCESS NYC — check what you qualify for (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="start" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="access hra — the application itself one form applies you for snap (food stamps), cash assistance and medicaid at the same time.   start here jamaica queens brooklyn manhattan bronx statenisland help where do i start begin ">
           <h3>ACCESS HRA — the application itself</h3>
           <p class="what">One form applies you for SNAP (food stamps), Cash Assistance and Medicaid at the same time.</p>
           <div class="acts">
-            <a class="go" href="https://a069-access.nyc.gov/accesshra/" target="_blank" rel="noopener noreferrer">Apply now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://a069-access.nyc.gov/accesshra/" target="_blank" rel="noopener noreferrer">Apply now<span class="sr-only"> for ACCESS HRA — the application itself (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399 — HRA Infoline</a>
           </div>
         </article>
@@ -363,7 +365,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYC 311</h3>
           <p class="what">The city's help line for anything you cannot find here. Free, 24 hours, over 175 languages.</p>
           <div class="acts">
-            <a class="go" href="https://portal.311.nyc.gov/" target="_blank" rel="noopener noreferrer">Open 311 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://portal.311.nyc.gov/" target="_blank" rel="noopener noreferrer">Open 311<span class="sr-only"> for NYC 311 (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:311"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call 311</a>
           </div>
         </article>
@@ -379,7 +381,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="addr">89-11 Lefferts Blvd, Richmond Hill, NY 11418</p>
           <p class="note">Wednesdays serve seniors and people with disabilities. Saturdays serve everyone. Call to confirm hours.</p>
           <div class="acts">
-            <a class="go" href="https://www.river.fund/onsite-pantry" target="_blank" rel="noopener noreferrer">See pantry days <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.river.fund/onsite-pantry" target="_blank" rel="noopener noreferrer">See pantry days<span class="sr-only"> for The River Fund New York (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17184411125"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 441-1125</a>
           </div>
         </article>
@@ -388,7 +390,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Monthly money on a card for groceries. If you qualify for emergency processing you can get benefits in about 5 days.</p>
           <p class="note">Not sure if you qualify? Check first at access.nyc.gov.</p>
           <div class="acts">
-            <a class="go" href="https://a069-access.nyc.gov/accesshra/" target="_blank" rel="noopener noreferrer">Apply now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://a069-access.nyc.gov/accesshra/" target="_blank" rel="noopener noreferrer">Apply now<span class="sr-only"> for SNAP (food stamps) (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399</a>
           </div>
         </article>
@@ -397,28 +399,28 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Shows the food pantries closest to you and lets you reserve a slot so you are not standing in line.</p>
           <p class="note">No smartphone? Text the word FOOD to 726879 from any phone.</p>
           <div class="acts">
-            <a class="go" href="https://www.plentiful.org/" target="_blank" rel="noopener noreferrer">Find a pantry <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.plentiful.org/" target="_blank" rel="noopener noreferrer">Find a pantry<span class="sr-only"> for Plentiful — find a pantry and book a time (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="food" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="food bank for new york city nearly 800 pantries, soup kitchens and mobile pantries across the five boroughs. search by your zip code.   food jamaica queens brooklyn manhattan bronx statenisland food hungry hunger groceries grocery eat feed my family pantry soup kitchen mobile pantry zip code">
           <h3>Food Bank For New York City</h3>
           <p class="what">Nearly 800 pantries, soup kitchens and mobile pantries across the five boroughs. Search by your ZIP code.</p>
           <div class="acts">
-            <a class="go" href="https://www.foodbanknyc.org/get-help/" target="_blank" rel="noopener noreferrer">Search by ZIP <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.foodbanknyc.org/get-help/" target="_blank" rel="noopener noreferrer">Search by ZIP<span class="sr-only"> for Food Bank For New York City (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="food" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="hra food assistance — pantries, meals and more the city&#x27;s own list of emergency food programs, plus how to get help applying for snap.   food jamaica queens brooklyn manhattan bronx statenisland food hungry hunger groceries grocery eat feed my family pantry soup kitchen emergency food meals">
           <h3>HRA food assistance — pantries, meals and more</h3>
           <p class="what">The city's own list of emergency food programs, plus how to get help applying for SNAP.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/help/food-assistance.page" target="_blank" rel="noopener noreferrer">See food help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/help/food-assistance.page" target="_blank" rel="noopener noreferrer">See food help<span class="sr-only"> for HRA food assistance — pantries, meals and more (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="food" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="wic — food for pregnant women, babies and kids under 5 free healthy food, formula, breastfeeding support and health referrals. you can qualify even if you work.   food jamaica queens brooklyn manhattan bronx statenisland food hungry hunger groceries grocery eat feed my family wic pregnant baby formula infant breastfeeding">
           <h3>WIC — food for pregnant women, babies and kids under 5</h3>
           <p class="what">Free healthy food, formula, breastfeeding support and health referrals. You can qualify even if you work.</p>
           <div class="acts">
-            <a class="go" href="https://www.health.ny.gov/prevention/nutrition/wic/" target="_blank" rel="noopener noreferrer">Apply for WIC <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.health.ny.gov/prevention/nutrition/wic/" target="_blank" rel="noopener noreferrer">Apply for WIC<span class="sr-only"> for WIC — food for pregnant women, babies and kids under 5 (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118005225006"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-522-5006</a>
           </div>
         </article>
@@ -426,7 +428,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Free school meals</h3>
           <p class="what">Breakfast and lunch are free for every NYC public school student. No form, no income check.</p>
           <div class="acts">
-            <a class="go" href="https://www.schools.nyc.gov/school-life/food/school-meals" target="_blank" rel="noopener noreferrer">How it works <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.schools.nyc.gov/school-life/food/school-meals" target="_blank" rel="noopener noreferrer">How it works<span class="sr-only"> for Free school meals (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -440,7 +442,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">The Homebase office that covers Jamaica and the rest of Queens. Run by Catholic Charities Brooklyn and Queens.</p>
           <p class="addr">161-10 Jamaica Avenue, 5th Floor, Jamaica, NY 11432</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/help/homebase.page" target="_blank" rel="noopener noreferrer">Homebase info <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/help/homebase.page" target="_blank" rel="noopener noreferrer">Homebase info<span class="sr-only"> for Homebase Queens — Jamaica office (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17186741000"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 674-1000</a>
           </div>
         </article>
@@ -449,14 +451,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Free help with back rent, landlord problems, and one-time emergency money to keep you in your apartment. Go here before you lose the place.</p>
           <p class="note">There is a Homebase office in every borough.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/help/homebase.page" target="_blank" rel="noopener noreferrer">Find your office <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/help/homebase.page" target="_blank" rel="noopener noreferrer">Find your office<span class="sr-only"> for Homebase — stop an eviction before it happens (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="housing" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="evictionfreenyc — free lawyer for eviction if you got court papers, you have a right to a free lawyer in every nyc zip code. immigration status does not matter.   housing and shelter jamaica queens brooklyn manhattan bronx statenisland housing home apartment place to live eviction evicted court papers marshal lockout housing court lawyer">
           <h3>EvictionFreeNYC — free lawyer for eviction</h3>
           <p class="what">If you got court papers, you have a right to a free lawyer in every NYC ZIP code. Immigration status does not matter.</p>
           <div class="acts">
-            <a class="go" href="https://www.evictionfreenyc.org/" target="_blank" rel="noopener noreferrer">Get a lawyer <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.evictionfreenyc.org/" target="_blank" rel="noopener noreferrer">Get a lawyer<span class="sr-only"> for EvictionFreeNYC — free lawyer for eviction (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571379"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1379</a>
           </div>
         </article>
@@ -464,7 +466,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>One-Shot Deal — emergency money for rent</h3>
           <p class="what">A one-time grant for back rent, a security deposit, movers, or a utility shutoff. Apply through ACCESS HRA.</p>
           <div class="acts">
-            <a class="go" href="https://access.nyc.gov/programs/one-shot-deal/" target="_blank" rel="noopener noreferrer">How to apply <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://access.nyc.gov/programs/one-shot-deal/" target="_blank" rel="noopener noreferrer">How to apply<span class="sr-only"> for One-Shot Deal — emergency money for rent (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399</a>
           </div>
         </article>
@@ -473,7 +475,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Intake is open 24 hours. Men: 8 East 3rd St, Manhattan. Women: 114 Snediker Ave, Brooklyn or 1122 Franklin Ave, Bronx. Adult families: 333 Bowery, Manhattan. Families with children: PATH, 151 East 151st St, Bronx.</p>
           <p class="note">These addresses changed in August 2026. Call 311 to confirm before you travel.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dhs/shelter/shelter.page" target="_blank" rel="noopener noreferrer">Shelter info <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dhs/shelter/shelter.page" target="_blank" rel="noopener noreferrer">Shelter info<span class="sr-only"> for Enter shelter tonight (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:311"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call 311 first</a>
           </div>
         </article>
@@ -481,7 +483,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Housing Court Answers</h3>
           <p class="what">Free advice line if you are behind on rent, in Housing Court, or facing a lockout. They explain what the papers mean.</p>
           <div class="acts">
-            <a class="go" href="https://housingcourtanswers.org/" target="_blank" rel="noopener noreferrer">Get answers <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://housingcourtanswers.org/" target="_blank" rel="noopener noreferrer">Get answers<span class="sr-only"> for Housing Court Answers (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+12129624795"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (212) 962-4795</a>
           </div>
         </article>
@@ -490,21 +492,21 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">The city's official list of income-restricted apartments. Free to apply. Set up one profile and enter as many lotteries as you want.</p>
           <p class="note">There is never a fee for an HPD or HDC housing application. Anyone charging you is a scam.</p>
           <div class="acts">
-            <a class="go" href="https://housingconnect.nyc.gov/PublicWeb/" target="_blank" rel="noopener noreferrer">Apply to lotteries <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://housingconnect.nyc.gov/PublicWeb/" target="_blank" rel="noopener noreferrer">Apply to lotteries<span class="sr-only"> for NYC Housing Connect — affordable apartment lottery (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="housing" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="nycha — public housing and section 8 apply for public housing and check where you stand on the waitlist.   housing and shelter jamaica queens brooklyn manhattan bronx statenisland housing home apartment place to live nycha projects public housing section 8 waitlist voucher">
           <h3>NYCHA — public housing and Section 8</h3>
           <p class="what">Apply for public housing and check where you stand on the waitlist.</p>
           <div class="acts">
-            <a class="go" href="https://selfserve.nycha.info/" target="_blank" rel="noopener noreferrer">Apply or check status <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://selfserve.nycha.info/" target="_blank" rel="noopener noreferrer">Apply or check status<span class="sr-only"> for NYCHA — public housing and Section 8 (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="housing" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="hpd eviction prevention the city&#x27;s guide to your rights as a tenant, repairs, harassment and rent arrears help.   housing and shelter jamaica queens brooklyn manhattan bronx statenisland housing home apartment place to live repairs heat no heat harassment landlord tenant rights eviction">
           <h3>HPD eviction prevention</h3>
           <p class="what">The city's guide to your rights as a tenant, repairs, harassment and rent arrears help.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hpd/services-and-information/eviction-prevention.page" target="_blank" rel="noopener noreferrer">Know your rights <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hpd/services-and-information/eviction-prevention.page" target="_blank" rel="noopener noreferrer">Know your rights<span class="sr-only"> for HPD eviction prevention (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="housing" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="cityfheps — rental assistance voucher a city voucher that pays most of your rent every month. for people in shelter or at risk of losing their home. homebase can help you apply. start there if you are not in shelter yet.  housing and shelter jamaica queens brooklyn manhattan bronx statenisland housing home apartment place to live rental assistance voucher rent voucher help paying rent cityfheps">
@@ -512,7 +514,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">A city voucher that pays most of your rent every month. For people in shelter or at risk of losing their home.</p>
           <p class="note">Homebase can help you apply. Start there if you are not in shelter yet.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/help/cityfheps.page" target="_blank" rel="noopener noreferrer">See if you qualify <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/help/cityfheps.page" target="_blank" rel="noopener noreferrer">See if you qualify<span class="sr-only"> for CityFHEPS — rental assistance voucher (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399</a>
           </div>
         </article>
@@ -525,7 +527,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Cash Assistance</h3>
           <p class="what">Monthly cash for rent, food and basics if you have little or no income. Same application as SNAP.</p>
           <div class="acts">
-            <a class="go" href="https://a069-access.nyc.gov/accesshra/" target="_blank" rel="noopener noreferrer">Apply now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://a069-access.nyc.gov/accesshra/" target="_blank" rel="noopener noreferrer">Apply now<span class="sr-only"> for Cash Assistance (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399</a>
           </div>
         </article>
@@ -534,14 +536,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Half off subway, eligible buses and Access-A-Ride. Open to New Yorkers 16 to 84 at or below 145% of the federal poverty line.</p>
           <p class="note">Fair Fares now issues OMNY cards instead of MetroCards.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/fairfares/index.page" target="_blank" rel="noopener noreferrer">Apply for Fair Fares <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/fairfares/index.page" target="_blank" rel="noopener noreferrer">Apply for Fair Fares<span class="sr-only"> for Fair Fares NYC — half-price subway and bus (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="money" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="nyc free tax prep file your taxes free with an irs-certified preparer and keep the whole refund. roughly $68,000 or less filing single, $97,000 or less with family.   money and bills jamaica queens brooklyn manhattan bronx statenisland money bills benefits broke income taxes tax refund vita irs free tax filing w2 eitc">
           <h3>NYC Free Tax Prep</h3>
           <p class="what">File your taxes free with an IRS-certified preparer and keep the whole refund. Roughly $68,000 or less filing single, $97,000 or less with family.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dca/consumers/file-your-taxes.page" target="_blank" rel="noopener noreferrer">Book free tax prep <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dca/consumers/file-your-taxes.page" target="_blank" rel="noopener noreferrer">Book free tax prep<span class="sr-only"> for NYC Free Tax Prep (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:311"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call 311</a>
           </div>
         </article>
@@ -549,7 +551,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Financial Empowerment Centers — free money counseling</h3>
           <p class="what">Sit down one-on-one with a counselor about debt, credit, budgeting or opening a bank account. Free, in every borough, no matter your income.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dca/consumers/get-free-financial-counseling.page" target="_blank" rel="noopener noreferrer">Book a session <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dca/consumers/get-free-financial-counseling.page" target="_blank" rel="noopener noreferrer">Book a session<span class="sr-only"> for Financial Empowerment Centers — free money counseling (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:311"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call 311</a>
           </div>
         </article>
@@ -558,7 +560,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Pays part of your heating or cooling bill, and can fix or replace a broken furnace or air conditioner. Money goes straight to the utility.</p>
           <p class="note">Application windows open and close each season. Call to check what is open now.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/help/energy-assistance.page" target="_blank" rel="noopener noreferrer">Apply for HEAP <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/help/energy-assistance.page" target="_blank" rel="noopener noreferrer">Apply for HEAP<span class="sr-only"> for HEAP — heating and cooling bill help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399</a>
           </div>
         </article>
@@ -566,21 +568,21 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Con Edison payment help</h3>
           <p class="what">Set up a payment agreement, stop a shutoff, or apply for bill credits.</p>
           <div class="acts">
-            <a class="go" href="https://www.coned.com/en/accounts-billing/payment-plans-assistance" target="_blank" rel="noopener noreferrer">Set up a plan <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.coned.com/en/accounts-billing/payment-plans-assistance" target="_blank" rel="noopener noreferrer">Set up a plan<span class="sr-only"> for Con Edison payment help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="money" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="idnyc — free photo id a free government photo id for anyone 10 and up living in nyc. immigration status does not matter. gets you into banks, clinics, schools and museums.   money and bills jamaica queens brooklyn manhattan bronx statenisland money bills benefits broke income id identification photo id card idnyc">
           <h3>IDNYC — free photo ID</h3>
           <p class="what">A free government photo ID for anyone 10 and up living in NYC. Immigration status does not matter. Gets you into banks, clinics, schools and museums.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/idnyc/index.page" target="_blank" rel="noopener noreferrer">Get an IDNYC <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/idnyc/index.page" target="_blank" rel="noopener noreferrer">Get an IDNYC<span class="sr-only"> for IDNYC — free photo ID (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="money" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="hra job centers and snap centers where to go in person for cash assistance, snap and medicaid if you cannot do it online. there are centers in every borough.   money and bills jamaica queens brooklyn manhattan bronx statenisland money bills benefits broke income in person office snap center job center walk in">
           <h3>HRA Job Centers and SNAP Centers</h3>
           <p class="what">Where to go in person for Cash Assistance, SNAP and Medicaid if you cannot do it online. There are centers in every borough.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/locations/job-locations.page" target="_blank" rel="noopener noreferrer">Find a center <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/locations/job-locations.page" target="_blank" rel="noopener noreferrer">Find a center<span class="sr-only"> for HRA Job Centers and SNAP Centers (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185571399"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-1399</a>
           </div>
         </article>
@@ -588,7 +590,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Social Security, SSI and disability</h3>
           <p class="what">Apply for retirement, SSI or disability benefits. You can start the application online and finish by phone.</p>
           <div class="acts">
-            <a class="go" href="https://www.ssa.gov/apply" target="_blank" rel="noopener noreferrer">Apply for benefits <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.ssa.gov/apply" target="_blank" rel="noopener noreferrer">Apply for benefits<span class="sr-only"> for Social Security, SSI and disability (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118007721213"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-772-1213</a>
           </div>
         </article>
@@ -596,7 +598,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>National Grid bill help</h3>
           <p class="what">Payment plans, budget billing and low-income discounts if your gas bill is behind.</p>
           <div class="acts">
-            <a class="go" href="https://www.nationalgridus.com/NY-Home/Bill-Help/" target="_blank" rel="noopener noreferrer">Get bill help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nationalgridus.com/NY-Home/Bill-Help/" target="_blank" rel="noopener noreferrer">Get bill help<span class="sr-only"> for National Grid bill help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -609,7 +611,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">File the week you lose your job. Do not wait. You file once, then certify every week to get paid.</p>
           <p class="note">Telephone Claims Center, Monday to Friday 8am to 5pm. Press 9 for an interpreter.</p>
           <div class="acts">
-            <a class="go" href="https://unemployment.labor.ny.gov/" target="_blank" rel="noopener noreferrer">File your claim <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://unemployment.labor.ny.gov/" target="_blank" rel="noopener noreferrer">File your claim<span class="sr-only"> for File an unemployment claim (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118882098124"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-888-209-8124</a>
           </div>
         </article>
@@ -617,14 +619,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Certify weekly for your benefit</h3>
           <p class="what">You have to certify every single week or you do not get paid, even after you are approved.</p>
           <div class="acts">
-            <a class="go" href="https://dol.ny.gov/unemployment/certify-weekly-unemployment-insurance-benefits" target="_blank" rel="noopener noreferrer">Certify now <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://dol.ny.gov/unemployment/certify-weekly-unemployment-insurance-benefits" target="_blank" rel="noopener noreferrer">Certify now<span class="sr-only"> for Certify weekly for your benefit (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="unemployment" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="problem with your claim denied, stuck, overpaid, or waiting too long. this is where you push back and where you appeal.   unemployment jamaica queens brooklyn manhattan bronx statenisland unemployment jobless benefits claim denied appeal overpaid stuck waiting hearing">
           <h3>Problem with your claim</h3>
           <p class="what">Denied, stuck, overpaid, or waiting too long. This is where you push back and where you appeal.</p>
           <div class="acts">
-            <a class="go" href="https://dol.ny.gov/unemployment/unemployment-insurance-assistance" target="_blank" rel="noopener noreferrer">Get claim help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://dol.ny.gov/unemployment/unemployment-insurance-assistance" target="_blank" rel="noopener noreferrer">Get claim help<span class="sr-only"> for Problem with your claim (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118882098124"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-888-209-8124</a>
           </div>
         </article>
@@ -640,7 +642,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="addr">168-25 Jamaica Avenue, 2nd Floor, Jamaica, NY 11432</p>
           <p class="note">Generally Monday to Friday, 9am to 5pm. Call before you go.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page" target="_blank" rel="noopener noreferrer">Center details <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page" target="_blank" rel="noopener noreferrer">Center details<span class="sr-only"> for Workforce1 Queens Career Center (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185576755"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 557-6755</a>
           </div>
         </article>
@@ -649,7 +651,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYS Queens Career Center</h3>
           <p class="what">The state's own career center for Queens. Job listings, veterans services and help with your unemployment claim in person.</p>
           <div class="acts">
-            <a class="go" href="https://dol.ny.gov/location/queens-career-center" target="_blank" rel="noopener noreferrer">Center details <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://dol.ny.gov/location/queens-career-center" target="_blank" rel="noopener noreferrer">Center details<span class="sr-only"> for NYS Queens Career Center (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens" data-s="queens public library — adult learning centers free english classes, high school equivalency prep, computer classes and job search help. the central library in jamaica has public computers you can use.  central library, 89-11 merrick blvd, jamaica, ny 11432 jobs and training jamaica queens job jobs work employment hiring career esl english classes ged hse computer class library public computer wifi">
@@ -658,7 +660,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Free English classes, high school equivalency prep, computer classes and job search help. The Central Library in Jamaica has public computers you can use.</p>
           <p class="addr">Central Library, 89-11 Merrick Blvd, Jamaica, NY 11432</p>
           <div class="acts">
-            <a class="go" href="https://www.queenslibrary.org/programs-activities/adult-learners" target="_blank" rel="noopener noreferrer">See classes <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.queenslibrary.org/programs-activities/adult-learners" target="_blank" rel="noopener noreferrer">See classes<span class="sr-only"> for Queens Public Library — Adult Learning Centers (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="queens" data-s="the fortune society — re-entry support housing, jobs, education and legal help for people coming home from prison or jail. based in long island city, serving all of nyc.   jobs and training queens job jobs work employment hiring career reentry re-entry prison jail parole probation record felony second chance">
@@ -666,49 +668,49 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>The Fortune Society — re-entry support</h3>
           <p class="what">Housing, jobs, education and legal help for people coming home from prison or jail. Based in Long Island City, serving all of NYC.</p>
           <div class="acts">
-            <a class="go" href="https://fortunesociety.org/" target="_blank" rel="noopener noreferrer">Get re-entry help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://fortunesociety.org/" target="_blank" rel="noopener noreferrer">Get re-entry help<span class="sr-only"> for The Fortune Society — re-entry support (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="workforce1 — all career centers free job placement help in every borough, run by the city. no cost, ever.   jobs and training jamaica queens brooklyn manhattan bronx statenisland job jobs work employment hiring career resume interview job placement training grant">
           <h3>Workforce1 — all career centers</h3>
           <p class="what">Free job placement help in every borough, run by the city. No cost, ever.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page" target="_blank" rel="noopener noreferrer">Find your center <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/sbs/careers/wf1-career-centers.page" target="_blank" rel="noopener noreferrer">Find your center<span class="sr-only"> for Workforce1 — all career centers (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="jobs nyc — city government jobs and hiring halls city jobs with benefits, plus in-person hiring halls where you can interview the same day.   jobs and training jamaica queens brooklyn manhattan bronx statenisland job jobs work employment hiring career city job civil service hiring hall benefits pension">
           <h3>Jobs NYC — city government jobs and hiring halls</h3>
           <p class="what">City jobs with benefits, plus in-person hiring halls where you can interview the same day.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/employment" target="_blank" rel="noopener noreferrer">See open jobs <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/employment" target="_blank" rel="noopener noreferrer">See open jobs<span class="sr-only"> for Jobs NYC — city government jobs and hiring halls (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="per scholas — free tech training free 12 to 15 week training in it support, cybersecurity, cloud and software engineering, with job placement after. no tuition.   jobs and training jamaica queens brooklyn manhattan bronx statenisland job jobs work employment hiring career it cybersecurity cloud coding tech training certification free">
           <h3>Per Scholas — free tech training</h3>
           <p class="what">Free 12 to 15 week training in IT support, cybersecurity, cloud and software engineering, with job placement after. No tuition.</p>
           <div class="acts">
-            <a class="go" href="https://perscholas.org/" target="_blank" rel="noopener noreferrer">Apply to a course <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://perscholas.org/" target="_blank" rel="noopener noreferrer">Apply to a course<span class="sr-only"> for Per Scholas — free tech training (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="year up united free year-long training plus a paid corporate internship for adults 18 to 29 with a high school diploma or equivalency.   jobs and training jamaica queens brooklyn manhattan bronx statenisland job jobs work employment hiring career internship training young adult 18 to 29 paid">
           <h3>Year Up United</h3>
           <p class="what">Free year-long training plus a paid corporate internship for adults 18 to 29 with a high school diploma or equivalency.</p>
           <div class="acts">
-            <a class="go" href="https://www.yearup.org/" target="_blank" rel="noopener noreferrer">See if you qualify <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.yearup.org/" target="_blank" rel="noopener noreferrer">See if you qualify<span class="sr-only"> for Year Up United (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="nyc department of veterans&#x27; services housing, benefits, mental health and job help for veterans and their families.   jobs and training jamaica queens brooklyn manhattan bronx statenisland job jobs work employment hiring career ">
           <h3>NYC Department of Veterans' Services</h3>
           <p class="what">Housing, benefits, mental health and job help for veterans and their families.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/veterans/index.page" target="_blank" rel="noopener noreferrer">Veterans services <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/veterans/index.page" target="_blank" rel="noopener noreferrer">Veterans services<span class="sr-only"> for NYC Department of Veterans' Services (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="jobs" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="cuny reconnect — go back to college for adults who started college and stopped. cuny helps you re-enroll, clear old balances and finish the degree.   jobs and training jamaica queens brooklyn manhattan bronx statenisland job jobs work employment hiring career college degree cuny school back to school financial aid">
           <h3>CUNY Reconnect — go back to college</h3>
           <p class="what">For adults who started college and stopped. CUNY helps you re-enroll, clear old balances and finish the degree.</p>
           <div class="acts">
-            <a class="go" href="https://www.cuny.edu/reconnect/" target="_blank" rel="noopener noreferrer">Re-enroll at CUNY <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.cuny.edu/reconnect/" target="_blank" rel="noopener noreferrer">Re-enroll at CUNY<span class="sr-only"> for CUNY Reconnect — go back to college (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -722,7 +724,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Free one-on-one business counseling in Jamaica. They help you write the business plan, find the money and file the paperwork. No charge.</p>
           <p class="addr">York College, 94-20 Guy R. Brewer Blvd, Jamaica, NY 11451</p>
           <div class="acts">
-            <a class="go" href="https://www.york.cuny.edu/sbdc" target="_blank" rel="noopener noreferrer">Book a consultant <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.york.cuny.edu/sbdc" target="_blank" rel="noopener noreferrer">Book a consultant<span class="sr-only"> for Small Business Development Center at York College (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17182622880"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 262-2880</a>
           </div>
         </article>
@@ -732,7 +734,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">A Community Development Financial Institution based in Jamaica with a revolving loan fund and hands-on technical help for local businesses.</p>
           <p class="addr">90-04 161st Street, Jamaica, NY 11432</p>
           <div class="acts">
-            <a class="go" href="https://gjdc.org/" target="_blank" rel="noopener noreferrer">See their programs <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://gjdc.org/" target="_blank" rel="noopener noreferrer">See their programs<span class="sr-only"> for Greater Jamaica Development Corporation (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17182910282"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 291-0282</a>
           </div>
         </article>
@@ -741,14 +743,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Queens Economic Development Corporation</h3>
           <p class="what">Free business courses, one-on-one help, and small grant programs across Queens. Home-based businesses count too.</p>
           <div class="acts">
-            <a class="go" href="https://www.queensny.org/help" target="_blank" rel="noopener noreferrer">Get business help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.queensny.org/help" target="_blank" rel="noopener noreferrer">Get business help<span class="sr-only"> for Queens Economic Development Corporation (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="nyc business — start, run and grow the city&#x27;s business portal. walks you through licenses, permits, free courses, and connects you to financing.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur license permit register llc open a business">
           <h3>NYC Business — start, run and grow</h3>
           <p class="what">The city's business portal. Walks you through licenses, permits, free courses, and connects you to financing.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/nycbusiness/" target="_blank" rel="noopener noreferrer">Start here <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/nycbusiness/" target="_blank" rel="noopener noreferrer">Start here<span class="sr-only"> for NYC Business — start, run and grow (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:311"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call 311</a>
           </div>
         </article>
@@ -757,42 +759,42 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Federal loans, microloans, disaster loans and surety bonds. The SBA does not usually lend directly, it guarantees the loan so a bank will say yes.</p>
           <p class="note">Real SBA grants are rare and go to specific programs. Anyone who charges you a fee to get an SBA grant is a scam.</p>
           <div class="acts">
-            <a class="go" href="https://www.sba.gov/funding-programs" target="_blank" rel="noopener noreferrer">See funding <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.sba.gov/funding-programs" target="_blank" rel="noopener noreferrer">See funding<span class="sr-only"> for SBA funding programs (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="sba local assistance find the free counselors, mentors and lenders nearest you, including the new york district office.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur sba counselor mentor lender district office">
           <h3>SBA local assistance</h3>
           <p class="what">Find the free counselors, mentors and lenders nearest you, including the New York district office.</p>
           <div class="acts">
-            <a class="go" href="https://www.sba.gov/local-assistance" target="_blank" rel="noopener noreferrer">Find local help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.sba.gov/local-assistance" target="_blank" rel="noopener noreferrer">Find local help<span class="sr-only"> for SBA local assistance (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="m/wbe certification certify your business as minority or woman-owned and get access to city contracts set aside for m/wbes. free to apply.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur mwbe minority owned woman owned certification city contracts">
           <h3>M/WBE certification</h3>
           <p class="what">Certify your business as minority or woman-owned and get access to city contracts set aside for M/WBEs. Free to apply.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/nycbusiness/article/mwbe-certification" target="_blank" rel="noopener noreferrer">Get certified <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/nycbusiness/article/mwbe-certification" target="_blank" rel="noopener noreferrer">Get certified<span class="sr-only"> for M/WBE certification (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="score new york city free mentoring from retired and working executives. you can meet the same mentor for as long as you need.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur mentor mentoring free advice business plan">
           <h3>SCORE New York City</h3>
           <p class="what">Free mentoring from retired and working executives. You can meet the same mentor for as long as you need.</p>
           <div class="acts">
-            <a class="go" href="https://newyorkcity.score.org/" target="_blank" rel="noopener noreferrer">Get a mentor <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://newyorkcity.score.org/" target="_blank" rel="noopener noreferrer">Get a mentor<span class="sr-only"> for SCORE New York City (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="pursuit — small business lending a nonprofit lender and top sba lender in new york. works with owners banks turn down.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur loan lender sba financing capital">
           <h3>Pursuit — small business lending</h3>
           <p class="what">A nonprofit lender and top SBA lender in New York. Works with owners banks turn down.</p>
           <div class="acts">
-            <a class="go" href="https://pursuitlending.com/" target="_blank" rel="noopener noreferrer">See loan options <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://pursuitlending.com/" target="_blank" rel="noopener noreferrer">See loan options<span class="sr-only"> for Pursuit — small business lending (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="accion opportunity fund nonprofit small business loans and free coaching in english and spanish, built for owners without perfect credit.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur loan microloan bad credit spanish financing">
           <h3>Accion Opportunity Fund</h3>
           <p class="what">Nonprofit small business loans and free coaching in English and Spanish, built for owners without perfect credit.</p>
           <div class="acts">
-            <a class="go" href="https://aofund.org/" target="_blank" rel="noopener noreferrer">Apply for a loan <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://aofund.org/" target="_blank" rel="noopener noreferrer">Apply for a loan<span class="sr-only"> for Accion Opportunity Fund (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -806,7 +808,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Indoor pool, gym and free youth aquatics including Learn to Swim and a youth swim team for ages 6 to 18. Right in South Jamaica.</p>
           <p class="addr">177th Street &amp; Baisley Blvd, Jamaica, NY 11434</p>
           <div class="acts">
-            <a class="go" href="https://www.nycgovparks.org/parks/roy-wilkins-recreation-center" target="_blank" rel="noopener noreferrer">See the center <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nycgovparks.org/parks/roy-wilkins-recreation-center" target="_blank" rel="noopener noreferrer">See the center<span class="sr-only"> for Roy Wilkins Recreation Center — Jamaica (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens" data-s="queens public library — homework help free tutoring and homework help, in person at branches and online. also free books, computers and wifi.   kids and teens jamaica queens kids kid children child teen teens youth young tutoring tutor homework help reading books computers wifi library">
@@ -814,14 +816,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Queens Public Library — homework help</h3>
           <p class="what">Free tutoring and homework help, in person at branches and online. Also free books, computers and wifi.</p>
           <div class="acts">
-            <a class="go" href="https://www.queenslibrary.org/programs-activities/homework-help" target="_blank" rel="noopener noreferrer">Get homework help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.queenslibrary.org/programs-activities/homework-help" target="_blank" rel="noopener noreferrer">Get homework help<span class="sr-only"> for Queens Public Library — homework help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="discoverdycd — find free programs near you search by your address for free after-school, sports, arts, tutoring and summer programs. this is the fastest way to find something for your kid this week.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young after school afterschool activities sports arts tutoring summer program things to do">
           <h3>DiscoverDYCD — find free programs near you</h3>
           <p class="what">Search by your address for free after-school, sports, arts, tutoring and summer programs. This is the fastest way to find something for your kid this week.</p>
           <div class="acts">
-            <a class="go" href="https://discoverdycd.dycdconnect.nyc/search" target="_blank" rel="noopener noreferrer">Search by address <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://discoverdycd.dycdconnect.nyc/search" target="_blank" rel="noopener noreferrer">Search by address<span class="sr-only"> for DiscoverDYCD — find free programs near you (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118002464646"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-246-4646</a>
           </div>
         </article>
@@ -829,7 +831,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>COMPASS after-school — free, K through 12</h3>
           <p class="what">Three hours a day, five days a week, including school holidays. Homework help, STEM, arts and sports. Every NYC student is eligible.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dycd/services/after-school.page" target="_blank" rel="noopener noreferrer">Find a program <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dycd/services/after-school.page" target="_blank" rel="noopener noreferrer">Find a program<span class="sr-only"> for COMPASS after-school — free, K through 12 (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118002464646"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-246-4646</a>
           </div>
         </article>
@@ -837,35 +839,35 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYC Parks recreation centers — free under 25</h3>
           <p class="what">Membership is free for anyone under 25 and for seniors. Gyms, indoor pools, classes and open gym time year round.</p>
           <div class="acts">
-            <a class="go" href="https://www.nycgovparks.org/facilities/recreationcenters/membership" target="_blank" rel="noopener noreferrer">Join free <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nycgovparks.org/facilities/recreationcenters/membership" target="_blank" rel="noopener noreferrer">Join free<span class="sr-only"> for NYC Parks recreation centers — free under 25 (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="free outdoor pools — summer every summer the city opens free outdoor pools in all five boroughs. no membership needed, even at pools next to a rec center.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young pool swim swimming summer free">
           <h3>Free outdoor pools — summer</h3>
           <p class="what">Every summer the city opens free outdoor pools in all five boroughs. No membership needed, even at pools next to a rec center.</p>
           <div class="acts">
-            <a class="go" href="https://www.nycgovparks.org/facilities/outdoor-pools" target="_blank" rel="noopener noreferrer">Find a pool <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nycgovparks.org/facilities/outdoor-pools" target="_blank" rel="noopener noreferrer">Find a pool<span class="sr-only"> for Free outdoor pools — summer (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="learn to swim — free swim lessons free swim instruction for kids and adults at city pools. spots fill fast, so sign up the day registration opens.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young swim swimming lessons learn to swim pool">
           <h3>Learn to Swim — free swim lessons</h3>
           <p class="what">Free swim instruction for kids and adults at city pools. Spots fill fast, so sign up the day registration opens.</p>
           <div class="acts">
-            <a class="go" href="https://www.nycgovparks.org/programs/aquatics/learn-to-swim" target="_blank" rel="noopener noreferrer">Sign up <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nycgovparks.org/programs/aquatics/learn-to-swim" target="_blank" rel="noopener noreferrer">Sign up<span class="sr-only"> for Learn to Swim — free swim lessons (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="summer rising — free summer program free full-day summer program for public school students in kindergarten through 8th grade. academics in the morning, trips and activities after.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young summer camp free summer program trips">
           <h3>Summer Rising — free summer program</h3>
           <p class="what">Free full-day summer program for public school students in kindergarten through 8th grade. Academics in the morning, trips and activities after.</p>
           <div class="acts">
-            <a class="go" href="https://www.schools.nyc.gov/enrollment/summer-rising" target="_blank" rel="noopener noreferrer">Enroll <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.schools.nyc.gov/enrollment/summer-rising" target="_blank" rel="noopener noreferrer">Enroll<span class="sr-only"> for Summer Rising — free summer program (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="summer youth employment program (syep) a paid summer job for ages 14 to 24. the biggest youth jobs program in the country. applications usually open in the winter for the coming summer.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young summer job paid teen youth job syep">
           <h3>Summer Youth Employment Program (SYEP)</h3>
           <p class="what">A paid summer job for ages 14 to 24. The biggest youth jobs program in the country. Applications usually open in the winter for the coming summer.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dycd/services/jobs-internships/summer-youth-employment-program-syep.page" target="_blank" rel="noopener noreferrer">Apply for SYEP <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dycd/services/jobs-internships/summer-youth-employment-program-syep.page" target="_blank" rel="noopener noreferrer">Apply for SYEP<span class="sr-only"> for Summer Youth Employment Program (SYEP) (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118002464646"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-246-4646</a>
           </div>
         </article>
@@ -873,14 +875,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>MyCity — child care and 3-K</h3>
           <p class="what">Apply for free or low-cost child care and see if you qualify for a voucher. One city account handles it.</p>
           <div class="acts">
-            <a class="go" href="https://mycity.nyc.gov/" target="_blank" rel="noopener noreferrer">Apply for child care <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://mycity.nyc.gov/" target="_blank" rel="noopener noreferrer">Apply for child care<span class="sr-only"> for MyCity — child care and 3-K (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="drop-in centers for youth 14 to 24 food, clothing, laundry, a shower, counseling and emergency shelter. you do not have to be homeless and you do not need documents.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young runaway homeless youth shower laundry teen shelter drop in">
           <h3>Drop-in centers for youth 14 to 24</h3>
           <p class="what">Food, clothing, laundry, a shower, counseling and emergency shelter. You do not have to be homeless and you do not need documents.</p>
           <div class="acts">
-            <a class="go" href="https://access.nyc.gov/programs/runaway-and-homeless-youth-drop-in-centers/" target="_blank" rel="noopener noreferrer">Find a drop-in center <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://access.nyc.gov/programs/runaway-and-homeless-youth-drop-in-centers/" target="_blank" rel="noopener noreferrer">Find a drop-in center<span class="sr-only"> for Drop-in centers for youth 14 to 24 (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118002464646"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-246-4646</a>
           </div>
         </article>
@@ -893,7 +895,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYC Care — health care for everyone</h3>
           <p class="what">Low-cost and no-cost care at NYC Health + Hospitals for New Yorkers who cannot get or afford insurance. No premiums. Immigration status does not matter and is not recorded.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyccare.nyc/" target="_blank" rel="noopener noreferrer">Enroll in NYC Care <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyccare.nyc/" target="_blank" rel="noopener noreferrer">Enroll in NYC Care<span class="sr-only"> for NYC Care — health care for everyone (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+116466922273"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-646-692-2273</a>
           </div>
         </article>
@@ -901,7 +903,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NY State of Health — insurance marketplace</h3>
           <p class="what">Apply for Medicaid, the Essential Plan, Child Health Plus or a subsidized plan. Many New Yorkers pay nothing.</p>
           <div class="acts">
-            <a class="go" href="https://nystateofhealth.ny.gov/" target="_blank" rel="noopener noreferrer">Apply for coverage <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://nystateofhealth.ny.gov/" target="_blank" rel="noopener noreferrer">Apply for coverage<span class="sr-only"> for NY State of Health — insurance marketplace (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118553555777"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-855-355-5777</a>
           </div>
         </article>
@@ -909,7 +911,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYC Health + Hospitals — find a clinic</h3>
           <p class="what">Public hospitals and neighborhood clinics in every borough. They treat you regardless of ability to pay.</p>
           <div class="acts">
-            <a class="go" href="https://www.nychealthandhospitals.org/locations/" target="_blank" rel="noopener noreferrer">Find a location <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nychealthandhospitals.org/locations/" target="_blank" rel="noopener noreferrer">Find a location<span class="sr-only"> for NYC Health + Hospitals — find a clinic (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118446924692"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-844-692-4692</a>
           </div>
         </article>
@@ -917,7 +919,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>988 — mental health and crisis line</h3>
           <p class="what">Call or text 988 any time, free and confidential, for you or for someone you are worried about.</p>
           <div class="acts">
-            <a class="go" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Learn more <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Learn more<span class="sr-only"> for 988 — mental health and crisis line (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:988"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call or text 988</a>
           </div>
         </article>
@@ -925,14 +927,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Drug and alcohol help</h3>
           <p class="what">Free treatment referrals, free naloxone, and syringe services. No insurance needed.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use.page" target="_blank" rel="noopener noreferrer">Get help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/doh/health/health-topics/alcohol-and-drug-use.page" target="_blank" rel="noopener noreferrer">Get help<span class="sr-only"> for Drug and alcohol help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="health" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="nyc aging — help for seniors senior centers, home-delivered meals, caregiver support, elder abuse help and benefits screening for new yorkers 60 and up.   health jamaica queens brooklyn manhattan bronx statenisland health medical doctor clinic senior seniors elderly meals on wheels senior center caregiver 60">
           <h3>NYC Aging — help for seniors</h3>
           <p class="what">Senior centers, home-delivered meals, caregiver support, elder abuse help and benefits screening for New Yorkers 60 and up.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dfta/index.page" target="_blank" rel="noopener noreferrer">See senior services <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dfta/index.page" target="_blank" rel="noopener noreferrer">See senior services<span class="sr-only"> for NYC Aging — help for seniors (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+12122446469"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (212) 244-6469</a>
           </div>
         </article>
@@ -940,7 +942,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Mayor's Office for People with Disabilities</h3>
           <p class="what">Accessible housing, benefits, transportation and job help for New Yorkers with disabilities.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/mopd/index.page" target="_blank" rel="noopener noreferrer">Get connected <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/mopd/index.page" target="_blank" rel="noopener noreferrer">Get connected<span class="sr-only"> for Mayor's Office for People with Disabilities (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -955,7 +957,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="addr">89-00 Sutphin Blvd, 5th Floor, Jamaica, NY 11435</p>
           <p class="note">Office line is (347) 592-2200. They work in any language.</p>
           <div class="acts">
-            <a class="go" href="https://www.legalservicesnyc.org/boroughs/queens-legal-services/" target="_blank" rel="noopener noreferrer">Queens office <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.legalservicesnyc.org/boroughs/queens-legal-services/" target="_blank" rel="noopener noreferrer">Queens office<span class="sr-only"> for Queens Legal Services (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+19176614500"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (917) 661-4500 — intake</a>
           </div>
         </article>
@@ -964,7 +966,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Free civil lawyers for housing, benefits, family, immigration, consumer debt and disability. Offices in all five boroughs.</p>
           <p class="note">Intake line, Monday to Friday, 9:30am to 4pm.</p>
           <div class="acts">
-            <a class="go" href="https://www.legalservicesnyc.org/" target="_blank" rel="noopener noreferrer">Get free legal help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.legalservicesnyc.org/" target="_blank" rel="noopener noreferrer">Get free legal help<span class="sr-only"> for Legal Services NYC (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+19176614500"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (917) 661-4500</a>
           </div>
         </article>
@@ -973,7 +975,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Free lawyers for civil, criminal and juvenile cases. The helpline points you to the right unit.</p>
           <p class="note">Helpline Monday to Friday, 10am to 3pm.</p>
           <div class="acts">
-            <a class="go" href="https://legalaidnyc.org/" target="_blank" rel="noopener noreferrer">Get help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://legalaidnyc.org/" target="_blank" rel="noopener noreferrer">Get help<span class="sr-only"> for The Legal Aid Society (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118886636680"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-888-663-6680</a>
           </div>
         </article>
@@ -981,7 +983,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>LawHelpNY</h3>
           <p class="what">Plain-English answers about your legal problem plus a directory of free legal help near you.</p>
           <div class="acts">
-            <a class="go" href="https://www.lawhelpny.org/" target="_blank" rel="noopener noreferrer">Find legal help <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.lawhelpny.org/" target="_blank" rel="noopener noreferrer">Find legal help<span class="sr-only"> for LawHelpNY (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -994,7 +996,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Free, safe, confidential immigration legal help through trusted community organizations and schools. You need an appointment.</p>
           <p class="note">Monday to Friday, 9am to 6pm. Or call 311 and say ActionNYC.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/actionnyc/index.page" target="_blank" rel="noopener noreferrer">Learn more <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/actionnyc/index.page" target="_blank" rel="noopener noreferrer">Learn more<span class="sr-only"> for ActionNYC — free immigration legal help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118003540365"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-354-0365</a>
           </div>
         </article>
@@ -1002,14 +1004,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Mayor's Office of Immigrant Affairs</h3>
           <p class="what">Know your rights, find legal help, and see the city services that are open to you no matter your status.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/immigrants/index.page" target="_blank" rel="noopener noreferrer">See resources <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/immigrants/index.page" target="_blank" rel="noopener noreferrer">See resources<span class="sr-only"> for Mayor's Office of Immigrant Affairs (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="immigrants" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="idnyc free nyc photo id for anyone 10 and up. immigration status does not matter and the city does not share your information.   immigrants jamaica queens brooklyn manhattan bronx statenisland immigrant immigrants immigration undocumented id identification photo id card idnyc">
           <h3>IDNYC</h3>
           <p class="what">Free NYC photo ID for anyone 10 and up. Immigration status does not matter and the city does not share your information.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/idnyc/index.page" target="_blank" rel="noopener noreferrer">Get an IDNYC <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/idnyc/index.page" target="_blank" rel="noopener noreferrer">Get an IDNYC<span class="sr-only"> for IDNYC (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -1023,7 +1025,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">The Queens center, in Kew Gardens. Walk in. You do not need a police report and you do not need to press charges.</p>
           <p class="addr">126-02 82nd Avenue, Kew Gardens, NY 11415</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page" target="_blank" rel="noopener noreferrer">Center details <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page" target="_blank" rel="noopener noreferrer">Center details<span class="sr-only"> for Family Justice Center — Queens (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+17185754545"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> (718) 575-4545</a>
           </div>
         </article>
@@ -1038,7 +1040,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>988 — suicide and crisis lifeline</h3>
           <p class="what">Free and confidential, 24 hours. Call or text.</p>
           <div class="acts">
-            <a class="go" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Learn more <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://988lifeline.org/" target="_blank" rel="noopener noreferrer">Learn more<span class="sr-only"> for 988 — suicide and crisis lifeline (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:988"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call or text 988</a>
           </div>
         </article>
@@ -1046,7 +1048,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYC 24-hour domestic violence hotline</h3>
           <p class="what">Safe, free and confidential, any hour. They help with safety planning and emergency shelter.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/hra/help/domestic-violence-support.page" target="_blank" rel="noopener noreferrer">More support <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/hra/help/domestic-violence-support.page" target="_blank" rel="noopener noreferrer">More support<span class="sr-only"> for NYC 24-hour domestic violence hotline (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118006214673"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-621-HOPE (4673)</a>
           </div>
         </article>
@@ -1054,21 +1056,21 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Family Justice Centers</h3>
           <p class="what">One place for survivors of domestic violence, sexual violence, trafficking and stalking. Counseling, legal help and safety planning, all free. Staff speak more than 30 languages.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page" target="_blank" rel="noopener noreferrer">Find your center <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/ocdv/programs/family-justice-centers.page" target="_blank" rel="noopener noreferrer">Find your center<span class="sr-only"> for Family Justice Centers (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="safety" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="safe horizon the country&#x27;s largest victim services nonprofit. hotlines for domestic violence, crime victims and rape and sexual assault.   safety and crisis jamaica queens brooklyn manhattan bronx statenisland safety crisis emergency danger unsafe help now domestic violence crime victim rape sexual assault hotline">
           <h3>Safe Horizon</h3>
           <p class="what">The country's largest victim services nonprofit. Hotlines for domestic violence, crime victims and rape and sexual assault.</p>
           <div class="acts">
-            <a class="go" href="https://www.safehorizon.org/get-help/domestic-violence/" target="_blank" rel="noopener noreferrer">Get support <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.safehorizon.org/get-help/domestic-violence/" target="_blank" rel="noopener noreferrer">Get support<span class="sr-only"> for Safe Horizon (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="safety" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="dycd youth connect one call connects a young person or a parent to youth programs, shelter, counseling and more. over 180 languages.   safety and crisis jamaica queens brooklyn manhattan bronx statenisland safety crisis emergency danger unsafe help now youth programs referral parent teen help line">
           <h3>DYCD Youth Connect</h3>
           <p class="what">One call connects a young person or a parent to youth programs, shelter, counseling and more. Over 180 languages.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/site/dycd/connected/youth-connect1.page" target="_blank" rel="noopener noreferrer">Learn more <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nyc.gov/site/dycd/connected/youth-connect1.page" target="_blank" rel="noopener noreferrer">Learn more<span class="sr-only"> for DYCD Youth Connect (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:+118002464646"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> 1-800-246-4646</a>
           </div>
         </article>
