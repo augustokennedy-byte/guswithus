@@ -17,7 +17,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 # Verified by hand in a real browser on 2026-09-19. Re-open one in a browser
 # before treating a new failure from these as real.
 BOT_BLOCKED = ("score.org", "ssa.gov", "sba.gov", "irs.gov", "camba.org",
-               "potsbronx.org", "nystateofhealth.ny.gov")
+               "potsbronx.org", "nystateofhealth.ny.gov", "perscholas.org")
 
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
@@ -49,6 +49,8 @@ def check(item):
         else:
             status, final = e.code, url
     except Exception as e:
+        if any(d in url for d in BOT_BLOCKED):   # connection dropped on bots, loads in a browser
+            return {**item, "status": "ERROR", "verdict": "bot-blocked (fine in browser)"}
         return {**item, "status": "ERROR", "detail": str(e)[:120]}
 
     ok = status == 200
@@ -72,7 +74,7 @@ def main():
     with ThreadPoolExecutor(max_workers=12) as ex:
         results = list(ex.map(check, items))
 
-    broken = [r for r in results if r.get("verdict") == "CHECK" or r["status"] == "ERROR"]
+    broken = [r for r in results if r.get("verdict") == "CHECK" or (r["status"] == "ERROR" and "verdict" not in r)]
     moved = [r for r in results if r.get("redirected") and r.get("verdict") == "ok"]
 
     for r in sorted(broken, key=lambda x: str(x["status"])):

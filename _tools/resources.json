@@ -1,5 +1,5 @@
 {
-  "checked": "2026-09-19",
+  "checked": "2026-10-16",
   "sections": [
     {
       "slug": "start",
@@ -223,7 +223,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://projecthospitality.org/food-services",
+          "href": "https://www.projecthospitality.org/food-services",
           "label": "See pantry days",
           "external": true
         },
@@ -331,7 +331,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://holyapostlessoupkitchen.org/",
+          "href": "https://holyapostlesnyc.org/",
           "label": "Hours and services",
           "external": true
         },
@@ -421,7 +421,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.foodbanknyc.org/get-help/",
+          "href": "https://www.foodbanknyc.org/find-food/",
           "label": "Search by ZIP",
           "external": true
         }
@@ -505,7 +505,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.schools.nyc.gov/school-life/food/school-meals",
+          "href": "https://www.schools.nyc.gov/school-life/school-meals",
           "label": "How it works",
           "external": true
         }
@@ -1174,7 +1174,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.nationalgridus.com/NY-Home/Bill-Help/",
+          "href": "https://www.nationalgridus.com/NY-Home/Bill-Help/Help-Making-Payments",
           "label": "Get bill help",
           "external": true
         }
@@ -1615,7 +1615,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.cuny.edu/reconnect/",
+          "href": "https://www.cuny.edu/admissions/reconnect/",
           "label": "Re-enroll at CUNY",
           "external": true
         }
@@ -1821,7 +1821,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.nyc.gov/nycbusiness/",
+          "href": "https://nyc-business.nyc.gov/nycbusiness/",
           "label": "Start here",
           "external": true
         },
@@ -1853,7 +1853,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.sba.gov/funding-programs",
+          "href": "https://www.sba.gov/loans/",
           "label": "See funding",
           "external": true
         }
@@ -1879,7 +1879,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.sba.gov/local-assistance",
+          "href": "https://www.sba.gov/counseling/local-assistance/",
           "label": "Find local help",
           "external": true
         }
@@ -1905,7 +1905,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.nyc.gov/nycbusiness/article/mwbe-certification",
+          "href": "https://nyc-business.nyc.gov/nycbusiness/article/mwbe-certification",
           "label": "Get certified",
           "external": true
         }
@@ -2225,7 +2225,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.nycgovparks.org/programs/aquatics/learn-to-swim",
+          "href": "https://www.nycgovparks.org/events/learn-to-swim",
           "label": "Sign up",
           "external": true
         }
@@ -3141,7 +3141,7 @@
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.safehorizon.org/get-help/domestic-violence/",
+          "href": "https://www.safehorizon.org/hotline",
           "label": "Get support",
           "external": true
         }

@@ -219,6 +219,101 @@ footer.site a.gps-badge{display:inline-flex;align-items:center;gap:9px;min-heigh
 footer.site a.gps-badge:hover{background:rgba(255,255,255,.18);border-color:#fff}
 footer.site a.gps-badge svg{flex:none;color:#F5B301}
 .gps-line{margin:20px 0 14px}
+/* ==== VIBRANT REFRESH (Oct 2026). Source: _tools/vibrant.css, applied by _tools/apply_vibrant.py ==== */
+:root{--orange:#F58426;--orange-tint:#FFF1E3;--sun:#FFC83D}
+
+/* Emergency bar: bolder */
+.emerg{background:linear-gradient(90deg,#9F1D12,#B42318 45%,#C2410C)}
+
+/* Hero: deep blue to green, bright type */
+.hero{position:relative;overflow:hidden;color:#fff;border-bottom:0;padding:56px 0 46px;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(34,169,90,.55) 0,rgba(34,169,90,0) 38%),
+    radial-gradient(circle at 6% 100%,rgba(245,132,38,.38) 0,rgba(245,132,38,0) 34%),
+    linear-gradient(135deg,#063575 0%,#0848A2 55%,#0B6B6B 100%)}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;
+  border:34px solid rgba(255,255,255,.07);pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{color:#fff;font-size:clamp(2.2rem,6.4vw,3.6rem)}
+.hero h1 .u-green{color:#7EE2A8}
+.hero .slogan{color:#FFD97A}
+.hero p{color:#E6EFFC}
+.eyebrow{background:var(--sun);color:#0B2447}
+.g-method{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-left:4px solid #7EE2A8;color:#fff;box-shadow:none}
+.g-method b{color:#fff}
+
+/* Quick-jump tiles */
+.quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:26px;max-width:880px}
+.quick a{display:flex;align-items:center;gap:11px;background:#fff;color:#0B2447;text-decoration:none;font-weight:700;
+  font-size:1rem;padding:13px 15px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.18);
+  border-bottom:4px solid var(--accent,#22A95A);transition:transform .15s,box-shadow .15s}
+.quick a:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,0,0,.24)}
+.quick .ic{font-size:1.45rem;line-height:1}
+
+/* Controls */
+.controls{box-shadow:0 6px 18px rgba(8,72,162,.08)}
+.chip{transition:background .15s,border-color .15s,transform .15s}
+.chip:hover{background:var(--blue-tint);transform:translateY(-1px)}
+.chip[aria-pressed="true"],.chip[aria-current]{box-shadow:0 4px 12px rgba(8,72,162,.28)}
+.chips.boro .chip[aria-pressed="true"],.chips.boro .chip[aria-current]{box-shadow:0 4px 12px rgba(21,128,61,.3)}
+
+/* Page background and category sections */
+main{background:linear-gradient(180deg,#F6F9FC 0,#fff 420px)}
+.cat{--accent:#0848A2;--tint:#EAF1FB}
+.cat[data-cat="food"]{--accent:#F58426;--tint:#FFF1E3}
+.cat[data-cat="housing"]{--accent:#0848A2;--tint:#EAF1FB}
+.cat[data-cat="money"]{--accent:#15803D;--tint:#E8F7EF}
+.cat[data-cat="unemployment"]{--accent:#7C3AED;--tint:#F3EDFF}
+.cat[data-cat="jobs"]{--accent:#0E7490;--tint:#E3F6FA}
+.cat[data-cat="business"]{--accent:#C2410C;--tint:#FFEDE3}
+.cat[data-cat="kids"]{--accent:#DB2777;--tint:#FFE8F2}
+.cat[data-cat="health"]{--accent:#0F766E;--tint:#E2F6F3}
+.cat[data-cat="legal"]{--accent:#4338CA;--tint:#ECEBFF}
+.cat[data-cat="immigrants"]{--accent:#B45309;--tint:#FFF3DD}
+.cat[data-cat="safety"]{--accent:#B42318;--tint:#FEECEA}
+.cat > h2{border-bottom:0;padding-bottom:0;font-size:1.65rem;align-items:center;gap:14px;position:relative}
+.cat > h2::before{content:var(--icon,"") / "";display:inline-flex;align-items:center;justify-content:center;
+  width:50px;height:50px;border-radius:15px;background:var(--tint);font-size:1.6rem;flex:none;
+  box-shadow:inset 0 0 0 2px var(--accent)}
+.cat > h2 .n{background:var(--tint);color:#0B2447;font-weight:700;padding:4px 11px;border-radius:999px;font-size:.78rem}
+.cat[data-cat="start"]{--icon:"\1F4CD"}
+.cat[data-cat="food"]{--icon:"\1F34E"}
+.cat[data-cat="housing"]{--icon:"\1F3E0"}
+.cat[data-cat="money"]{--icon:"\1F4B5"}
+.cat[data-cat="unemployment"]{--icon:"\1F4DD"}
+.cat[data-cat="jobs"]{--icon:"\1F4BC"}
+.cat[data-cat="business"]{--icon:"\1F680"}
+.cat[data-cat="kids"]{--icon:"\1F9D2"}
+.cat[data-cat="health"]{--icon:"\2695\FE0F"}
+.cat[data-cat="legal"]{--icon:"\2696\FE0F"}
+.cat[data-cat="immigrants"]{--icon:"\1F30E"}
+.cat[data-cat="safety"]{--icon:"\1F6E1\FE0F"}
+
+/* Cards */
+.card{border-radius:18px;border:1px solid var(--line);border-top:5px solid var(--accent);
+  transition:transform .15s,box-shadow .15s,border-color .15s;box-shadow:0 2px 8px rgba(11,36,71,.05)}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(11,36,71,.14);border-color:#CBD9EC;border-top-color:var(--accent)}
+.card.urgent{border-top-color:var(--red)}
+.badge{background:var(--sun);color:#0B2447}
+.card p.note{background:var(--tint);border-left:3px solid var(--accent);border-radius:0 9px 9px 0}
+.go{background:linear-gradient(135deg,#0848A2,#0B5FD0);box-shadow:0 4px 12px rgba(8,72,162,.25);transition:transform .15s,box-shadow .15s}
+.go:hover{background:linear-gradient(135deg,#063575,#0848A2);transform:translateY(-1px);box-shadow:0 8px 18px rgba(8,72,162,.34)}
+.tel{border-width:2px}
+
+/* Closer */
+.closer{background:linear-gradient(135deg,#063575,#0848A2 60%,#0B6B6B);box-shadow:0 18px 40px rgba(8,72,162,.25)}
+footer.site{background:linear-gradient(180deg,#071B33,#05111F)}
+
+@media (max-width:860px){
+  .hero{padding:32px 0 28px}
+  .quick{grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
+  .quick a{padding:11px 12px;font-size:.93rem}
+  .cat > h2{font-size:1.4rem}
+  .cat > h2::before{width:42px;height:42px;font-size:1.3rem;border-radius:12px}
+}
+@media (prefers-reduced-motion:reduce){.card:hover,.quick a:hover,.go:hover,.chip:hover{transform:none}}
+@media print{.quick{display:none!important}.hero{background:#fff!important;color:#000!important}.hero h1,.hero p,.hero .slogan{color:#000!important}.card{border-top-width:1px}}
+/* ==== END VIBRANT REFRESH ==== */
 </style>
 <script type="application/ld+json">
 {
@@ -280,6 +375,14 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
     <p>This is our home. GUS is at 175-61 Hillside Avenue, and the programs below are the ones we send our own families to. Below are 85 free programs that serve Jamaica, Queens &mdash; 13 of them with an address in the borough, the rest citywide. Every link goes straight to the application or the phone number.</p>
     <p class="meta">Nothing here costs money. You do not need an account, and what you type is never recorded.</p>
     <div class="g-method"><b>The G Method:</b> one page, real links, no runaround.</div>
+    <nav class="quick" aria-label="Jump to a topic">
+      <a href="#cat-food" style="--accent:#F58426"><span class="ic" aria-hidden="true">🍎</span>Food</a>
+      <a href="#cat-housing" style="--accent:#0848A2"><span class="ic" aria-hidden="true">🏠</span>Rent &amp; shelter</a>
+      <a href="#cat-jobs" style="--accent:#0E7490"><span class="ic" aria-hidden="true">💼</span>Jobs</a>
+      <a href="#cat-legal" style="--accent:#4338CA"><span class="ic" aria-hidden="true">⚖️</span>Legal help</a>
+      <a href="#cat-kids" style="--accent:#DB2777"><span class="ic" aria-hidden="true">🧒</span>Kids &amp; teens</a>
+      <a href="#cat-health" style="--accent:#0F766E"><span class="ic" aria-hidden="true">⚕️</span>Health</a>
+    </nav>
   </div>
 </div>
 
@@ -406,7 +509,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Food Bank For New York City</h3>
           <p class="what">Nearly 800 pantries, soup kitchens and mobile pantries across the five boroughs. Search by your ZIP code.</p>
           <div class="acts">
-            <a class="go" href="https://www.foodbanknyc.org/get-help/" target="_blank" rel="noopener noreferrer">Search by ZIP<span class="sr-only"> for Food Bank For New York City (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.foodbanknyc.org/find-food/" target="_blank" rel="noopener noreferrer">Search by ZIP<span class="sr-only"> for Food Bank For New York City (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="food" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="hra food assistance — pantries, meals and more the city&#x27;s own list of emergency food programs, plus how to get help applying for snap.   food jamaica queens brooklyn manhattan bronx statenisland food hungry hunger groceries grocery eat feed my family pantry soup kitchen emergency food meals">
@@ -428,7 +531,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Free school meals</h3>
           <p class="what">Breakfast and lunch are free for every NYC public school student. No form, no income check.</p>
           <div class="acts">
-            <a class="go" href="https://www.schools.nyc.gov/school-life/food/school-meals" target="_blank" rel="noopener noreferrer">How it works<span class="sr-only"> for Free school meals (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.schools.nyc.gov/school-life/school-meals" target="_blank" rel="noopener noreferrer">How it works<span class="sr-only"> for Free school meals (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -598,7 +701,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>National Grid bill help</h3>
           <p class="what">Payment plans, budget billing and low-income discounts if your gas bill is behind.</p>
           <div class="acts">
-            <a class="go" href="https://www.nationalgridus.com/NY-Home/Bill-Help/" target="_blank" rel="noopener noreferrer">Get bill help<span class="sr-only"> for National Grid bill help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nationalgridus.com/NY-Home/Bill-Help/Help-Making-Payments" target="_blank" rel="noopener noreferrer">Get bill help<span class="sr-only"> for National Grid bill help (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -702,7 +805,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>CUNY Reconnect — go back to college</h3>
           <p class="what">For adults who started college and stopped. CUNY helps you re-enroll, clear old balances and finish the degree.</p>
           <div class="acts">
-            <a class="go" href="https://www.cuny.edu/reconnect/" target="_blank" rel="noopener noreferrer">Re-enroll at CUNY<span class="sr-only"> for CUNY Reconnect — go back to college (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.cuny.edu/admissions/reconnect/" target="_blank" rel="noopener noreferrer">Re-enroll at CUNY<span class="sr-only"> for CUNY Reconnect — go back to college (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
       </div>
@@ -742,7 +845,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>NYC Business — start, run and grow</h3>
           <p class="what">The city's business portal. Walks you through licenses, permits, free courses, and connects you to financing.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/nycbusiness/" target="_blank" rel="noopener noreferrer">Start here<span class="sr-only"> for NYC Business — start, run and grow (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://nyc-business.nyc.gov/nycbusiness/" target="_blank" rel="noopener noreferrer">Start here<span class="sr-only"> for NYC Business — start, run and grow (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
             <a class="tel" href="tel:311"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.58 3.6a1 1 0 01-.25 1l-2.2 2.2z"/></svg> Call 311</a>
           </div>
         </article>
@@ -751,21 +854,21 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <p class="what">Federal loans, microloans, disaster loans and surety bonds. The SBA does not usually lend directly, it guarantees the loan so a bank will say yes.</p>
           <p class="note">Real SBA grants are rare and go to specific programs. Anyone who charges you a fee to get an SBA grant is a scam.</p>
           <div class="acts">
-            <a class="go" href="https://www.sba.gov/funding-programs" target="_blank" rel="noopener noreferrer">See funding<span class="sr-only"> for SBA funding programs (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.sba.gov/loans/" target="_blank" rel="noopener noreferrer">See funding<span class="sr-only"> for SBA funding programs (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="sba local assistance find the free counselors, mentors and lenders nearest you, including the new york district office.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur sba counselor mentor lender district office">
           <h3>SBA local assistance</h3>
           <p class="what">Find the free counselors, mentors and lenders nearest you, including the New York district office.</p>
           <div class="acts">
-            <a class="go" href="https://www.sba.gov/local-assistance" target="_blank" rel="noopener noreferrer">Find local help<span class="sr-only"> for SBA local assistance (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.sba.gov/counseling/local-assistance/" target="_blank" rel="noopener noreferrer">Find local help<span class="sr-only"> for SBA local assistance (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="m/wbe certification certify your business as minority or woman-owned and get access to city contracts set aside for m/wbes. free to apply.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur mwbe minority owned woman owned certification city contracts">
           <h3>M/WBE certification</h3>
           <p class="what">Certify your business as minority or woman-owned and get access to city contracts set aside for M/WBEs. Free to apply.</p>
           <div class="acts">
-            <a class="go" href="https://www.nyc.gov/nycbusiness/article/mwbe-certification" target="_blank" rel="noopener noreferrer">Get certified<span class="sr-only"> for M/WBE certification (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://nyc-business.nyc.gov/nycbusiness/article/mwbe-certification" target="_blank" rel="noopener noreferrer">Get certified<span class="sr-only"> for M/WBE certification (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="business" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="score new york city free mentoring from retired and working executives. you can meet the same mentor for as long as you need.   start a business jamaica queens brooklyn manhattan bronx statenisland business small business entrepreneur mentor mentoring free advice business plan">
@@ -845,7 +948,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Learn to Swim — free swim lessons</h3>
           <p class="what">Free swim instruction for kids and adults at city pools. Spots fill fast, so sign up the day registration opens.</p>
           <div class="acts">
-            <a class="go" href="https://www.nycgovparks.org/programs/aquatics/learn-to-swim" target="_blank" rel="noopener noreferrer">Sign up<span class="sr-only"> for Learn to Swim — free swim lessons (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.nycgovparks.org/events/learn-to-swim" target="_blank" rel="noopener noreferrer">Sign up<span class="sr-only"> for Learn to Swim — free swim lessons (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="kids" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="summer rising — free summer program free full-day summer program for public school students in kindergarten through 8th grade. academics in the morning, trips and activities after.   kids and teens jamaica queens brooklyn manhattan bronx statenisland kids kid children child teen teens youth young summer camp free summer program trips">
@@ -1055,7 +1158,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <h3>Safe Horizon</h3>
           <p class="what">The country's largest victim services nonprofit. Hotlines for domestic violence, crime victims and rape and sexual assault.</p>
           <div class="acts">
-            <a class="go" href="https://www.safehorizon.org/get-help/domestic-violence/" target="_blank" rel="noopener noreferrer">Get support<span class="sr-only"> for Safe Horizon (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+            <a class="go" href="https://www.safehorizon.org/hotline" target="_blank" rel="noopener noreferrer">Get support<span class="sr-only"> for Safe Horizon (opens in new tab)</span> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
           </div>
         </article>
         <article class="card" data-cat="safety" data-boro="jamaica queens brooklyn manhattan bronx statenisland" data-s="dycd youth connect one call connects a young person or a parent to youth programs, shelter, counseling and more. over 180 languages.   safety and crisis jamaica queens brooklyn manhattan bronx statenisland safety crisis emergency danger unsafe help now youth programs referral parent teen help line">
@@ -1087,7 +1190,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
     <p><strong>GUS With Us</strong> is the operating name of GUS Growth Unity &amp; Success, Inc., a New York not-for-profit corporation and registered 501(c)(3) public charity. guswithus.org is the official website of GUS Growth Unity &amp; Success, Inc.</p>
     <p>175-61 Hillside Avenue, Suite 202, Jamaica, NY 11432 &middot; <a href="tel:+17187755050">(718)&nbsp;775-5050</a> &middot; <a href="mailto:info@guswithus.org">info@guswithus.org</a> &middot; EIN 39-2462364</p>
     <p><strong>The G Method, developed with our team.</strong> One page, real links, no runaround.</p>
-    <p class="checked">Every link on this page was checked on <time datetime="2026-09-19">19 September 2026</time>. We check them on the 1st and the 15th of every month.</p>
+    <p class="checked">Every link on this page was checked on <time datetime="2026-10-16">16 October 2026</time>. We check them on the 1st and the 15th of every month.</p>
     <p>The GUS Resource Center lists programs run by government agencies and other nonprofits. GUS does not operate them, cannot decide who they accept, and does not control their hours or funding. Details change. Call ahead before you travel. Nothing here is legal, medical or financial advice.</p>
     <p>Follow GUS:
       <a href="https://www.instagram.com/gus.withus/" target="_blank" rel="noopener noreferrer">Instagram: @gus.withus</a> &middot;
