@@ -475,6 +475,23 @@ footer.site a.gps-badge{display:inline-flex;align-items:center;gap:9px;min-heigh
 footer.site a.gps-badge:hover{background:rgba(255,255,255,.18);border-color:#fff}
 footer.site a.gps-badge svg{flex:none;color:#F5B301}
 .gps-line{margin:20px 0 14px}
+
+/* ---- Photo gallery ---- */
+.gallery{background:#fff}
+.gallery .photo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:8px;align-items:start}
+.gallery .photo-grid figure{grid-column:span 2}
+.gallery .photo-grid figure:nth-child(n+4){grid-column:span 3}
+.gallery figure{margin:0;border-radius:18px;overflow:hidden;background:#fff;border:1px solid #E5EBF3;box-shadow:0 6px 20px rgba(11,36,71,.08)}
+.gallery figure img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery .ph{aspect-ratio:4/3;overflow:hidden}
+.gallery .ph.tall img{object-position:center 30%}
+.gallery figcaption{padding:12px 16px 14px;font-size:.95rem;color:#1F2937;border-top:4px solid #22A95A}
+.gallery .photo-grid figure:nth-child(2) figcaption{border-top-color:#F58426}
+.gallery .photo-grid figure:nth-child(3) figcaption{border-top-color:#0848A2}
+.gallery .photo-grid figure:nth-child(4) figcaption{border-top-color:#DB2777}
+.gallery .photo-grid figure:nth-child(5) figcaption{border-top-color:#0E7490}
+@media (max-width:860px){.gallery .photo-grid{grid-template-columns:1fr 1fr}.gallery .photo-grid figure,.gallery .photo-grid figure:nth-child(n+4){grid-column:span 1}}
+@media (max-width:520px){.gallery .photo-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {
@@ -727,6 +744,24 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <li>Pathways to internships, certifications, and jobs</li>
         </ul>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHOTOS ================= -->
+<section class="gallery" id="photos" aria-labelledby="photos-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">In the community</span>
+      <h2 id="photos-h">See where your gift lands</h2>
+      <p>Shoes, shirts, hats, and a classroom full of future business owners. This is what the work looks like.</p>
+    </div>
+    <div class="photo-grid">
+        <figure><div class="ph tall"><img src="/assets/photos/winter-hats-lobby.jpg" alt="Three adults smile in a school lobby beside large bags of donated winter hats, in front of the auditorium doors at JHS 217." width="750" height="1356" loading="lazy"></div><figcaption>Winter hats ready to go at JHS 217.</figcaption></figure>
+        <figure><div class="ph"><img src="/assets/photos/financial-literacy-class.jpg" alt="A teacher and a GUS presenter lead a classroom of students through a slide titled Where Should We Sell?" width="1400" height="1050" loading="lazy"></div><figcaption>Financial Literacy: students decide where to sell their product.</figcaption></figure>
+        <figure><div class="ph tall"><img src="/assets/photos/shoe-boxes.jpg" alt="Stacks of new shoe boxes sorted on gym bleachers." width="900" height="1200" loading="lazy"></div><figcaption>New shoes, stacked and ready for families to choose from.</figcaption></figure>
+        <figure><div class="ph"><img src="/assets/photos/gus-table.jpg" alt="A table with a GUS banner holding sample sneakers on their boxes." width="1400" height="1050" loading="lazy"></div><figcaption>The GUS table at a giveaway.</figcaption></figure>
+        <figure><div class="ph"><img src="/assets/photos/shirts-socks.jpg" alt="Folded new T-shirts and packs of socks laid out on a table." width="1400" height="1050" loading="lazy"></div><figcaption>New shirts and socks, set out so families can pick their own.</figcaption></figure>
     </div>
   </div>
 </section>

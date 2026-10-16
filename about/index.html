@@ -141,6 +141,10 @@ main{padding-top:44px}
 @media (max-width:640px){.founder-row{flex-direction:column;text-align:center}.pagehero{padding:34px 0 30px}}
 @media (prefers-reduced-motion:reduce){.programs div:hover,.paths a:hover,.cards .card:hover,.cta-row a:hover{transform:none}}
 /* ==== END VIBRANT INNER PAGES ==== */
+.about-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:8px}
+.about-photos figure{margin:0;border-radius:18px;overflow:hidden;border:1px solid #E5EBF3;box-shadow:var(--shadow);background:#fff}
+.about-photos img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-photos figcaption{padding:12px 16px;font-size:.95rem;border-top:4px solid #22A95A}
 </style>
 <script type="application/ld+json">
 {
@@ -193,6 +197,14 @@ main{padding-top:44px}
     <section>
       <h2>Our story so far</h2>
       <p>We were incorporated in New York in 2025 and served roughly 75 young people in our first full year — powered entirely by individual and community donations. We don't operate out of a single building. Our programs meet young people where they already are: in schools and community spaces across Queens, with referrals coming through school counselors and community partners.</p>
+    </section>
+
+    <section>
+      <h2>See the work</h2>
+      <div class="about-photos">
+        <figure><img src="/assets/photos/gus-table.jpg" alt="A table with a GUS banner holding sample sneakers on their boxes." width="1400" height="1050" loading="lazy"><figcaption>The GUS table at a giveaway.</figcaption></figure>
+        <figure><img src="/assets/photos/financial-literacy-class.jpg" alt="A teacher and a GUS presenter lead a classroom of students through a slide titled Where Should We Sell?" width="1400" height="1050" loading="lazy"><figcaption>Financial Literacy: students decide where to sell their product.</figcaption></figure>
+      </div>
     </section>
 
     <section>
