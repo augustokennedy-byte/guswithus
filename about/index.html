@@ -102,6 +102,45 @@ footer.site a.gps-badge{display:inline-flex;align-items:center;gap:9px;min-heigh
 footer.site a.gps-badge:hover{background:rgba(255,255,255,.18);border-color:#fff}
 footer.site a.gps-badge svg{flex:none;color:#F5B301}
 .gps-line{margin:20px 0 14px}
+/* ==== VIBRANT INNER PAGES (Oct 2026). Source: _tools/vibrant-inner.css ==== */
+.pagehero{position:relative;overflow:hidden;color:#fff;padding:56px 0 48px;
+  background:radial-gradient(circle at 88% 10%,rgba(34,169,90,.55) 0,rgba(34,169,90,0) 38%),
+  radial-gradient(circle at 6% 100%,rgba(245,132,38,.38) 0,rgba(245,132,38,0) 34%),
+  linear-gradient(135deg,#063575 0%,#0848A2 55%,#0B6B6B 100%)}
+.pagehero::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:34px solid rgba(255,255,255,.07)}
+.pagehero .wrap{position:relative;z-index:1}
+.pagehero h1{color:#fff;font-size:clamp(2.2rem,6vw,3.3rem);margin-bottom:10px}
+.pagehero .lede{color:#E6EFFC;margin-bottom:0}
+.pagehero .eyebrow{display:inline-block;background:#FFC83D;color:#0B2447;font-weight:700;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:16px}
+main{padding-top:44px}
+.mission{background:linear-gradient(135deg,#E8F7EF,#EAF1FB);border-left:5px solid #22A95A}
+.programs div{border-top:5px solid var(--accent,#22A95A);background:#fff;box-shadow:0 2px 8px rgba(11,36,71,.06);transition:transform .15s,box-shadow .15s}
+.programs div:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(11,36,71,.13)}
+.programs h3{color:var(--blue-ink)}
+.programs .ic{display:block;font-size:1.7rem;margin-bottom:6px}
+.founder-row{display:flex;gap:24px;align-items:center;background:var(--cloud);border:1px solid #E5EBF3;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.founder-row img{width:120px;height:120px;border-radius:50%;object-fit:cover;flex:none;border:4px solid #22A95A}
+.founder-row p{margin:0 0 8px}
+.founder-row .who{font-family:'Sora',sans-serif;font-weight:700;color:var(--blue-ink)}
+.cta-band{background:linear-gradient(135deg,#063575,#0848A2 60%,#0B6B6B);color:#fff;border-radius:var(--radius);padding:34px 30px}
+.cta-band h2{color:#fff;margin-bottom:8px}
+.cta-band p{color:#DCE7F7;margin-bottom:18px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.cta-row a{display:inline-block;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:999px;border:2px solid #fff;color:#fff}
+.cta-row a.primary{background:#FFC83D;border-color:#FFC83D;color:#0B2447}
+.cta-row a:hover{transform:translateY(-2px)}
+.cards .card{border-top:5px solid var(--accent,#22A95A);background:#fff;transition:transform .15s,box-shadow .15s}
+.cards .card:hover{transform:translateY(-3px)}
+.cards .card h2{color:var(--blue-ink)}
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:40px}
+.paths a{display:block;text-decoration:none;color:var(--blue-ink);background:#fff;border:2px solid var(--accent);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.paths a:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(11,36,71,.15)}
+.paths .ic{font-size:1.8rem;display:block;margin-bottom:6px}
+.paths strong{display:block;font-family:'Sora',sans-serif;font-size:1.15rem;margin-bottom:4px}
+.paths span.d{color:var(--ink-soft);font-size:.95rem}
+@media (max-width:640px){.founder-row{flex-direction:column;text-align:center}.pagehero{padding:34px 0 30px}}
+@media (prefers-reduced-motion:reduce){.programs div:hover,.paths a:hover,.cards .card:hover,.cta-row a:hover{transform:none}}
+/* ==== END VIBRANT INNER PAGES ==== */
 </style>
 <script type="application/ld+json">
 {
@@ -135,10 +174,16 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
   </div>
 </header>
 
-<main id="main">
+<div class="pagehero">
   <div class="wrap">
+    <span class="eyebrow">Jamaica, Queens &middot; 501(c)(3)</span>
     <h1>About GUS</h1>
     <p class="lede">Growth. Unity. Success. Three words, one promise to the young people of Queens.</p>
+  </div>
+</div>
+
+<main id="main">
+  <div class="wrap">
 
     <section>
       <p><strong>GUS Growth Unity &amp; Success, Inc.</strong> is a 501(c)(3) nonprofit serving underserved youth and families, ages 8–24, in Jamaica, South Jamaica, South Ozone Park, and the Far Rockaways in Queens, New York. Our community knows us as <strong>GUS With Us</strong> — and guswithus.org is our official home online.</p>
@@ -153,11 +198,22 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
     <section>
       <h2>What we do</h2>
       <div class="programs">
-        <div><h3>Financial Literacy</h3><p>Hands-on money and entrepreneurship education inside the worlds kids already love — from Minecraft and Roblox economies to AI and social media.</p></div>
-        <div><h3>Clothing Assistance</h3><p>Clothing collected, professionally cleaned, and set out on racks so families choose what they need with dignity. No application. No means test.</p></div>
-        <div><h3>Academic Support</h3><p>Tutoring, mentorship, and executive-function coaching in small groups, backed by a volunteer corps.</p></div>
-        <div><h3>Athletic Development</h3><p>Basketball, floor hockey, golf, and fitness programming that builds confidence and community.</p></div>
-        <div><h3>Vocational Training</h3><p>Career readiness and certifications for young adults ages 16–24.</p></div>
+        <div style="--accent:#22A95A"><span class="ic" aria-hidden="true">💵</span><h3>Financial Literacy</h3><p>Hands-on money and entrepreneurship education inside the worlds kids already love — from Minecraft and Roblox economies to AI and social media.</p></div>
+        <div style="--accent:#F58426"><span class="ic" aria-hidden="true">🧥</span><h3>Clothing Assistance</h3><p>Clothing collected, professionally cleaned, and set out on racks so families choose what they need with dignity. No application. No means test.</p></div>
+        <div style="--accent:#0848A2"><span class="ic" aria-hidden="true">📚</span><h3>Academic Support</h3><p>Tutoring, mentorship, and executive-function coaching in small groups, backed by a volunteer corps.</p></div>
+        <div style="--accent:#DB2777"><span class="ic" aria-hidden="true">🏀</span><h3>Athletic Development</h3><p>Basketball, floor hockey, golf, and fitness programming that builds confidence and community.</p></div>
+        <div style="--accent:#0E7490"><span class="ic" aria-hidden="true">🛠️</span><h3>Vocational Training</h3><p>Career readiness and certifications for young adults ages 16–24.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who leads GUS</h2>
+      <div class="founder-row">
+        <img src="/assets/founder.jpg" alt="Augusto (Gus) Kennedy, Founder and Executive Director of GUS" width="120" height="120">
+        <div>
+          <p class="who">Augusto (Gus) Kennedy &middot; Founder &amp; Executive Director</p>
+          <p>Gus is a New York City educator, coach, and youth mentor. A youth program shaped his own path, and GUS exists so the next young person in Jamaica has that same someone in their corner.</p>
+        </div>
       </div>
     </section>
 
@@ -178,7 +234,15 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
     </section>
 
     <section>
-      <p>Want to be part of this? Reach out at <a href="mailto:info@guswithus.org">info@guswithus.org</a> — we'd love to hear from you.</p>
+      <div class="cta-band">
+        <h2>Pick your way in</h2>
+        <p>Give, show up, or get help. Each one takes about two minutes to start.</p>
+        <div class="cta-row">
+          <a class="primary" href="/#donate">Donate, 0% fees</a>
+          <a href="mailto:info@guswithus.org?subject=I%20want%20to%20volunteer%20with%20GUS">Volunteer</a>
+          <a href="/resources/">Find free help</a>
+        </div>
+      </div>
     </section>
   </div>
 </main>

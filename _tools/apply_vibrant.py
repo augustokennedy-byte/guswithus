@@ -10,7 +10,7 @@ START, END = "/* ==== VIBRANT REFRESH", "/* ==== END VIBRANT REFRESH ==== */"
 QUICK = [("food","\U0001F34E","Food","#F58426"),("housing","\U0001F3E0","Rent &amp; shelter","#0848A2"),
          ("jobs","\U0001F4BC","Jobs","#0E7490"),("legal","⚖️","Legal help","#4338CA"),
          ("kids","\U0001F9D2","Kids &amp; teens","#DB2777"),("health","⚕️","Health","#0F766E")]
-QRE = re.compile(r'\n *<nav class="quick".*?</nav>', re.S)
+QRE = re.compile(r'\n *<nav class="quick".*?</nav>(\n *<p class="winter">.*?</p>)?', re.S)
 
 def quick_html(src):
     items = []
@@ -18,7 +18,10 @@ def quick_html(src):
         if 'id="cat-%s"' % slug in src:
             items.append('      <a href="#cat-%s" style="--accent:%s"><span class="ic" aria-hidden="true">%s</span>%s</a>'
                          % (slug, color, icon, label))
-    return '\n    <nav class="quick" aria-label="Jump to a topic">\n%s\n    </nav>' % "\n".join(items)
+    winter = ('\n    <p class="winter"><strong>Winter help:</strong> '
+              '<a href="#cat-money">heating bills and free tax prep</a>, '
+              '<a href="#cat-housing">shelter and rent help</a>. Call to confirm what is open now.</p>')
+    return '\n    <nav class="quick" aria-label="Jump to a topic">\n%s\n    </nav>%s' % ("\n".join(items), winter)
 
 def main():
     root = pathlib.Path(sys.argv[1])

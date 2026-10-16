@@ -245,6 +245,7 @@ section{padding:92px 0}
 /* programs */
 .programs{background:var(--cloud)}
 .program-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.program-grid .card-wide{grid-column:1/-1;background:linear-gradient(135deg,#E8F7EF,#EAF1FB);border:2px solid #22A95A}
 .card{
   background:#fff;border-radius:var(--radius);padding:34px 30px;
   box-shadow:var(--shadow);border-top:5px solid var(--green);
@@ -604,7 +605,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
           <div class="mini-stat" role="listitem"><b data-count="75" data-suffix="+">75</b><span>In weekly programs</span></div>
           <div class="mini-stat" role="listitem"><b data-count="25">25</b><span>Communities reached</span></div>
           <div class="mini-stat" role="listitem"><b data-count="400" data-suffix="+">400+</b><span>Hours of service</span></div>
-          <div class="mini-stat" role="listitem"><b data-count="4">4</b><span>Core programs</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="5">5</b><span>Core programs</span></div>
         </div>
       </div>
       <div class="blob blob-1" aria-hidden="true"></div>
@@ -620,7 +621,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
     <div class="reveal"><b>75</b><span>In weekly programs</span></div>
     <div class="reveal"><b>25</b><span>Communities reached</span></div>
     <div class="reveal"><b>400+</b><span>Hours of committed work</span></div>
-    <div class="reveal"><b>4</b><span>Programs &amp; services</span></div>
+    <div class="reveal"><b>5</b><span>Programs &amp; services</span></div>
   </div>
 </div>
 
@@ -665,11 +666,21 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
 <section class="programs" id="programs" aria-labelledby="programs-h">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Four programs, one goal</span>
+      <span class="eyebrow">Five programs, one goal</span>
       <h2 id="programs-h">From basic needs to big futures</h2>
       <p>Each program removes a different barrier standing between a young person and their potential.</p>
     </div>
     <div class="program-grid">
+      <article class="card reveal card-wide">
+        <div class="icon" aria-hidden="true">💵</div>
+        <span class="kicker">New in 2026 &middot; Money skills kids use</span>
+        <h3>Financial Literacy</h3>
+        <p>Students learn earning, saving, spending, and pricing inside the worlds they already live in: Minecraft, Roblox, a classroom lemonade business, even AI and social media. Hands-on, and different for a third grader than for a parent.</p>
+        <ul>
+          <li>Three grade-specific elementary workshops, May 2026</li>
+          <li>Presented at Fin-Ed Fest, a citywide conference for financial literacy educators, April 28, 2026</li>
+        </ul>
+      </article>
       <article class="card reveal">
         <div class="icon" aria-hidden="true">🧥</div>
         <span class="kicker">Dignity first</span>
@@ -817,7 +828,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
         <p>“As a school social worker, I've witnessed firsthand the incredible impact of Growth, Unity &amp; Success. Their partnership has provided our students with essential items — from school supplies to warm coats — ensuring their basic needs are met so they can focus on learning.”</p>
         <footer>
           <span class="avatar g" aria-hidden="true">LG</span>
-          <div><b>LaRelle Gee, LMSW</b><span>School Social Worker</span></div>
+          <div><b>LaRelle Gee, LMSW</b><span>School Social Worker &middot; GUS Director of Mental Health Programs</span></div>
         </footer>
       </article>
       <article class="story reveal">
