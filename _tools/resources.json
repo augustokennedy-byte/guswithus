@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-16",
+  "checked": "2026-10-18",
   "sections": [
     {
       "slug": "start",
@@ -930,18 +930,18 @@
       ],
       "badge": null,
       "name": "Fair Fares NYC — half-price subway and bus",
-      "what": "Half off subway, eligible buses and Access-A-Ride. Open to New Yorkers 16 to 84 at or below 145% of the federal poverty line.",
+      "what": "Half off subway and eligible buses, and 50% off Access-A-Ride. Open to New York City residents ages 18 to 64 whose household income is at or below $23,940 for one person or $49,500 for a family of four (2026 limits).",
       "addr": null,
-      "note": "Fair Fares now issues OMNY cards instead of MetroCards.",
+      "note": "Not available if you already get full carfare from HRA or reduced fare through another NYC program. Need help applying? Call 311.",
       "acts": [
         {
           "kind": "go",
-          "href": "https://www.nyc.gov/site/fairfares/index.page",
+          "href": "https://a069-access.nyc.gov/accesshra/fairfares",
           "label": "Apply for Fair Fares",
           "external": true
         }
       ],
-      "keywords": " money bills benefits broke income metrocard omny subway bus fare transit discount access-a-ride"
+      "keywords": " money bills benefits broke income subway bus fare transit discount access-a-ride half price ages 18 64 "
     },
     {
       "cat": "money",
