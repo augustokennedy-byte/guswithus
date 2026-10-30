@@ -186,7 +186,7 @@ header{
 .hero-card h2{font-size:1.15rem;text-align:center;margin-bottom:6px}
 .hero-card p{text-align:center;color:var(--ink-soft);font-size:.95rem;margin-bottom:20px}
 .mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.mini-stats>.mini-stat:last-child{grid-column:1/-1}
+.mini-stats>.mini-stat:last-child:nth-child(odd){grid-column:1/-1}
 .mini-stat{
   background:var(--cloud);border-radius:14px;padding:14px 10px;text-align:center;
 }
@@ -204,7 +204,7 @@ header{
 
 /* ============ IMPACT STATS ============ */
 .impact{background:var(--blue);color:#fff;padding:58px 0}
-.impact .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;text-align:center}
+.impact .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;text-align:center}
 .needhelp{background:var(--green-tint);border-top:1px solid #CDEBDA;border-bottom:1px solid #CDEBDA;padding:38px 0}
 .needhelp .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
 .needhelp h2{font-size:clamp(1.35rem,2.6vw,1.85rem);margin-bottom:10px}
@@ -434,7 +434,7 @@ footer.site{background:#071B33;color:#AEC3DF;padding:64px 0 34px;font-size:.95re
   .program-grid{grid-template-columns:1fr}
   .story-grid,.ways-grid{grid-template-columns:1fr}
   .impact .wrap{grid-template-columns:repeat(2,1fr)}
-  .impact .wrap>div:last-child{grid-column:1/-1}
+  .impact .wrap>div:last-child:nth-child(odd){grid-column:1/-1}
   .foot-grid{grid-template-columns:1fr}
   section{padding:64px 0}
   .hero{padding-top:12px}
@@ -620,6 +620,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
         <div class="mini-stats" role="list" aria-label="Impact statistics">
           <div class="mini-stat" role="listitem"><b data-count="1950" data-suffix="+">1,950</b><span>Reached with coats &amp; supplies</span></div>
           <div class="mini-stat" role="listitem"><b data-count="75" data-suffix="+">75</b><span>In weekly programs</span></div>
+          <div class="mini-stat" role="listitem"><b data-count="250">250</b><span>Students in financial literacy</span></div>
           <div class="mini-stat" role="listitem"><b data-count="25">25</b><span>Communities reached</span></div>
           <div class="mini-stat" role="listitem"><b data-count="400" data-suffix="+">400+</b><span>Hours of service</span></div>
           <div class="mini-stat" role="listitem"><b data-count="5">5</b><span>Core programs</span></div>
@@ -636,6 +637,7 @@ footer.site a.gps-badge svg{flex:none;color:#F5B301}
   <div class="wrap">
     <div class="reveal"><b>1,950</b><span>Reached with coats &amp; supplies</span></div>
     <div class="reveal"><b>75</b><span>In weekly programs</span></div>
+    <div class="reveal"><b>250</b><span>Students in financial literacy</span></div>
     <div class="reveal"><b>25</b><span>Communities reached</span></div>
     <div class="reveal"><b>400+</b><span>Hours of committed work</span></div>
     <div class="reveal"><b>5</b><span>Programs &amp; services</span></div>
