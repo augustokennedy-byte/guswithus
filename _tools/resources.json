@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-18",
+  "checked": "2026-11-02",
   "sections": [
     {
       "slug": "start",
@@ -359,7 +359,7 @@
       "name": "SNAP (food stamps)",
       "what": "Monthly money on a card for groceries. If you qualify for emergency processing you can get benefits in about 5 days.",
       "addr": null,
-      "note": "Not sure if you qualify? Check first at access.nyc.gov.",
+      "note": "Not sure if you qualify? Check first at access.nyc.gov. Adults 18 to 64 with no child under 14 may need to work, train or volunteer to keep SNAP. Ask HRA which rule fits you.",
       "acts": [
         {
           "kind": "go",
@@ -479,7 +479,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118005225006",
+          "href": "tel:+18005225006",
           "label": "1-800-522-5006",
           "external": false
         }
@@ -932,7 +932,7 @@
       "name": "Fair Fares NYC — half-price subway and bus",
       "what": "Half off subway and eligible buses, and 50% off Access-A-Ride. Open to New York City residents ages 18 to 64 whose household income is at or below $23,940 for one person or $49,500 for a family of four (2026 limits).",
       "addr": null,
-      "note": "Not available if you already get full carfare from HRA or reduced fare through another NYC program. Need help applying? Call 311.",
+      "note": "The city budget agreed in June 2026 raises the income limit to 200% of the poverty level. Check the application for the limit in effect today. Not available if you already get full carfare from HRA or reduced fare through another NYC program. Need help applying? Call 311.",
       "acts": [
         {
           "kind": "go",
@@ -1019,10 +1019,10 @@
         "statenisland"
       ],
       "badge": null,
-      "name": "HEAP — heating and cooling bill help",
-      "what": "Pays part of your heating or cooling bill, and can fix or replace a broken furnace or air conditioner. Money goes straight to the utility.",
+      "name": "HEAP — heating bill help",
+      "what": "Pays part of your heating bill, and can fix or replace a broken furnace. Money goes straight to the utility.",
       "addr": null,
-      "note": "Application windows open and close each season. Call to check what is open now.",
+      "note": "Regular heating help opened November 2, 2026. Apply online through ACCESS HRA, or call to ask for a paper form. Furnace repair and Clean and Tune opened October 1.",
       "acts": [
         {
           "kind": "go",
@@ -1148,7 +1148,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118007721213",
+          "href": "tel:+18007721213",
           "label": "1-800-772-1213",
           "external": false
         }
@@ -1206,7 +1206,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118882098124",
+          "href": "tel:+18882098124",
           "label": "1-888-209-8124",
           "external": false
         }
@@ -1264,7 +1264,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118882098124",
+          "href": "tel:+18882098124",
           "label": "1-888-209-8124",
           "external": false
         }
@@ -2083,7 +2083,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+119172756975",
+          "href": "tel:+19172756975",
           "label": "(917) 275-6975 — Ask NYPL",
           "external": false
         }
@@ -2115,7 +2115,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118002464646",
+          "href": "tel:+18002464646",
           "label": "1-800-246-4646",
           "external": false
         }
@@ -2147,7 +2147,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118002464646",
+          "href": "tel:+18002464646",
           "label": "1-800-246-4646",
           "external": false
         }
@@ -2273,17 +2273,17 @@
       "name": "Summer Youth Employment Program (SYEP)",
       "what": "A paid summer job for ages 14 to 24. The biggest youth jobs program in the country. Applications usually open in the winter for the coming summer.",
       "addr": null,
-      "note": null,
+      "note": "The 2026 deadline was March 13, 2026. The 2027 application has not opened yet. Check the page this winter.",
       "acts": [
         {
           "kind": "go",
           "href": "https://www.nyc.gov/site/dycd/services/jobs-internships/summer-youth-employment-program-syep.page",
-          "label": "Apply for SYEP",
+          "label": "See SYEP details",
           "external": true
         },
         {
           "kind": "tel",
-          "href": "tel:+118002464646",
+          "href": "tel:+18002464646",
           "label": "1-800-246-4646",
           "external": false
         }
@@ -2305,7 +2305,7 @@
       "name": "MyCity — child care and 3-K",
       "what": "Apply for free or low-cost child care and see if you qualify for a voucher. One city account handles it.",
       "addr": null,
-      "note": null,
+      "note": "2-K, free child care for two-year-olds, started this fall in select school districts. The first round closed June 26, 2026. Call 718-935-2009 to ask about seats.",
       "acts": [
         {
           "kind": "go",
@@ -2341,7 +2341,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118002464646",
+          "href": "tel:+18002464646",
           "label": "1-800-246-4646",
           "external": false
         }
@@ -2373,7 +2373,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+116466922273",
+          "href": "tel:+16466922273",
           "label": "1-646-692-2273",
           "external": false
         }
@@ -2405,7 +2405,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118553555777",
+          "href": "tel:+18553555777",
           "label": "1-855-355-5777",
           "external": false
         }
@@ -2437,7 +2437,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118446924692",
+          "href": "tel:+18446924692",
           "label": "1-844-692-4692",
           "external": false
         }
@@ -2753,7 +2753,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118886636680",
+          "href": "tel:+18886636680",
           "label": "1-888-663-6680",
           "external": false
         }
@@ -2811,7 +2811,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118003540365",
+          "href": "tel:+18003540365",
           "label": "1-800-354-0365",
           "external": false
         }
@@ -3089,7 +3089,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118006214673",
+          "href": "tel:+18006214673",
           "label": "1-800-621-HOPE (4673)",
           "external": false
         }
@@ -3173,7 +3173,7 @@
         },
         {
           "kind": "tel",
-          "href": "tel:+118002464646",
+          "href": "tel:+18002464646",
           "label": "1-800-246-4646",
           "external": false
         }
